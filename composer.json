@@ -1,24 +1,16 @@
 {
-	"name": "holonet/Sc2repParser",
-	"autoload": {
-		"psr-4" : {
-			"holonet\\Sc2repParser\\scripts\\" : "scripts/",
-			"holonet\\Sc2repParser\\" : "src/"
-		}
-	},
-	"autoload-dev": {
-		"psr-4" : {"holonet\\Sc2repParser\\tests\\" : "tests/"},
-		"files": [
-			"src/utils/functions.php",
-			"lib/php-mpq/mpq.php"
-		]
-	},
+	"name": "holonet/sc2utils",
+	"description": "Replay parser for Starcraft 2",
 	"require": {
-		"holonet/common": "dev-develop",
-		"holonet/bitstream": "dev-develop"
+		"php": ">=8.4",
+		"holonet/bitstream": "^1.0.0",
+		"holonet/common": "dev-develop"
 	},
 	"require-dev": {
-		"phpunit/phpunit": "*"
+		"ergebnis/composer-normalize": "^2.5",
+		"friendsofphp/php-cs-fixer": "^3.13",
+		"phpunit/phpunit": "*",
+		"vimeo/psalm": "^6.0"
 	},
 	"repositories": [
 		{
@@ -29,5 +21,38 @@
 			"type": "git",
 			"url": "https://github.com/matthiaslantsch/holonet-bitstream.git"
 		}
-	]
+	],
+	"autoload": {
+		"psr-4": {
+			"holonet\\sc2utils\\": "src/",
+			"holonet\\sc2utils\\scripts\\": "scripts/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"holonet\\sc2utils\\tests\\": "tests/"
+		},
+		"files": [
+			"src/utils/functions.php",
+			"lib/php-mpq/mpq.php"
+		]
+	},
+	"config": {
+		"allow-plugins": {
+			"ergebnis/composer-normalize": true
+		}
+	},
+	"scripts": {
+		"fix": [
+			"@composer normalize --diff --ansi",
+			"@php -d memory_limit=-1 vendor/friendsofphp/php-cs-fixer/php-cs-fixer fix --verbose --ansi --diff"
+		],
+		"test": [
+			"@composer validate --ansi",
+			"@composer normalize --dry-run --diff --ansi",
+			"@php -d xdebug.mode=coverage -d memory_limit=-1 vendor/phpunit/phpunit/phpunit -c phpunit.xml --colors=always",
+			"@php -d memory_limit=-1 vendor/friendsofphp/php-cs-fixer/php-cs-fixer fix --verbose --dry-run --ansi --diff",
+			"@php -d memory_limit=-1 vendor/vimeo/psalm/psalm"
+		]
+	}
 }

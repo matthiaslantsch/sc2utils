@@ -1,38 +1,32 @@
 <?php
 /**
  * This file is part of the holonet sc2 replay parser library
- * (c) Matthias Lantsch
+ * (c) Matthias Lantsch.
  *
- * class file for the ReplayParserTest PHPUnit test class
- *
- * @package holonet sc2 replay parser library
  * @license http://opensource.org/licenses/gpl-license.php  GNU Public License
  * @author  Matthias Lantsch <matthias.lantsch@bluewin.ch>
  */
 
-namespace holonet\Sc2repParser\tests;
+namespace holonet\sc2utils\tests;
 
+use holonet\sc2utils\decoders\GameEventsDecoder;
+use holonet\sc2utils\decoders\MessageEventsDecoder;
+use holonet\sc2utils\ParserException;
+use holonet\sc2utils\ReplayParser;
+use holonet\sc2utils\resources\Replay;
 use PHPUnit\Framework\TestCase;
-use holonet\Sc2repParser\ReplayParser;
-use holonet\Sc2repParser\ParserException;
-use holonet\Sc2repParser\resources\Replay;
-use holonet\Sc2repParser\decoders\MessageEventsDecoder;
-use holonet\Sc2repParser\decoders\GameEventsDecoder;
 
 /**
- * The ReplayParserTest tests the ReplayParser class for correct values
- *
- * @author  matthias.lantsch
- * @package holonet\Sc2repParser\tests
+ * @internal
  */
+#[\PHPUnit\Framework\Attributes\Small]
 class ReplayParserTest extends TestCase {
-
 	/**
-	 * Contains hardcoded details about my replay files in order to test our code
+	 * Contains hardcoded details about my replay files in order to test our code.
 	 */
-	public function replayProvider() {
-		return [
-			//beta phase 1
+	public static function provideHeaderDecodeCases(): iterable {
+		yield from array(
+			// beta phase 1
 			// 'beta patch 1' => ['0.2.0.13891/0.2.0.13891.SC2Replay', new Replay(13891, "0.2.0.13891", 7680, "WoL Beta")],
 			// 'beta patch 3' => ['0.4.0.14133/0.4.0.14133.SC2Replay', new Replay(14133, "0.4.0.14133", 48112, "WoL Beta")],
 			// 'beta patch 4' => ['0.6.0.14259/0.6.0.14259.SC2Replay', new Replay(14259, "0.6.0.14259", 33552, "WoL Beta")],
@@ -75,16 +69,13 @@ class ReplayParserTest extends TestCase {
 			// '3.2.2.42253' => ['3.2.2.42253/3.2.2.42253.SC2Replay', new Replay(42253, "3.2.2.42253", 17735, "LotV")],
 			// '3.3.1.43199' => ['3.3.1.43199/3.3.1.43199.SC2Replay', new Replay(42932, "3.3.1.43199", 19386, "LotV")],
 			// '3.4.0.44401' => ['3.4.0.44401/3.4.0.44401.SC2Replay', new Replay(44401, "3.4.0.44401", 7008, "LotV")],
-			'4.4.0.65895' => ['4.4.0.65895/4.4.0.65895.SC2Replay', new Replay(65895, "4.4.0.65895", 16338, "LotV")],
-		];
+			'4.4.0.65895' => array('4.4.0.65895/4.4.0.65895.SC2Replay', new Replay(65_895, '4.4.0.65895', 16_338, 'LotV')),
+		);
 	}
 
-	/**
-	 * Intitialises a test data loader class for each replay in the hardcoded array
-	 */
-	public function replayDetailData() {
+	public function replayDetailData(): iterable {
 		foreach ($this->replayProvider() as $name => $arr) {
-			$ret[$name] = [$arr[0], new TestDataLoader($arr[1]->version)];
+			$ret[$name] = array($arr[0], new TestDataLoader($arr[1]->version));
 		}
 
 		return $ret;
@@ -93,82 +84,81 @@ class ReplayParserTest extends TestCase {
 	/**
 	 * @covers \holonet\Sc2repParser\ReplayParser::__construct()
 	 */
-	public function testFileNotFoundException() {
+	public function test_file_not_found_exception(): void {
 		$msg = null;
 
 		try {
-			new ReplayParser("some file.sc2replay");
+			new ReplayParser('some file.sc2replay');
 		} catch (ParserException $e) {
 			$msg = $e->getMessage();
 		}
 
-		$this->assertEquals($msg, "The replay file 'some file.sc2replay' could not be found/read");
+		$this->assertSame($msg, "The replay file 'some file.sc2replay' could not be found/read");
+	}
+
+	/**
+	 * @covers \holonet\Sc2repParser\ReplayParser::decode()
+	 */
+	#[\PHPUnit\Framework\Attributes\DataProvider('replayDetailData')]
+	public function test_game_events_decoder($repFile, $dataLoader): void {
+		$parser = new ReplayParser(__DIR__.\DIRECTORY_SEPARATOR.'test_replays'.\DIRECTORY_SEPARATOR.$repFile);
+		$parser->doIdentify();
+
+		if ($parser->replay->baseBuild <= 15_623) {
+			$this->markTestIncomplete(
+				'Game event parsing for beta builds has not been implemented yet.'
+			);
+		} else {
+			$parser->decodeFile('replay.game.events', GameEventsDecoder::class);
+			$expected = $dataLoader->load('game.events');
+			$this->assertSame($expected, $parser->replay->eventArray('game'));
+		}
 	}
 
 	/**
 	 * @covers \holonet\Sc2repParser\ReplayParser::__construct()
-	 * @dataProvider replayProvider
 	 */
-	public function testHeaderDecode($path, $expected) {
-		$parser = new ReplayParser(__DIR__.DIRECTORY_SEPARATOR."test_replays".DIRECTORY_SEPARATOR.$path);
+	#[\PHPUnit\Framework\Attributes\DataProvider('provideHeaderDecodeCases')]
+	public function test_header_decode($path, $expected): void {
+		$parser = new ReplayParser(__DIR__.\DIRECTORY_SEPARATOR.'test_replays'.\DIRECTORY_SEPARATOR.$path);
 
-		$this->assertEquals($expected, $parser->replay);
+		$this->assertSame($expected, $parser->replay);
+	}
+
+	/**
+	 * @covers \holonet\Sc2repParser\ReplayParser::identify()
+	 */
+	#[\PHPUnit\Framework\Attributes\DataProvider('replayDetailData')]
+	public function test_identify($repFile, $dataLoader): void {
+		$identify = ReplayParser::identify(__DIR__.\DIRECTORY_SEPARATOR.'test_replays'.\DIRECTORY_SEPARATOR.$repFile);
+
+		$expected = $dataLoader->load('identify');
+		$this->assertSame($expected, $identify);
+	}
+
+	/**
+	 * @covers \holonet\Sc2repParser\ReplayParser::decode()
+	 */
+	#[\PHPUnit\Framework\Attributes\DataProvider('replayDetailData')]
+	public function test_message_events_decoder($repFile, $dataLoader): void {
+		$parser = new ReplayParser(__DIR__.\DIRECTORY_SEPARATOR.'test_replays'.\DIRECTORY_SEPARATOR.$repFile);
+		$parser->doIdentify();
+		$parser->decodeFile('replay.message.events', MessageEventsDecoder::class);
+
+		$expected = $dataLoader->load('message.events');
+		$this->assertSame($expected, $parser->replay->eventArray('message'));
 	}
 
 	/**
 	 * @covers \holonet\Sc2repParser\ReplayParser::compare()
 	 * @uses   \holonet\Sc2repParser\ReplayParser::identify()
 	 */
-	public function testReplayHash() {
-		$identifyFirst = ReplayParser::identify(__DIR__.DIRECTORY_SEPARATOR."test_replays"
-			.DIRECTORY_SEPARATOR."same_match".DIRECTORY_SEPARATOR."Full.SC2Replay");
-		$identifySecond = ReplayParser::identify(__DIR__.DIRECTORY_SEPARATOR."test_replays"
-					.DIRECTORY_SEPARATOR."same_match".DIRECTORY_SEPARATOR."Partial.SC2Replay");
+	public function test_replay_hash(): void {
+		$identifyFirst = ReplayParser::identify(__DIR__.\DIRECTORY_SEPARATOR.'test_replays'
+			.\DIRECTORY_SEPARATOR.'same_match'.\DIRECTORY_SEPARATOR.'Full.SC2Replay');
+		$identifySecond = ReplayParser::identify(__DIR__.\DIRECTORY_SEPARATOR.'test_replays'
+					.\DIRECTORY_SEPARATOR.'same_match'.\DIRECTORY_SEPARATOR.'Partial.SC2Replay');
 
-		$this->assertEquals(true, ReplayParser::compare($identifyFirst["repHash"], $identifySecond["repHash"]));
+		$this->assertTrue(ReplayParser::compare($identifyFirst['repHash'], $identifySecond['repHash']));
 	}
-
-	/**
-	 * @covers \holonet\Sc2repParser\ReplayParser::identify()
-	 * @dataProvider replayDetailData
-	 */
-	public function testIdentify($repFile, $dataLoader) {
-		$identify = ReplayParser::identify(__DIR__.DIRECTORY_SEPARATOR."test_replays".DIRECTORY_SEPARATOR.$repFile);
-
-		$expected = $dataLoader->load("identify");
-		$this->assertEquals($expected, $identify);
-	}
-
-	/**
-	 * @covers \holonet\Sc2repParser\ReplayParser::decode()
-	 * @dataProvider replayDetailData
-	 */
-	public function testMessageEventsDecoder($repFile, $dataLoader) {
-		$parser = new ReplayParser(__DIR__.DIRECTORY_SEPARATOR."test_replays".DIRECTORY_SEPARATOR.$repFile);
-		$parser->doIdentify();
-		$parser->decodeFile("replay.message.events", MessageEventsDecoder::class);
-
-		$expected = $dataLoader->load("message.events");
-		$this->assertEquals($expected, $parser->replay->eventArray("message"));
-	}
-
-	/**
-	 * @covers \holonet\Sc2repParser\ReplayParser::decode()
-	 * @dataProvider replayDetailData
-	 */
-	public function testGameEventsDecoder($repFile, $dataLoader) {
-		$parser = new ReplayParser(__DIR__.DIRECTORY_SEPARATOR."test_replays".DIRECTORY_SEPARATOR.$repFile);
-		$parser->doIdentify();
-
-		if($parser->replay->baseBuild <= 15623) {
-			$this->markTestIncomplete(
-			  'Game event parsing for beta builds has not been implemented yet.'
-			);
-		} else {
-			$parser->decodeFile("replay.game.events", GameEventsDecoder::class);
-			$expected = $dataLoader->load("game.events");
-			$this->assertEquals($expected, $parser->replay->eventArray("game"));
-		}
-	}
-
 }

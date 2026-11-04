@@ -6,12 +6,11 @@
  * THIS FILE WAS AUTOMATICALLY GENERATED
  * binary format definition file for the replay {{SUBFILE}} subfile in version {{VERSION}}
  *
- * @package holonet sc2 replay parser library
  * @license http://opensource.org/licenses/gpl-license.php  GNU Public License
  * @author  Matthias Lantsch <matthias.lantsch@bluewin.ch>
  */
 
-use holonet\Sc2repParser\format\BinSerialisedData;
+use holonet\sc2utils\format\BinSerialisedData;
 use holonet\bitstream\format\BinStruct;
 use holonet\bitstream\format\BinInteger;
 use holonet\bitstream\format\BinSkip;

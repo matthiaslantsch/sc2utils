@@ -1,3 +1,7 @@
-log/*
-vendor/*
-.phpunit*
+.idea/
+/vendor/
+composer.lock
+/.php_cs
+.php-cs-fixer.cache
+.phpunit.cache/
+tests/coverage/

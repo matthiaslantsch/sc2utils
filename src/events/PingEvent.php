@@ -1,7 +1,7 @@
 <?php
 /**
  * This file is part of the sc2rep replay parser project
- * (c) Matthias Lantsch
+ * (c) Matthias Lantsch.
  *
  * class file for the PingEvent logic class
  */
@@ -9,29 +9,24 @@
 namespace HIS5\lib\Sc2repParser\events;
 
 /**
- * PingEvent is an event generated for player pings
+ * PingEvent is an event generated for player pings.
  *
  * @author  {AUTHOR}
- * @version {VERSION}
- * @package HIS5\lib\Sc2repParser\events
  */
 class PingEvent extends MessageEvent {
-
 	/**
-	 * property containing the ping location on the map
+	 * property containing the ping location on the map.
 	 *
-	 * @access 	public
-	 * @var 	array location | array with the location with the x and the y index
+	 * @var array location | array with the location with the x and the y index
 	 */
-	public $location;
+	public array $location;
 
 	/**
-	 * constructor accepting the gameloop count
+	 * constructor accepting the gameloop count.
 	 *
-	 * @access public
-	 * @param  integer gameloops | gameloop counter at the time the event happened
-	 * @param  integer playerId | playerId of the player that caused the event
-	 * @param  integer recipient | integer describing the recipient of the message
+	 * @param  int gameloops | gameloop counter at the time the event happened
+	 * @param  int playerId | playerId of the player that caused the event
+	 * @param  int recipient | integer describing the recipient of the message
 	 * @param  array location | array with the location with the x and the y index
 	 */
 	public function __construct($gameloops, $playerId, $recipient, $location) {
@@ -39,5 +34,4 @@ class PingEvent extends MessageEvent {
 
 		$this->location = $location;
 	}
-
 }

@@ -1,7 +1,7 @@
 <?php
 /**
  * This file is part of the sc2rep replay parser project
- * (c) Matthias Lantsch
+ * (c) Matthias Lantsch.
  *
  * class file for the CameraEvent logic class
  */
@@ -9,57 +9,48 @@
 namespace HIS5\lib\Sc2repParser\events;
 
 /**
- * CameraEvent is an event generated when a user moves his camera
+ * CameraEvent is an event generated when a user moves his camera.
  *
  * @author  {AUTHOR}
- * @version {VERSION}
- * @package HIS5\lib\Sc2repParser\events
  */
 class CameraEvent extends EventBase {
-
-	/**
-	 * property containing an array with the location described as 2d point
-	 *
-	 * @access 	public
-	 * @var 	array location | array with x and y coordinate
-	 */
-	public $location;
-
 	/**
 	 * property containing the distance to the camera target ??
 	 *
-	 * @access 	public
-	 * @var 	integer distance | distance to the camera target
+	 * @var int distance | distance to the camera target
 	 */
-	public $distance;
+	public int $distance;
 
 	/**
-	 * property containing the current pitch of the camera
+	 * property containing an array with the location described as 2d point.
 	 *
-	 * @access 	public
-	 * @var 	integer pitch | current pitch of the camera
+	 * @var array location | array with x and y coordinate
 	 */
-	public $pitch;
+	public array $location;
 
 	/**
-	 * property containing the current yaw of the camera
+	 * property containing the current pitch of the camera.
 	 *
-	 * @access 	public
-	 * @var 	integer yaw | current yaw of the camera
+	 * @var int pitch | current pitch of the camera
 	 */
-	public $yaw;
+	public int $pitch;
 
 	/**
-	 * constructor accepting the gameloop count
+	 * property containing the current yaw of the camera.
 	 *
-	 * @access public
-	 * @param  integer gameloops | gameloop counter at the time the event happened
-	 * @param  integer playerId | playerId of the player that caused the event
+	 * @var int yaw | current yaw of the camera
+	 */
+	public int $yaw;
+
+	/**
+	 * constructor accepting the gameloop count.
+	 *
+	 * @param  int gameloops | gameloop counter at the time the event happened
+	 * @param  int playerId | playerId of the player that caused the event
 	 * @param  array location | array with x and y coordinate
 	 */
 	public function __construct($gameloops, $playerId, $location) {
 		parent::__construct($gameloops, $playerId);
 		$this->location = $location;
 	}
-
 }

@@ -1,5 +1,25 @@
-<phpunit bootstrap="vendor/autoload.php">
-  <testsuite name="parser-Tests">
-    <directory>./tests/</directory>
+<?xml version="1.0"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.1/phpunit.xsd"
+         cacheDirectory=".phpunit.cache"
+         requireCoverageMetadata="true"
+         displayDetailsOnTestsThatTriggerWarnings="true"
+         displayDetailsOnTestsThatTriggerDeprecations="true"
+         displayDetailsOnTestsThatTriggerErrors="true"
+         displayDetailsOnTestsThatTriggerNotices="true">
+  <testsuite name="tests">
+    <directory>./tests</directory>
   </testsuite>
+  <coverage>
+    <report>
+      <html outputDirectory="tests/coverage/html"/>
+    </report>
+  </coverage>
+  <source>
+    <include>
+      <directory suffix=".php">./src</directory>
+    </include>
+  </source>
 </phpunit>

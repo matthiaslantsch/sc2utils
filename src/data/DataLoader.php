@@ -1,45 +1,36 @@
 <?php
 /**
-* This file is part of the holonet sc2 replay parser library
-* (c) Matthias Lantsch
-*
-* class file for the DataLoader wrapper class
-*
-* @package holonet sc2 replay parser library
-* @license http://opensource.org/licenses/gpl-license.php  GNU Public License
-* @author  Matthias Lantsch <matthias.lantsch@bluewin.ch>
- */
-
-namespace holonet\Sc2repParser\data;
-
-/**
- * The DataLoader class is used as a wrapper around the numerous json data files in the same directory
+ * This file is part of the holonet sc2 replay parser library
+ * (c) Matthias Lantsch.
  *
- * @author  matthias.lantsch
- * @package holonet\Sc2repParser\data
+ * @license http://opensource.org/licenses/gpl-license.php  GNU Public License
+ * @author  Matthias Lantsch <matthias.lantsch@bluewin.ch>
  */
-class DataLoader {
 
+namespace holonet\sc2utils\data;
+
+use LogicException;
+
+class DataLoader {
 	/**
 	 * load a version specified dataset
-	 * usually contains a base json with changes per version to overwrite
+	 * usually contains a base json with changes per version to overwrite.
 	 *
-	 * @access public
-	 * @param  string $dataset The name of the data set to load
-	 * @param  integer $baseBuild The base build to load the data for
+	 * @param string $dataset The name of the data set to load
+	 * @param int $baseBuild The base build to load the data for
 	 * @return array with data from the requested data set
 	 */
-	public static function loadDataset($dataset, $baseBuild) {
-		$dir = __DIR__.DIRECTORY_SEPARATOR.$dataset.DIRECTORY_SEPARATOR;
+	public static function loadDataset(string $dataset, int $baseBuild): array {
+		$dir = __DIR__.\DIRECTORY_SEPARATOR.$dataset.\DIRECTORY_SEPARATOR;
 		$ret = self::loadFile("{$dir}base.json");
 
-		foreach (glob("$dir*") as $avaibleVersion) {
-			$filesAvaible[] = str_replace(".json", "", basename($avaibleVersion));
+		foreach (glob("{$dir}*") as $availableVersion) {
+			$filesAvailable[] = str_replace('.json', '', basename($availableVersion));
 		}
-		sort($filesAvaible);
+		sort($filesAvailable);
 
-		foreach ($filesAvaible as $version) {
-			if($baseBuild <= $version) {
+		foreach ($filesAvailable as $version) {
+			if ($baseBuild <= $version) {
 				foreach (self::loadFile("{$dir}{$version}.json") as $key => $value) {
 					$ret[$key] = $value;
 				}
@@ -50,19 +41,18 @@ class DataLoader {
 	}
 
 	/**
-	 * read a specified json file and return it's contents as an array
+	 * read a specified json file and return its contents as an array.
 	 *
-	 * @access public
 	 * @param  string file The name of the file to load
 	 * @return array with data from the requested data file
 	 */
-	private static function loadFile($file) {
-		if(file_exists($file)) {
+	private static function loadFile(string $file): array {
+		if (file_exists($file)) {
 			$content = file_get_contents($file);
-			return json_decode($content, true);
-		} else {
-			return null;
-		}
-	}
 
+			return json_decode($content, true);
+		}
+
+		throw new LogicException("File '{$file}' not found.");
+	}
 }
