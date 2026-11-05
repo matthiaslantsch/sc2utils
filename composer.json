@@ -3,6 +3,8 @@
 	"description": "Replay parser for Starcraft 2",
 	"require": {
 		"php": ">=8.4",
+		"ext-bz2": "*",
+		"ext-zlib": "*",
 		"holonet/bitstream": "^1.0.0",
 		"holonet/common": "dev-develop"
 	},
@@ -31,11 +33,7 @@
 	"autoload-dev": {
 		"psr-4": {
 			"holonet\\sc2utils\\tests\\": "tests/"
-		},
-		"files": [
-			"src/utils/functions.php",
-			"lib/php-mpq/mpq.php"
-		]
+		}
 	},
 	"config": {
 		"allow-plugins": {

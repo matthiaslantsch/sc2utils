@@ -5,3 +5,5 @@ composer.lock
 .php-cs-fixer.cache
 .phpunit.cache/
 tests/coverage/
+/tools/.venv/
+/tools/.cache/

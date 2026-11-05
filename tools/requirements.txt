@@ -1,0 +1,7 @@
+# Dev tooling only, never needed at runtime. See README.md for the setup.
+# The oracles themselves come from the pinned submodules, not from PyPI:
+-e ./s2protocol
+-e ./sc2reader
+# Third-party dependencies, pinned (versions as in sc2reader's uv.lock):
+mpyq==0.2.5
+pillow==12.1.0

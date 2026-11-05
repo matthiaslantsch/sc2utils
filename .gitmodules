@@ -1,6 +1,6 @@
-[submodule "s2prot/s2protocol"]
-	path = s2prot/s2protocol
+[submodule "s2protocol"]
+	path = tools/s2protocol
 	url = https://github.com/Blizzard/s2protocol
 [submodule "sc2reader"]
-	path = sc2reader
+	path = tools/sc2reader
 	url = https://github.com/ggtracker/sc2reader
