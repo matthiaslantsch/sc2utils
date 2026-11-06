@@ -1,0 +1,13 @@
+[
+{"m_progress":9,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":1},"_bits":56},
+{"m_progress":14,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":1},"_bits":56},
+{"m_progress":36,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":1},"_bits":56},
+{"m_progress":42,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":1},"_bits":56},
+{"m_progress":50,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":1},"_bits":56},
+{"m_progress":57,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":1},"_bits":56},
+{"m_progress":90,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":1},"_bits":56},
+{"m_progress":97,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":1},"_bits":56},
+{"m_recipient":0,"m_string":"gl hf","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":63,"_userid":{"m_userId":0},"_bits":72},
+{"m_recipient":0,"m_string":"glhf","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":300,"_userid":{"m_userId":1},"_bits":72},
+{"m_recipient":0,"m_string":"gg","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":19853,"_userid":{"m_userId":0},"_bits":64}
+]

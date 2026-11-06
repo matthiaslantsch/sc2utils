@@ -1,0 +1,84 @@
+{
+	"m_playerList": [
+		{
+			"m_name": "[CORE]<sp/>Firkraag",
+			"m_toon": {
+				"m_region": 2,
+				"m_programId": "\u0000\u0000S2",
+				"m_realm": 1,
+				"m_id": 260647
+			},
+			"m_race": "Terran",
+			"m_color": {
+				"m_a": 255,
+				"m_r": 180,
+				"m_g": 20,
+				"m_b": 30
+			},
+			"m_control": 2,
+			"m_teamId": 0,
+			"m_handicap": 100,
+			"m_observe": 0,
+			"m_result": 1,
+			"m_workingSetSlotId": 0
+		},
+		{
+			"m_name": "Nibbler",
+			"m_toon": {
+				"m_region": 2,
+				"m_programId": "\u0000\u0000S2",
+				"m_realm": 1,
+				"m_id": 1735978
+			},
+			"m_race": "Zerg",
+			"m_color": {
+				"m_a": 255,
+				"m_r": 0,
+				"m_g": 66,
+				"m_b": 255
+			},
+			"m_control": 2,
+			"m_teamId": 1,
+			"m_handicap": 100,
+			"m_observe": 0,
+			"m_result": 2,
+			"m_workingSetSlotId": 1
+		}
+	],
+	"m_title": "Neo Planet S LE",
+	"m_difficulty": "",
+	"m_thumbnail": {
+		"m_file": "Minimap.tga"
+	},
+	"m_isBlizzardMap": true,
+	"m_timeUTC": 130154535305487071,
+	"m_timeLocalOffset": 72000000000,
+	"m_description": "",
+	"m_imageFilePath": "",
+	"m_mapFileName": "",
+	"m_cacheHandles": [
+		{
+			"hex": "73326d61000045556de41503baccd05656360b6f027db88169fa1989bb6357b1b215a2547939f5fb"
+		},
+		{
+			"hex": "73326d6100004555421c8aa0f3619b652d23a2735dfee812ab644228235e7a797edecfe8b67da30e"
+		},
+		{
+			"hex": "73326d610000455566093832128453efffbb787c80b7d3eec1ad81bde55c83c930dea79c4e505a04"
+		},
+		{
+			"hex": "73326d61000045555548d57da713ed0358ba73fad82b1454428ed585eed4fecd9a69eb9226968cc5"
+		},
+		{
+			"hex": "73326d61000045557f41411aa597f4b46440d42a563348bf53822d2a68112f0104f9b891f6f05ae1"
+		},
+		{
+			"hex": "73326d61000045553edd7b8b5cca3045cfd54cd3a664d0ffebb3c14040c8aeb4f3f869ca7aed2142"
+		}
+	],
+	"m_miniSave": false,
+	"m_gameSpeed": 4,
+	"m_defaultDifficulty": 3,
+	"m_modPaths": null,
+	"m_campaignIndex": 0
+}

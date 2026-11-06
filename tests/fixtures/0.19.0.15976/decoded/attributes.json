@@ -1,0 +1,292 @@
+{
+	"source": null,
+	"mapNamespace": 0,
+	"scopes": {
+		"1": {
+			"3007": [
+				{
+					"namespace": 999,
+					"attrid": 3007,
+					"value": "Part"
+				}
+			],
+			"500": [
+				{
+					"namespace": 999,
+					"attrid": 500,
+					"value": "Humn"
+				}
+			],
+			"2003": [
+				{
+					"namespace": 999,
+					"attrid": 2003,
+					"value": "T1"
+				}
+			],
+			"3001": [
+				{
+					"namespace": 999,
+					"attrid": 3001,
+					"value": "Zerg"
+				}
+			],
+			"2018": [
+				{
+					"namespace": 999,
+					"attrid": 2018,
+					"value": "T1"
+				}
+			],
+			"3004": [
+				{
+					"namespace": 999,
+					"attrid": 3004,
+					"value": "Medi"
+				}
+			],
+			"2011": [
+				{
+					"namespace": 999,
+					"attrid": 2011,
+					"value": "T1"
+				}
+			],
+			"2005": [
+				{
+					"namespace": 999,
+					"attrid": 2005,
+					"value": "T1"
+				}
+			],
+			"3008": [
+				{
+					"namespace": 999,
+					"attrid": 3008,
+					"value": "Obs"
+				}
+			],
+			"2007": [
+				{
+					"namespace": 999,
+					"attrid": 2007,
+					"value": "T1"
+				}
+			],
+			"3003": [
+				{
+					"namespace": 999,
+					"attrid": 3003,
+					"value": " 100"
+				}
+			],
+			"2006": [
+				{
+					"namespace": 999,
+					"attrid": 2006,
+					"value": "T1"
+				}
+			],
+			"2002": [
+				{
+					"namespace": 999,
+					"attrid": 2002,
+					"value": "T1"
+				}
+			],
+			"3002": [
+				{
+					"namespace": 999,
+					"attrid": 3002,
+					"value": "tc01"
+				}
+			],
+			"2008": [
+				{
+					"namespace": 999,
+					"attrid": 2008,
+					"value": "T1"
+				}
+			],
+			"2004": [
+				{
+					"namespace": 999,
+					"attrid": 2004,
+					"value": "T1"
+				}
+			]
+		},
+		"2": {
+			"3007": [
+				{
+					"namespace": 999,
+					"attrid": 3007,
+					"value": "Part"
+				}
+			],
+			"500": [
+				{
+					"namespace": 999,
+					"attrid": 500,
+					"value": "Humn"
+				}
+			],
+			"2003": [
+				{
+					"namespace": 999,
+					"attrid": 2003,
+					"value": "T2"
+				}
+			],
+			"3001": [
+				{
+					"namespace": 999,
+					"attrid": 3001,
+					"value": "Terr"
+				}
+			],
+			"2018": [
+				{
+					"namespace": 999,
+					"attrid": 2018,
+					"value": "T2"
+				}
+			],
+			"3004": [
+				{
+					"namespace": 999,
+					"attrid": 3004,
+					"value": "Medi"
+				}
+			],
+			"2011": [
+				{
+					"namespace": 999,
+					"attrid": 2011,
+					"value": "T2"
+				}
+			],
+			"2005": [
+				{
+					"namespace": 999,
+					"attrid": 2005,
+					"value": "T2"
+				}
+			],
+			"3008": [
+				{
+					"namespace": 999,
+					"attrid": 3008,
+					"value": "Obs"
+				}
+			],
+			"2007": [
+				{
+					"namespace": 999,
+					"attrid": 2007,
+					"value": "T2"
+				}
+			],
+			"3003": [
+				{
+					"namespace": 999,
+					"attrid": 3003,
+					"value": " 100"
+				}
+			],
+			"2006": [
+				{
+					"namespace": 999,
+					"attrid": 2006,
+					"value": "T2"
+				}
+			],
+			"2002": [
+				{
+					"namespace": 999,
+					"attrid": 2002,
+					"value": "T2"
+				}
+			],
+			"3002": [
+				{
+					"namespace": 999,
+					"attrid": 3002,
+					"value": "tc02"
+				}
+			],
+			"2008": [
+				{
+					"namespace": 999,
+					"attrid": 2008,
+					"value": "T2"
+				}
+			],
+			"2004": [
+				{
+					"namespace": 999,
+					"attrid": 2004,
+					"value": "T2"
+				}
+			]
+		},
+		"16": {
+			"1000": [
+				{
+					"namespace": 999,
+					"attrid": 1000,
+					"value": "Dflt"
+				}
+			],
+			"3010": [
+				{
+					"namespace": 999,
+					"attrid": 3010,
+					"value": "yes"
+				}
+			],
+			"2000": [
+				{
+					"namespace": 999,
+					"attrid": 2000,
+					"value": "t2"
+				}
+			],
+			"3000": [
+				{
+					"namespace": 999,
+					"attrid": 3000,
+					"value": "Fasr"
+				}
+			],
+			"3006": [
+				{
+					"namespace": 999,
+					"attrid": 3006,
+					"value": "7"
+				}
+			],
+			"3009": [
+				{
+					"namespace": 999,
+					"attrid": 3009,
+					"value": "Amm"
+				}
+			],
+			"1001": [
+				{
+					"namespace": 999,
+					"attrid": 1001,
+					"value": "yes"
+				}
+			],
+			"2001": [
+				{
+					"namespace": 999,
+					"attrid": 2001,
+					"value": "1v1"
+				}
+			]
+		}
+	}
+}

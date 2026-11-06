@@ -1,35 +1,76 @@
-from __future__ import absolute_import, print_function, unicode_literals, division
+"""Dump every s2protocol protocol module as JSON lines on stdout, for tools/generate/protocols.php.
+
+Usage (from the repo root; tools/generate/protocols.sh runs the whole pipe):
+    tools/.venv/bin/python tools/generate/protocols.py | php tools/generate/protocols.php
+
+Line 1 describes the source: {"s2protocol": version, "commit": submodule commit, "legacy": rev, "legacyCommit": sha}.
+Every further line is one protocol, in build order, with the module's tables as s2protocol has them (tuples become
+JSON lists, int dict keys become strings) and nothing interpreted:
+
+    build, source ("legacy" or "current"), file (path in the submodule), notice (the module's licence header),
+    typeinfos, svaruint32_typeid, user_id_typeid, replay_header_typeid, game_details_typeid,
+    replay_initdata_typeid, game_eventid_typeid, game_event_types, message_eventid_typeid, message_event_types,
+    tracker_eventid_typeid, tracker_event_types
+
+user_id_typeid is replay_userid_typeid, or replay_playerid_typeid in the oldest legacy modules (see
+common.protocols.user_id_typeid()). The tracker fields are null for protocols without tracker events.
+"""
+
 import json
-import argparse
-from s2protocol.versions import build, list_all, latest
+import sys
+from pathlib import Path
 
-"""
-This script is intended to dump the type info from the protocol into a json file
-"""
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-parser = argparse.ArgumentParser(description="Dump the type info from a protocol into a json file.")
-parser.add_argument('baseBuild', metavar='baseBuild', type=int, nargs=1, help="BaseBuild to dump the protocol for.")
-args = parser.parse_args()
+from common import protocols  # noqa: E402
 
-# Import it
-protocol = build(args.baseBuild[0])
 
-data = {
-	"typeinfos": protocol.typeinfos,
-	"replay_header_typeid": protocol.replay_header_typeid,
-	"replay_initdata_typeid": protocol.replay_initdata_typeid,
-	"game_details_typeid": protocol.game_details_typeid,
-	"svaruint32_typeid": protocol.svaruint32_typeid,
-	"replay_userid_typeid": protocol.replay_userid_typeid,
-	"game_eventid_typeid": protocol.game_eventid_typeid,
-	"game_event_types": protocol.game_event_types,
-	"message_eventid_typeid": protocol.message_eventid_typeid,
-	"message_event_types": protocol.message_event_types,
-	"tracker_eventid_typeid": protocol.tracker_eventid_typeid,
-	"tracker_event_types": protocol.tracker_event_types
-}
+def notice(path: Path) -> str:
+    """The comment block the module starts with (Blizzard's MIT notice), without the comment markers."""
+    lines = []
+    for line in path.read_text(encoding='utf-8').splitlines():
+        if not line.startswith('#'):
+            break
+        lines.append(line[1:].removeprefix(' ').rstrip())
+    return '\n'.join(lines).strip('\n')
 
-#f = open('protocol18574.json','w')
-#f.write(json.dumps(data, indent=3))
-#f.close()
-print(json.dumps(data))
+
+def protocol_line(source: protocols.Source) -> dict:
+    module = protocols.load(source.build)
+    tracker = hasattr(module, 'tracker_event_types')
+    return {
+        'build': source.build,
+        'source': 'legacy' if source.legacy else 'current',
+        'file': f'{protocols.VERSIONS}/{source.path.name}',
+        'notice': notice(source.path),
+        'typeinfos': module.typeinfos,
+        'svaruint32_typeid': module.svaruint32_typeid,
+        'user_id_typeid': protocols.user_id_typeid(module),
+        'replay_header_typeid': module.replay_header_typeid,
+        'game_details_typeid': module.game_details_typeid,
+        'replay_initdata_typeid': module.replay_initdata_typeid,
+        'game_eventid_typeid': module.game_eventid_typeid,
+        'game_event_types': module.game_event_types,
+        'message_eventid_typeid': module.message_eventid_typeid,
+        'message_event_types': module.message_event_types,
+        'tracker_eventid_typeid': module.tracker_eventid_typeid if tracker else None,
+        'tracker_event_types': module.tracker_event_types if tracker else None,
+    }
+
+
+def main() -> int:
+    out = sys.stdout
+    head = {
+        's2protocol': protocols.version(),
+        'commit': protocols.head(),
+        'legacy': protocols.LEGACY,
+        'legacyCommit': protocols._git('rev-parse', protocols.LEGACY).strip(),
+    }
+    out.write(json.dumps(head) + '\n')
+    for source in protocols.sources().values():
+        out.write(json.dumps(protocol_line(source), separators=(',', ':')) + '\n')
+    return 0
+
+
+if __name__ == '__main__':
+    sys.exit(main())

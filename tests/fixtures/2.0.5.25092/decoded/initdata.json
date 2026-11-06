@@ -1,0 +1,1147 @@
+{
+	"m_syncLobbyState": {
+		"m_userInitialData": [
+			{
+				"m_name": "ShowTime",
+				"m_clanTag": "",
+				"m_highestLeague": 3,
+				"m_combinedRaceLevels": 0,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_observe": 0
+			},
+			{
+				"m_name": "白米饭",
+				"m_clanTag": "",
+				"m_highestLeague": 3,
+				"m_combinedRaceLevels": 0,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_observe": 0
+			},
+			{
+				"m_name": "ImYoonA",
+				"m_clanTag": "",
+				"m_highestLeague": 8,
+				"m_combinedRaceLevels": 0,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_observe": 0
+			},
+			{
+				"m_name": "Jess",
+				"m_clanTag": "",
+				"m_highestLeague": 4,
+				"m_combinedRaceLevels": 0,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_observe": 0
+			},
+			{
+				"m_name": "焚情",
+				"m_clanTag": "",
+				"m_highestLeague": 4,
+				"m_combinedRaceLevels": 0,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_observe": 0
+			},
+			{
+				"m_name": "吖树树怪",
+				"m_clanTag": "",
+				"m_highestLeague": 8,
+				"m_combinedRaceLevels": 0,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_observe": 0
+			},
+			{
+				"m_name": "",
+				"m_clanTag": "",
+				"m_highestLeague": 0,
+				"m_combinedRaceLevels": 4294967295,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_observe": 0
+			},
+			{
+				"m_name": "",
+				"m_clanTag": "",
+				"m_highestLeague": 0,
+				"m_combinedRaceLevels": 4294967295,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_observe": 0
+			},
+			{
+				"m_name": "",
+				"m_clanTag": "",
+				"m_highestLeague": 0,
+				"m_combinedRaceLevels": 4294967295,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_observe": 0
+			},
+			{
+				"m_name": "",
+				"m_clanTag": "",
+				"m_highestLeague": 0,
+				"m_combinedRaceLevels": 4294967295,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_observe": 0
+			},
+			{
+				"m_name": "",
+				"m_clanTag": "",
+				"m_highestLeague": 0,
+				"m_combinedRaceLevels": 4294967295,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_observe": 0
+			},
+			{
+				"m_name": "",
+				"m_clanTag": "",
+				"m_highestLeague": 0,
+				"m_combinedRaceLevels": 4294967295,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_observe": 0
+			},
+			{
+				"m_name": "",
+				"m_clanTag": "",
+				"m_highestLeague": 0,
+				"m_combinedRaceLevels": 4294967295,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_observe": 0
+			},
+			{
+				"m_name": "",
+				"m_clanTag": "",
+				"m_highestLeague": 0,
+				"m_combinedRaceLevels": 4294967295,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_observe": 0
+			},
+			{
+				"m_name": "",
+				"m_clanTag": "",
+				"m_highestLeague": 0,
+				"m_combinedRaceLevels": 4294967295,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_observe": 0
+			},
+			{
+				"m_name": "",
+				"m_clanTag": "",
+				"m_highestLeague": 0,
+				"m_combinedRaceLevels": 4294967295,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_observe": 0
+			}
+		],
+		"m_gameDescription": {
+			"m_randomValue": 3571643662,
+			"m_gameCacheName": "Dflt",
+			"m_gameOptions": {
+				"m_lockTeams": true,
+				"m_teamsTogether": false,
+				"m_advancedSharedControl": false,
+				"m_randomRaces": false,
+				"m_battleNet": true,
+				"m_amm": true,
+				"m_competitive": true,
+				"m_noVictoryOrDefeat": false,
+				"m_fog": 0,
+				"m_observers": 0,
+				"m_userDifficulty": 0,
+				"m_clientDebugFlags": 0
+			},
+			"m_gameSpeed": 4,
+			"m_gameType": 0,
+			"m_maxUsers": 6,
+			"m_maxObservers": 10,
+			"m_maxPlayers": 6,
+			"m_maxTeams": 6,
+			"m_maxColors": 16,
+			"m_maxRaces": 3,
+			"m_maxControls": 1,
+			"m_mapSizeX": 224,
+			"m_mapSizeY": 208,
+			"m_mapFileSyncChecksum": 3051139727,
+			"m_mapFileName": "",
+			"m_mapAuthorName": "5-S2-1-1",
+			"m_modFileSyncChecksum": 1877339453,
+			"m_slotDescriptions": [
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "feff"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 96,
+						"hex": "7d0080bd9c78df40ef3b0000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "feff"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 96,
+						"hex": "7d0080fa3a78df01df3b0000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "feff"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 96,
+						"hex": "7d0080f8dc78df074f3b0000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "feff"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 96,
+						"hex": "7d0080e37c78df1c2f3b0000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "feff"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 96,
+						"hex": "7d0080bd9c78df40ef3b0000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "feff"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 96,
+						"hex": "7d0080fa3a78df01df3b0000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "0100"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "0"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "0380000000000000000000000000000000000000000000000000000000000000"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 96,
+						"hex": "7d0080f8dc78df074f3b0000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "0100"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "0"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "0380000000000000000000000000000000000000000000000000000000000000"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 96,
+						"hex": "7d0080e37c78df1c2f3b0000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "0100"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "0"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "0380000000000000000000000000000000000000000000000000000000000000"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 96,
+						"hex": "7d0080bd9c78df40ef3b0000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "0100"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "0"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "0380000000000000000000000000000000000000000000000000000000000000"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 96,
+						"hex": "7d0080fa3a78df01df3b0000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "0100"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "0"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "0380000000000000000000000000000000000000000000000000000000000000"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 96,
+						"hex": "7d0080f8dc78df074f3b0000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "0100"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "0"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "0380000000000000000000000000000000000000000000000000000000000000"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 96,
+						"hex": "7d0080e37c78df1c2f3b0000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "0100"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "0"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "0380000000000000000000000000000000000000000000000000000000000000"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 96,
+						"hex": "7d0080bd9c78df40ef3b0000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "0100"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "0"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "0380000000000000000000000000000000000000000000000000000000000000"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 96,
+						"hex": "7d0080fa3a78df01df3b0000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "0100"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "0"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "0380000000000000000000000000000000000000000000000000000000000000"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 96,
+						"hex": "7d0080f8dc78df074f3b0000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "0100"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "0"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "0380000000000000000000000000000000000000000000000000000000000000"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 96,
+						"hex": "7d0080e37c78df1c2f3b0000"
+					}
+				}
+			],
+			"m_defaultDifficulty": 3,
+			"m_defaultAIBuild": 0,
+			"m_cacheHandles": [
+				{
+					"hex": "73326d610000434e6de41503baccd05656360b6f027db88169fa1989bb6357b1b215a2547939f5fb"
+				},
+				{
+					"hex": "73326d610000434e421c8aa0f3619b652d23a2735dfee812ab644228235e7a797edecfe8b67da30e"
+				},
+				{
+					"hex": "73326d610000434e5c673e6cd2f1bf6e068fa59e2f9421f5debb91cb516aca3237d3b05fe7c7e9fa"
+				},
+				{
+					"hex": "73326d610000434eb6ccab9e1dca6e10b65a4cf87569ace66c5743dd42cf30113f2b83c59ce7f1a2"
+				},
+				{
+					"hex": "73326d610000434e6019911ed7b772a7fb817f07d206d810ec6222495721cd6914822604293f8baf"
+				}
+			],
+			"m_isBlizzardMap": true,
+			"m_isPremadeFFA": false,
+			"m_isCoopMode": false
+		},
+		"m_lobbyState": {
+			"m_phase": 0,
+			"m_maxUsers": 6,
+			"m_maxObservers": 10,
+			"m_slots": [
+				{
+					"m_control": 2,
+					"m_userId": 0,
+					"m_teamId": 0,
+					"m_colorPref": {
+						"m_color": 1
+					},
+					"m_racePref": {
+						"m_race": 2
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 0,
+					"m_workingSetSlotId": 0,
+					"m_rewards": [
+						3288406474,
+						3979921667,
+						250310860,
+						1975240368,
+						1120539613
+					],
+					"m_toonHandle": "5-S2-1-1742533",
+					"m_licenses": [
+						162
+					]
+				},
+				{
+					"m_control": 2,
+					"m_userId": 1,
+					"m_teamId": 0,
+					"m_colorPref": {
+						"m_color": 2
+					},
+					"m_racePref": {
+						"m_race": 0
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 0,
+					"m_workingSetSlotId": 1,
+					"m_rewards": [
+						3979921667,
+						4067220888,
+						2009110693,
+						1500394717,
+						656055948,
+						982527914,
+						2120826697,
+						2820704051,
+						3717180683,
+						2951153716,
+						1751841167,
+						3673336716
+					],
+					"m_toonHandle": "5-S2-1-287957",
+					"m_licenses": []
+				},
+				{
+					"m_control": 2,
+					"m_userId": 2,
+					"m_teamId": 0,
+					"m_colorPref": {
+						"m_color": 3
+					},
+					"m_racePref": {
+						"m_race": 2
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 0,
+					"m_workingSetSlotId": 2,
+					"m_rewards": [
+						3065782512,
+						2009110693,
+						1500394717,
+						656055948,
+						3717180683,
+						2820704051,
+						1751841167,
+						3979921667,
+						4067220888,
+						1333792768,
+						2359737029,
+						18730036,
+						1658138110,
+						3673336716
+					],
+					"m_toonHandle": "5-S2-1-2718988",
+					"m_licenses": [
+						162
+					]
+				},
+				{
+					"m_control": 2,
+					"m_userId": 3,
+					"m_teamId": 1,
+					"m_colorPref": {
+						"m_color": 4
+					},
+					"m_racePref": {
+						"m_race": 1
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 0,
+					"m_workingSetSlotId": 3,
+					"m_rewards": [
+						18730036,
+						4166430433,
+						531423509,
+						3168567118,
+						982527914
+					],
+					"m_toonHandle": "5-S2-1-458926",
+					"m_licenses": [
+						162
+					]
+				},
+				{
+					"m_control": 2,
+					"m_userId": 4,
+					"m_teamId": 1,
+					"m_colorPref": {
+						"m_color": 5
+					},
+					"m_racePref": {
+						"m_race": 2
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 0,
+					"m_workingSetSlotId": 4,
+					"m_rewards": [
+						2713000630,
+						4166430433,
+						4239673732,
+						1303934070,
+						2359737029
+					],
+					"m_toonHandle": "5-S2-1-703627",
+					"m_licenses": [
+						162
+					]
+				},
+				{
+					"m_control": 2,
+					"m_userId": 5,
+					"m_teamId": 1,
+					"m_colorPref": {
+						"m_color": 6
+					},
+					"m_racePref": {
+						"m_race": 1
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 0,
+					"m_workingSetSlotId": 5,
+					"m_rewards": [
+						4166430433,
+						4067220888,
+						2009110693,
+						3717180683,
+						1218439071,
+						1751841167,
+						985481741,
+						2874745307
+					],
+					"m_toonHandle": "5-S2-1-82094",
+					"m_licenses": []
+				},
+				{
+					"m_control": 1,
+					"m_userId": null,
+					"m_teamId": 0,
+					"m_colorPref": {
+						"m_color": 0
+					},
+					"m_racePref": {
+						"m_race": 0
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 1,
+					"m_workingSetSlotId": 15,
+					"m_rewards": [],
+					"m_toonHandle": "",
+					"m_licenses": []
+				},
+				{
+					"m_control": 1,
+					"m_userId": null,
+					"m_teamId": 0,
+					"m_colorPref": {
+						"m_color": 0
+					},
+					"m_racePref": {
+						"m_race": 0
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 1,
+					"m_workingSetSlotId": 14,
+					"m_rewards": [],
+					"m_toonHandle": "",
+					"m_licenses": []
+				},
+				{
+					"m_control": 1,
+					"m_userId": null,
+					"m_teamId": 0,
+					"m_colorPref": {
+						"m_color": 0
+					},
+					"m_racePref": {
+						"m_race": 0
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 1,
+					"m_workingSetSlotId": 13,
+					"m_rewards": [],
+					"m_toonHandle": "",
+					"m_licenses": []
+				},
+				{
+					"m_control": 1,
+					"m_userId": null,
+					"m_teamId": 0,
+					"m_colorPref": {
+						"m_color": 0
+					},
+					"m_racePref": {
+						"m_race": 0
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 1,
+					"m_workingSetSlotId": 12,
+					"m_rewards": [],
+					"m_toonHandle": "",
+					"m_licenses": []
+				},
+				{
+					"m_control": 1,
+					"m_userId": null,
+					"m_teamId": 0,
+					"m_colorPref": {
+						"m_color": 0
+					},
+					"m_racePref": {
+						"m_race": 0
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 1,
+					"m_workingSetSlotId": 11,
+					"m_rewards": [],
+					"m_toonHandle": "",
+					"m_licenses": []
+				},
+				{
+					"m_control": 1,
+					"m_userId": null,
+					"m_teamId": 0,
+					"m_colorPref": {
+						"m_color": 0
+					},
+					"m_racePref": {
+						"m_race": 0
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 1,
+					"m_workingSetSlotId": 10,
+					"m_rewards": [],
+					"m_toonHandle": "",
+					"m_licenses": []
+				},
+				{
+					"m_control": 1,
+					"m_userId": null,
+					"m_teamId": 0,
+					"m_colorPref": {
+						"m_color": 0
+					},
+					"m_racePref": {
+						"m_race": 0
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 1,
+					"m_workingSetSlotId": 9,
+					"m_rewards": [],
+					"m_toonHandle": "",
+					"m_licenses": []
+				},
+				{
+					"m_control": 1,
+					"m_userId": null,
+					"m_teamId": 0,
+					"m_colorPref": {
+						"m_color": 0
+					},
+					"m_racePref": {
+						"m_race": 0
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 1,
+					"m_workingSetSlotId": 8,
+					"m_rewards": [],
+					"m_toonHandle": "",
+					"m_licenses": []
+				},
+				{
+					"m_control": 1,
+					"m_userId": null,
+					"m_teamId": 0,
+					"m_colorPref": {
+						"m_color": 0
+					},
+					"m_racePref": {
+						"m_race": 0
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 1,
+					"m_workingSetSlotId": 7,
+					"m_rewards": [],
+					"m_toonHandle": "",
+					"m_licenses": []
+				},
+				{
+					"m_control": 1,
+					"m_userId": null,
+					"m_teamId": 0,
+					"m_colorPref": {
+						"m_color": 0
+					},
+					"m_racePref": {
+						"m_race": 0
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 1,
+					"m_workingSetSlotId": 6,
+					"m_rewards": [],
+					"m_toonHandle": "",
+					"m_licenses": []
+				}
+			],
+			"m_randomSeed": 3571643662,
+			"m_hostUserId": null,
+			"m_isSinglePlayer": false,
+			"m_gameDuration": 0,
+			"m_defaultDifficulty": 3,
+			"m_defaultAIBuild": 0
+		}
+	}
+}

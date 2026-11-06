@@ -7,3 +7,4 @@ composer.lock
 tests/coverage/
 /tools/.venv/
 /tools/.cache/
+**/__pycache__/

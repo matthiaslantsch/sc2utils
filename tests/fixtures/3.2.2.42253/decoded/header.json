@@ -1,0 +1,25 @@
+{
+	"m_signature": "StarCraft II replay\u001b11",
+	"m_version": {
+		"m_flags": 1,
+		"m_major": 3,
+		"m_minor": 2,
+		"m_revision": 2,
+		"m_build": 42253,
+		"m_baseBuild": 42253
+	},
+	"m_type": 2,
+	"m_elapsedGameLoops": 17735,
+	"m_useScaledTime": true,
+	"m_ngdpRootKey": {
+		"m_data": {
+			"hex": "e120b5a488875df1e08ebdf3adf2a2ef"
+		}
+	},
+	"m_dataBuildNum": 42253,
+	"m_replayCompatibilityHash": {
+		"m_data": {
+			"hex": "9b9591277f1f76b5250d45c4aad19358"
+		}
+	}
+}

@@ -1,0 +1,161 @@
+{
+	"m_playerList": [
+		{
+			"m_name": "Venomous",
+			"m_toon": {
+				"m_region": 1,
+				"m_programId": "\u0000\u0000S2",
+				"m_realm": 1,
+				"m_id": 309099
+			},
+			"m_race": "Protoss",
+			"m_color": {
+				"m_a": 255,
+				"m_r": 180,
+				"m_g": 20,
+				"m_b": 30
+			},
+			"m_control": 2,
+			"m_teamId": 0,
+			"m_handicap": 100,
+			"m_observe": 0,
+			"m_result": 2
+		},
+		{
+			"m_name": "BERsERkER",
+			"m_toon": {
+				"m_region": 1,
+				"m_programId": "\u0000\u0000S2",
+				"m_realm": 1,
+				"m_id": 416868
+			},
+			"m_race": "Protoss",
+			"m_color": {
+				"m_a": 255,
+				"m_r": 0,
+				"m_g": 66,
+				"m_b": 255
+			},
+			"m_control": 2,
+			"m_teamId": 0,
+			"m_handicap": 100,
+			"m_observe": 0,
+			"m_result": 2
+		},
+		{
+			"m_name": "saganRitual",
+			"m_toon": {
+				"m_region": 1,
+				"m_programId": "\u0000\u0000S2",
+				"m_realm": 1,
+				"m_id": 688638
+			},
+			"m_race": "Zerg",
+			"m_color": {
+				"m_a": 255,
+				"m_r": 28,
+				"m_g": 167,
+				"m_b": 234
+			},
+			"m_control": 2,
+			"m_teamId": 1,
+			"m_handicap": 100,
+			"m_observe": 0,
+			"m_result": 2
+		},
+		{
+			"m_name": "Vowels",
+			"m_toon": {
+				"m_region": 1,
+				"m_programId": "\u0000\u0000S2",
+				"m_realm": 1,
+				"m_id": 1374494
+			},
+			"m_race": "Terran",
+			"m_color": {
+				"m_a": 255,
+				"m_r": 84,
+				"m_g": 0,
+				"m_b": 129
+			},
+			"m_control": 2,
+			"m_teamId": 1,
+			"m_handicap": 100,
+			"m_observe": 0,
+			"m_result": 1
+		},
+		{
+			"m_name": "RoyalMist",
+			"m_toon": {
+				"m_region": 1,
+				"m_programId": "\u0000\u0000S2",
+				"m_realm": 1,
+				"m_id": 1666326
+			},
+			"m_race": "Protoss",
+			"m_color": {
+				"m_a": 255,
+				"m_r": 235,
+				"m_g": 225,
+				"m_b": 41
+			},
+			"m_control": 2,
+			"m_teamId": 1,
+			"m_handicap": 100,
+			"m_observe": 0,
+			"m_result": 1
+		},
+		{
+			"m_name": "Ctio",
+			"m_toon": {
+				"m_region": 1,
+				"m_programId": "\u0000\u0000S2",
+				"m_realm": 1,
+				"m_id": 1114761
+			},
+			"m_race": "Terran",
+			"m_color": {
+				"m_a": 255,
+				"m_r": 254,
+				"m_g": 138,
+				"m_b": 14
+			},
+			"m_control": 1,
+			"m_teamId": 0,
+			"m_handicap": 100,
+			"m_observe": 1,
+			"m_result": 1
+		}
+	],
+	"m_title": "Ulaan Deeps",
+	"m_difficulty": "",
+	"m_thumbnail": {
+		"m_file": "Minimap.tga"
+	},
+	"m_isBlizzardMap": true,
+	"m_timeUTC": 129453322617783751,
+	"m_timeLocalOffset": -252000000000,
+	"m_description": "",
+	"m_imageFilePath": "",
+	"m_mapFileName": "",
+	"m_cacheHandles": [
+		{
+			"hex": "73326d61000055536de41503baccd05656360b6f027db88169fa1989bb6357b1b215a2547939f5fb"
+		},
+		{
+			"hex": "73326d6100005553421c8aa0f3619b652d23a2735dfee812ab644228235e7a797edecfe8b67da30e"
+		},
+		{
+			"hex": "73326d6100005553f94c326d1357e93e2286bf4c9892ac414f6a15503a2fad2185f0d9b89a976207"
+		},
+		{
+			"hex": "73326d6100005553b6ccab9e1dca6e10b65a4cf87569ace66c5743dd42cf30113f2b83c59ce7f1a2"
+		},
+		{
+			"hex": "73326d6100005553e3fecbed67d6fda6edb5a9297a33e2dc6ccb67c866cee25c8ff5ed749adaa0cf"
+		}
+	],
+	"m_miniSave": false,
+	"m_gameSpeed": 4,
+	"m_defaultDifficulty": 2
+}

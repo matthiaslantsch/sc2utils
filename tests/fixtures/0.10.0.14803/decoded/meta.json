@@ -1,0 +1,6 @@
+{
+	"replay": "0.10.0.14803/0.10.0.14803.SC2Replay",
+	"s2protocol": "5.0.17.98310.0",
+	"s2protocolCommit": "3b40c5ef01834096b4305172ef5485ec00133dcc",
+	"error": "header: CorruptedError: buffer(00/0,[1]=53)"
+}

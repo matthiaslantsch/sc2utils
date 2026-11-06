@@ -1,0 +1,19 @@
+[
+{"m_progress":9,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_playerId":1},"_bits":56},
+{"m_progress":14,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_playerId":1},"_bits":56},
+{"m_progress":36,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_playerId":1},"_bits":56},
+{"m_progress":44,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_playerId":1},"_bits":56},
+{"m_progress":50,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_playerId":1},"_bits":56},
+{"m_progress":57,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_playerId":1},"_bits":56},
+{"m_progress":90,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_playerId":1},"_bits":56},
+{"m_progress":97,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_playerId":1},"_bits":56},
+{"m_recipient":0,"m_string":"glgl","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":83,"_userid":{"m_playerId":2},"_bits":72},
+{"m_recipient":0,"m_string":"gg gl hf","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":102,"_userid":{"m_playerId":1},"_bits":96},
+{"m_recipient":0,"m_string":"league? my 3rd hots game","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":214,"_userid":{"m_playerId":1},"_bits":232},
+{"m_recipient":0,"m_string":"bronze","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":317,"_userid":{"m_playerId":2},"_bits":88},
+{"m_recipient":0,"m_string":"k","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":360,"_userid":{"m_playerId":1},"_bits":40},
+{"m_recipient":0,"m_string":"in wotl?","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":411,"_userid":{"m_playerId":1},"_bits":96},
+{"m_recipient":0,"m_string":"gold","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":483,"_userid":{"m_playerId":2},"_bits":72},
+{"m_recipient":0,"m_string":"same :D","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":548,"_userid":{"m_playerId":1},"_bits":96},
+{"m_recipient":0,"m_string":"gg","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":8190,"_userid":{"m_playerId":2},"_bits":56}
+]

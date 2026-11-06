@@ -1,0 +1,9 @@
+[
+{"m_progress":47,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":1},"_bits":56},
+{"m_progress":57,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":1},"_bits":56},
+{"m_progress":64,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":1},"_bits":56},
+{"m_progress":70,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":1},"_bits":56},
+{"m_progress":83,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":1},"_bits":56},
+{"m_progress":99,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":1},"_bits":56},
+{"m_recipient":1,"m_string":"actually you could leave now","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":4955,"_userid":{"m_userId":0},"_bits":264}
+]

@@ -1,0 +1,169 @@
+{
+	"m_playerList": [
+		{
+			"m_name": "ShowTime",
+			"m_toon": {
+				"m_region": 5,
+				"m_programId": "\u0000\u0000S2",
+				"m_realm": 1,
+				"m_id": 1742533
+			},
+			"m_race": "星灵",
+			"m_color": {
+				"m_a": 255,
+				"m_r": 180,
+				"m_g": 20,
+				"m_b": 30
+			},
+			"m_control": 2,
+			"m_teamId": 0,
+			"m_handicap": 100,
+			"m_observe": 0,
+			"m_result": 0,
+			"m_workingSetSlotId": 0
+		},
+		{
+			"m_name": "白米饭",
+			"m_toon": {
+				"m_region": 5,
+				"m_programId": "\u0000\u0000S2",
+				"m_realm": 1,
+				"m_id": 287957
+			},
+			"m_race": "人类",
+			"m_color": {
+				"m_a": 255,
+				"m_r": 0,
+				"m_g": 66,
+				"m_b": 255
+			},
+			"m_control": 2,
+			"m_teamId": 0,
+			"m_handicap": 100,
+			"m_observe": 0,
+			"m_result": 0,
+			"m_workingSetSlotId": 1
+		},
+		{
+			"m_name": "ImYoonA",
+			"m_toon": {
+				"m_region": 5,
+				"m_programId": "\u0000\u0000S2",
+				"m_realm": 1,
+				"m_id": 2718988
+			},
+			"m_race": "星灵",
+			"m_color": {
+				"m_a": 255,
+				"m_r": 28,
+				"m_g": 167,
+				"m_b": 234
+			},
+			"m_control": 2,
+			"m_teamId": 0,
+			"m_handicap": 100,
+			"m_observe": 0,
+			"m_result": 0,
+			"m_workingSetSlotId": 2
+		},
+		{
+			"m_name": "Jess",
+			"m_toon": {
+				"m_region": 5,
+				"m_programId": "\u0000\u0000S2",
+				"m_realm": 1,
+				"m_id": 458926
+			},
+			"m_race": "异虫",
+			"m_color": {
+				"m_a": 255,
+				"m_r": 84,
+				"m_g": 0,
+				"m_b": 129
+			},
+			"m_control": 2,
+			"m_teamId": 1,
+			"m_handicap": 100,
+			"m_observe": 0,
+			"m_result": 0,
+			"m_workingSetSlotId": 3
+		},
+		{
+			"m_name": "焚情",
+			"m_toon": {
+				"m_region": 5,
+				"m_programId": "\u0000\u0000S2",
+				"m_realm": 1,
+				"m_id": 703627
+			},
+			"m_race": "星灵",
+			"m_color": {
+				"m_a": 255,
+				"m_r": 235,
+				"m_g": 225,
+				"m_b": 41
+			},
+			"m_control": 2,
+			"m_teamId": 1,
+			"m_handicap": 100,
+			"m_observe": 0,
+			"m_result": 0,
+			"m_workingSetSlotId": 4
+		},
+		{
+			"m_name": "吖树树怪",
+			"m_toon": {
+				"m_region": 5,
+				"m_programId": "\u0000\u0000S2",
+				"m_realm": 1,
+				"m_id": 82094
+			},
+			"m_race": "异虫",
+			"m_color": {
+				"m_a": 255,
+				"m_r": 254,
+				"m_g": 138,
+				"m_b": 14
+			},
+			"m_control": 2,
+			"m_teamId": 1,
+			"m_handicap": 100,
+			"m_observe": 0,
+			"m_result": 0,
+			"m_workingSetSlotId": 5
+		}
+	],
+	"m_title": "生化实验区",
+	"m_difficulty": "",
+	"m_thumbnail": {
+		"m_file": "Minimap.tga"
+	},
+	"m_isBlizzardMap": true,
+	"m_timeUTC": 130070550599528838,
+	"m_timeLocalOffset": -288000000000,
+	"m_description": "",
+	"m_imageFilePath": "",
+	"m_mapFileName": "",
+	"m_cacheHandles": [
+		{
+			"hex": "73326d610000434e6de41503baccd05656360b6f027db88169fa1989bb6357b1b215a2547939f5fb"
+		},
+		{
+			"hex": "73326d610000434e421c8aa0f3619b652d23a2735dfee812ab644228235e7a797edecfe8b67da30e"
+		},
+		{
+			"hex": "73326d610000434e5c673e6cd2f1bf6e068fa59e2f9421f5debb91cb516aca3237d3b05fe7c7e9fa"
+		},
+		{
+			"hex": "73326d610000434eb6ccab9e1dca6e10b65a4cf87569ace66c5743dd42cf30113f2b83c59ce7f1a2"
+		},
+		{
+			"hex": "73326d610000434e6019911ed7b772a7fb817f07d206d810ec6222495721cd6914822604293f8baf"
+		}
+	],
+	"m_miniSave": false,
+	"m_gameSpeed": 4,
+	"m_defaultDifficulty": 3,
+	"m_modPaths": null,
+	"m_campaignIndex": 0
+}

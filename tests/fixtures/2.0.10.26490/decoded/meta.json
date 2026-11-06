@@ -1,0 +1,33 @@
+{
+	"replay": "2.0.10.26490/2.0.10.26490.SC2Replay",
+	"s2protocol": "5.0.17.98310.0",
+	"s2protocolCommit": "3b40c5ef01834096b4305172ef5485ec00133dcc",
+	"baseBuild": 26490,
+	"protocol": 26490,
+	"protocolSource": "legacy b41b369^",
+	"streams": {
+		"header": {
+			"file": "header.json"
+		},
+		"details": {
+			"file": "details.json"
+		},
+		"initdata": {
+			"file": "initdata.json"
+		},
+		"attributes": {
+			"file": "attributes.json"
+		},
+		"message": {
+			"absent": true
+		},
+		"game": {
+			"file": "game.events.jsonl.gz",
+			"events": 699
+		},
+		"tracker": {
+			"file": "tracker.events.jsonl.gz",
+			"events": 4228
+		}
+	}
+}
