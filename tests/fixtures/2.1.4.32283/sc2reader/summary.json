@@ -1,0 +1,87 @@
+{
+	"version": "2.1.4.32283",
+	"baseBuild": 32283,
+	"gameloops": 8569,
+	"expansion": "HotS",
+	"speed": "Faster",
+	"region": "us",
+	"map": {
+		"name": "Catallena LE",
+		"hash": "3d1373d04ca077ffd4bf54e4cea652fc9d61cd5ce3f670f8e628d448ff705557",
+		"depotRegion": "us"
+	},
+	"endTime": 1411503076,
+	"utcOffset": -3.9999999999166667,
+	"realLength": 382,
+	"gameMode": "Ladder",
+	"teamSize": "1v1",
+	"realType": "1v1",
+	"isLadder": true,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "GGTracker",
+			"clanTag": "TOG",
+			"toon": [
+				1,
+				1,
+				637188
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": "Win",
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "SgtPepper",
+			"clanTag": "",
+			"toon": [
+				1,
+				1,
+				3137999
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": "Loss",
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1
+			],
+			"result": "Win",
+			"lineup": "P"
+		},
+		{
+			"number": 2,
+			"players": [
+				2
+			],
+			"result": "Loss",
+			"lineup": "P"
+		}
+	]
+}

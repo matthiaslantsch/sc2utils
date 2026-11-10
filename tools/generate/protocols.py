@@ -7,7 +7,8 @@ Line 1 describes the source: {"s2protocol": version, "commit": submodule commit,
 Every further line is one protocol, in build order, with the module's tables as s2protocol has them (tuples become
 JSON lists, int dict keys become strings) and nothing interpreted:
 
-    build, source ("legacy" or "current"), file (path in the submodule), notice (the module's licence header),
+    build, source ("legacy", "current" or "supplement"), file (path in the submodule, or in tools/ for
+    supplements), notice (the module's licence header),
     typeinfos, svaruint32_typeid, user_id_typeid, replay_header_typeid, game_details_typeid,
     replay_initdata_typeid, game_eventid_typeid, game_event_types, message_eventid_typeid, message_event_types,
     tracker_eventid_typeid, tracker_event_types
@@ -40,8 +41,8 @@ def protocol_line(source: protocols.Source) -> dict:
     tracker = hasattr(module, 'tracker_event_types')
     return {
         'build': source.build,
-        'source': 'legacy' if source.legacy else 'current',
-        'file': f'{protocols.VERSIONS}/{source.path.name}',
+        'source': source.kind,
+        'file': f'tools/supplements/{source.path.name}' if source.supplement else f'{protocols.VERSIONS}/{source.path.name}',
         'notice': notice(source.path),
         'typeinfos': module.typeinfos,
         'svaruint32_typeid': module.svaruint32_typeid,

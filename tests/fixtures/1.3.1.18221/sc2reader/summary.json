@@ -1,0 +1,87 @@
+{
+	"version": "1.3.1.18221",
+	"baseBuild": 18092,
+	"gameloops": 33970,
+	"expansion": "WoL",
+	"speed": "Faster",
+	"region": "eu",
+	"map": {
+		"name": "Metalopolis",
+		"hash": "48de3ccc7bc2982f88d647d722415f32658fcfd16550882a12b065cc04f1c804",
+		"depotRegion": "eu"
+	},
+	"endTime": 1301693709,
+	"utcOffset": 2.0,
+	"realLength": 1516,
+	"gameMode": "Ladder",
+	"teamSize": "1v1",
+	"realType": "1v1",
+	"isLadder": true,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "Collector",
+			"clanTag": null,
+			"toon": [
+				2,
+				1,
+				469109
+			],
+			"pickedRace": "Zerg",
+			"playedRace": "Zerg",
+			"result": "Loss",
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "MǂLalush",
+			"clanTag": null,
+			"toon": [
+				2,
+				1,
+				211474
+			],
+			"pickedRace": "Zerg",
+			"playedRace": "Zerg",
+			"result": "Win",
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1
+			],
+			"result": "Loss",
+			"lineup": "Z"
+		},
+		{
+			"number": 2,
+			"players": [
+				2
+			],
+			"result": "Win",
+			"lineup": "Z"
+		}
+	]
+}

@@ -1,0 +1,183 @@
+{
+	"version": "2.0.5.25092",
+	"baseBuild": 24944,
+	"gameloops": 15780,
+	"expansion": "WoL",
+	"speed": "Faster",
+	"region": "cn",
+	"map": {
+		"name": "生化实验区",
+		"hash": "6019911ed7b772a7fb817f07d206d810ec6222495721cd6914822604293f8baf",
+		"depotRegion": "cn"
+	},
+	"endTime": 1362581460,
+	"utcOffset": -8.0,
+	"realLength": 704,
+	"gameMode": "Ladder",
+	"teamSize": "3v3",
+	"realType": "3v3",
+	"isLadder": true,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "ShowTime",
+			"clanTag": "",
+			"toon": [
+				5,
+				1,
+				1742533
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": null,
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "白米饭",
+			"clanTag": "",
+			"toon": [
+				5,
+				1,
+				287957
+			],
+			"pickedRace": "Terran",
+			"playedRace": "Terran",
+			"result": null,
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 3,
+			"slot": 2,
+			"name": "ImYoonA",
+			"clanTag": "",
+			"toon": [
+				5,
+				1,
+				2718988
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": null,
+			"human": true,
+			"color": "Teal",
+			"rgba": [
+				28,
+				167,
+				234,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 4,
+			"slot": 3,
+			"name": "Jess",
+			"clanTag": "",
+			"toon": [
+				5,
+				1,
+				458926
+			],
+			"pickedRace": "Zerg",
+			"playedRace": "Zerg",
+			"result": null,
+			"human": true,
+			"color": "Purple",
+			"rgba": [
+				84,
+				0,
+				129,
+				255
+			],
+			"team": 2
+		},
+		{
+			"pid": 5,
+			"slot": 4,
+			"name": "焚情",
+			"clanTag": "",
+			"toon": [
+				5,
+				1,
+				703627
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": null,
+			"human": true,
+			"color": "Yellow",
+			"rgba": [
+				235,
+				225,
+				41,
+				255
+			],
+			"team": 2
+		},
+		{
+			"pid": 6,
+			"slot": 5,
+			"name": "吖树树怪",
+			"clanTag": "",
+			"toon": [
+				5,
+				1,
+				82094
+			],
+			"pickedRace": "Zerg",
+			"playedRace": "Zerg",
+			"result": null,
+			"human": true,
+			"color": "Orange",
+			"rgba": [
+				254,
+				138,
+				14,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1,
+				2,
+				3
+			],
+			"result": null,
+			"lineup": "PPT"
+		},
+		{
+			"number": 2,
+			"players": [
+				4,
+				5,
+				6
+			],
+			"result": null,
+			"lineup": "PZZ"
+		}
+	]
+}

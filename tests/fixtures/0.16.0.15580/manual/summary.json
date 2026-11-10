@@ -1,0 +1,79 @@
+{
+	"version": "0.16.0.15580",
+	"baseBuild": 15580,
+	"gameloops": 14048,
+	"expansion": "WoL",
+	"speed": "Faster",
+	"region": "usb",
+	"map": {
+		"name": "Lost Temple",
+		"hash": "ece88096028c71663d7774e24c1b57068b067b646b45169f0849c31fc8a4c642",
+		"depotRegion": "usb"
+	},
+	"endTime": 1275593048,
+	"utcOffset": -7.0,
+	"realLength": 627,
+	"gameMode": "Private",
+	"teamSize": "1v1",
+	"realType": "1v1",
+	"isLadder": false,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 1,
+			"name": "Machine",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Zerg",
+			"playedRace": "Zerg",
+			"result": "Win",
+			"human": true,
+			"color": "Light Pink",
+			"rgba": [
+				204,
+				166,
+				252,
+				255
+			],
+			"team": 2
+		},
+		{
+			"pid": 2,
+			"slot": 2,
+			"name": "WhiteRa",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": "Loss",
+			"human": true,
+			"color": "Green",
+			"rgba": [
+				22,
+				128,
+				0,
+				255
+			],
+			"team": 1
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				2
+			],
+			"result": "Loss",
+			"lineup": "P"
+		},
+		{
+			"number": 2,
+			"players": [
+				1
+			],
+			"result": "Win",
+			"lineup": "Z"
+		}
+	]
+}

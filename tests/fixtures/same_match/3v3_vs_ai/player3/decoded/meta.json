@@ -1,0 +1,34 @@
+{
+	"replay": "same_match/3v3_vs_ai/player3.SC2Replay",
+	"s2protocol": "5.0.17.98310.0",
+	"s2protocolCommit": "3b40c5ef01834096b4305172ef5485ec00133dcc",
+	"baseBuild": 98310,
+	"protocol": 98310,
+	"protocolSource": "current",
+	"streams": {
+		"header": {
+			"file": "header.json"
+		},
+		"details": {
+			"file": "details.json"
+		},
+		"initdata": {
+			"file": "initdata.json"
+		},
+		"attributes": {
+			"file": "attributes.json"
+		},
+		"message": {
+			"file": "message.events.json",
+			"events": 23
+		},
+		"game": {
+			"file": "game.events.jsonl.gz",
+			"events": 220
+		},
+		"tracker": {
+			"file": "tracker.events.jsonl.gz",
+			"events": 540
+		}
+	}
+}

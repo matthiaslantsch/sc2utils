@@ -1,0 +1,87 @@
+{
+	"version": "2.0.11.26825",
+	"baseBuild": 26490,
+	"gameloops": 19924,
+	"expansion": "HotS",
+	"speed": "Faster",
+	"region": "eu",
+	"map": {
+		"name": "Daedalus Point",
+		"hash": "c9d277ba141a498f876e84d17ea7373d74f9ca5c75feba1420e6f0484e357942",
+		"depotRegion": "eu"
+	},
+	"endTime": 1388878749,
+	"utcOffset": 1.0,
+	"realLength": 889,
+	"gameMode": "Ladder",
+	"teamSize": "1v1",
+	"realType": "1v1",
+	"isLadder": true,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "Checkerspell",
+			"clanTag": "TDV",
+			"toon": [
+				2,
+				1,
+				2682482
+			],
+			"pickedRace": "Random",
+			"playedRace": "Protoss",
+			"result": "Loss",
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "blue",
+			"clanTag": "",
+			"toon": [
+				2,
+				1,
+				2001644
+			],
+			"pickedRace": "Terran",
+			"playedRace": "Terran",
+			"result": "Win",
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1
+			],
+			"result": "Loss",
+			"lineup": "P"
+		},
+		{
+			"number": 2,
+			"players": [
+				2
+			],
+			"result": "Win",
+			"lineup": "T"
+		}
+	]
+}

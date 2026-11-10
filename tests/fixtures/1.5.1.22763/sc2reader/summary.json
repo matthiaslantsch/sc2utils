@@ -1,0 +1,87 @@
+{
+	"version": "1.5.1.22763",
+	"baseBuild": 22612,
+	"gameloops": 11162,
+	"expansion": "WoL",
+	"speed": "Faster",
+	"region": "eu",
+	"map": {
+		"name": "ESL Entombed Valley",
+		"hash": "453019fb5312bb9fc301c2917bd8ad8e55ffc4609df7fe33fecbef148d5bbe05",
+		"depotRegion": "eu"
+	},
+	"endTime": 1344792946,
+	"utcOffset": 2.0,
+	"realLength": 497,
+	"gameMode": "Public",
+	"teamSize": "1v1",
+	"realType": "1v1",
+	"isLadder": false,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "måndag",
+			"clanTag": null,
+			"toon": [
+				2,
+				1,
+				1376643
+			],
+			"pickedRace": "Zerg",
+			"playedRace": "Zerg",
+			"result": "Loss",
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "basTy",
+			"clanTag": null,
+			"toon": [
+				2,
+				1,
+				994978
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": "Win",
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1
+			],
+			"result": "Loss",
+			"lineup": "Z"
+		},
+		{
+			"number": 2,
+			"players": [
+				2
+			],
+			"result": "Win",
+			"lineup": "P"
+		}
+	]
+}

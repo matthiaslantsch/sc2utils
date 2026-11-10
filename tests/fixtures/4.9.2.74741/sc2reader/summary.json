@@ -1,0 +1,231 @@
+{
+	"version": "4.9.2.74741",
+	"baseBuild": 74741,
+	"gameloops": 604,
+	"expansion": "LotV",
+	"speed": "Faster",
+	"region": "eu",
+	"map": {
+		"name": "Troizinia LE",
+		"hash": "565f3e205c855a732b035e89b6370efc6a591332200bd84167034f3f918db154",
+		"depotRegion": "eu"
+	},
+	"endTime": 1561224262,
+	"utcOffset": 2.0,
+	"realLength": 26,
+	"gameMode": "Ladder",
+	"teamSize": "4v4",
+	"realType": "4v4",
+	"isLadder": true,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "DarthAlasar",
+			"clanTag": "TeamUR",
+			"toon": [
+				2,
+				1,
+				2513209
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": "Loss",
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "JohnTheGen",
+			"clanTag": "go4ham",
+			"toon": [
+				2,
+				1,
+				1668414
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": "Loss",
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 3,
+			"slot": 2,
+			"name": "Buttsniffer",
+			"clanTag": "7he",
+			"toon": [
+				2,
+				1,
+				2373534
+			],
+			"pickedRace": "Zerg",
+			"playedRace": "Zerg",
+			"result": "Loss",
+			"human": true,
+			"color": "Teal",
+			"rgba": [
+				28,
+				167,
+				234,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 4,
+			"slot": 3,
+			"name": "Zerpflücker",
+			"clanTag": "",
+			"toon": [
+				2,
+				1,
+				1645426
+			],
+			"pickedRace": "Random",
+			"playedRace": "Terran",
+			"result": "Loss",
+			"human": true,
+			"color": "Purple",
+			"rgba": [
+				84,
+				0,
+				129,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 5,
+			"slot": 4,
+			"name": "EricCartman",
+			"clanTag": "",
+			"toon": [
+				2,
+				1,
+				8560247
+			],
+			"pickedRace": "Terran",
+			"playedRace": "Terran",
+			"result": "Win",
+			"human": true,
+			"color": "Yellow",
+			"rgba": [
+				235,
+				225,
+				41,
+				255
+			],
+			"team": 2
+		},
+		{
+			"pid": 6,
+			"slot": 5,
+			"name": "SkiHuZ",
+			"clanTag": "ƮesXG",
+			"toon": [
+				2,
+				1,
+				5324533
+			],
+			"pickedRace": "Zerg",
+			"playedRace": "Zerg",
+			"result": "Win",
+			"human": true,
+			"color": "Orange",
+			"rgba": [
+				254,
+				138,
+				14,
+				255
+			],
+			"team": 2
+		},
+		{
+			"pid": 7,
+			"slot": 6,
+			"name": "MiniskinSC",
+			"clanTag": "ƮesXG",
+			"toon": [
+				2,
+				1,
+				1247098
+			],
+			"pickedRace": "Random",
+			"playedRace": "Zerg",
+			"result": "Win",
+			"human": true,
+			"color": "Green",
+			"rgba": [
+				22,
+				128,
+				0,
+				255
+			],
+			"team": 2
+		},
+		{
+			"pid": 8,
+			"slot": 7,
+			"name": "Zetta",
+			"clanTag": "",
+			"toon": [
+				2,
+				1,
+				3287805
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": "Win",
+			"human": true,
+			"color": "Light Pink",
+			"rgba": [
+				204,
+				166,
+				252,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1,
+				2,
+				3,
+				4
+			],
+			"result": "Loss",
+			"lineup": "PPTZ"
+		},
+		{
+			"number": 2,
+			"players": [
+				5,
+				6,
+				7,
+				8
+			],
+			"result": "Win",
+			"lineup": "PTZZ"
+		}
+	]
+}

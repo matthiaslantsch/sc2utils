@@ -1,0 +1,2856 @@
+{
+	"m_syncLobbyState": {
+		"m_userInitialData": [
+			{
+				"m_name": "ZergStillOP",
+				"m_clanTag": "TeamUR",
+				"m_clanLogo": null,
+				"m_highestLeague": 0,
+				"m_combinedRaceLevels": 4294967295,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_testType": 0,
+				"m_observe": 0,
+				"m_hero": "",
+				"m_skin": "",
+				"m_mount": "",
+				"m_toonHandle": "",
+				"m_scaledRating": 4059
+			},
+			{
+				"m_name": "Chorong",
+				"m_clanTag": "Apink",
+				"m_clanLogo": null,
+				"m_highestLeague": 0,
+				"m_combinedRaceLevels": 4294967295,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_testType": 0,
+				"m_observe": 0,
+				"m_hero": "",
+				"m_skin": "",
+				"m_mount": "",
+				"m_toonHandle": "",
+				"m_scaledRating": 4102
+			},
+			{
+				"m_name": "zzaazzoo",
+				"m_clanTag": "",
+				"m_clanLogo": null,
+				"m_highestLeague": 4,
+				"m_combinedRaceLevels": 4294967295,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_testType": 0,
+				"m_observe": 0,
+				"m_hero": "",
+				"m_skin": "",
+				"m_mount": "",
+				"m_toonHandle": "",
+				"m_scaledRating": 4064
+			},
+			{
+				"m_name": "llllllllllll",
+				"m_clanTag": "",
+				"m_clanLogo": null,
+				"m_highestLeague": 5,
+				"m_combinedRaceLevels": 4294967295,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_testType": 0,
+				"m_observe": 0,
+				"m_hero": "",
+				"m_skin": "",
+				"m_mount": "",
+				"m_toonHandle": "",
+				"m_scaledRating": 3879
+			},
+			{
+				"m_name": "hUBI",
+				"m_clanTag": "",
+				"m_clanLogo": null,
+				"m_highestLeague": 0,
+				"m_combinedRaceLevels": 4294967295,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_testType": 0,
+				"m_observe": 0,
+				"m_hero": "",
+				"m_skin": "",
+				"m_mount": "",
+				"m_toonHandle": "",
+				"m_scaledRating": 4000
+			},
+			{
+				"m_name": "Mioga",
+				"m_clanTag": "",
+				"m_clanLogo": null,
+				"m_highestLeague": 5,
+				"m_combinedRaceLevels": 4294967295,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_testType": 0,
+				"m_observe": 0,
+				"m_hero": "",
+				"m_skin": "",
+				"m_mount": "",
+				"m_toonHandle": "",
+				"m_scaledRating": 4181
+			},
+			{
+				"m_name": "Brelity",
+				"m_clanTag": "JUSTG",
+				"m_clanLogo": {
+					"hex": "636c666c00004555ceed1302d1b93b91cf9ca449c18674e4d197eb85b6691939cec3fa2393126078"
+				},
+				"m_highestLeague": 5,
+				"m_combinedRaceLevels": 4294967295,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_testType": 0,
+				"m_observe": 0,
+				"m_hero": "",
+				"m_skin": "",
+				"m_mount": "",
+				"m_toonHandle": "",
+				"m_scaledRating": 3985
+			},
+			{
+				"m_name": "Hocks",
+				"m_clanTag": "",
+				"m_clanLogo": null,
+				"m_highestLeague": 0,
+				"m_combinedRaceLevels": 4294967295,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_testType": 0,
+				"m_observe": 0,
+				"m_hero": "",
+				"m_skin": "",
+				"m_mount": "",
+				"m_toonHandle": "",
+				"m_scaledRating": 3885
+			},
+			{
+				"m_name": "",
+				"m_clanTag": "",
+				"m_clanLogo": null,
+				"m_highestLeague": 0,
+				"m_combinedRaceLevels": 4294967295,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_testType": 0,
+				"m_observe": 0,
+				"m_hero": "",
+				"m_skin": "",
+				"m_mount": "",
+				"m_toonHandle": "",
+				"m_scaledRating": null
+			},
+			{
+				"m_name": "",
+				"m_clanTag": "",
+				"m_clanLogo": null,
+				"m_highestLeague": 0,
+				"m_combinedRaceLevels": 4294967295,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_testType": 0,
+				"m_observe": 0,
+				"m_hero": "",
+				"m_skin": "",
+				"m_mount": "",
+				"m_toonHandle": "",
+				"m_scaledRating": null
+			},
+			{
+				"m_name": "",
+				"m_clanTag": "",
+				"m_clanLogo": null,
+				"m_highestLeague": 0,
+				"m_combinedRaceLevels": 4294967295,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_testType": 0,
+				"m_observe": 0,
+				"m_hero": "",
+				"m_skin": "",
+				"m_mount": "",
+				"m_toonHandle": "",
+				"m_scaledRating": null
+			},
+			{
+				"m_name": "",
+				"m_clanTag": "",
+				"m_clanLogo": null,
+				"m_highestLeague": 0,
+				"m_combinedRaceLevels": 4294967295,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_testType": 0,
+				"m_observe": 0,
+				"m_hero": "",
+				"m_skin": "",
+				"m_mount": "",
+				"m_toonHandle": "",
+				"m_scaledRating": null
+			},
+			{
+				"m_name": "",
+				"m_clanTag": "",
+				"m_clanLogo": null,
+				"m_highestLeague": 0,
+				"m_combinedRaceLevels": 4294967295,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_testType": 0,
+				"m_observe": 0,
+				"m_hero": "",
+				"m_skin": "",
+				"m_mount": "",
+				"m_toonHandle": "",
+				"m_scaledRating": null
+			},
+			{
+				"m_name": "",
+				"m_clanTag": "",
+				"m_clanLogo": null,
+				"m_highestLeague": 0,
+				"m_combinedRaceLevels": 4294967295,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_testType": 0,
+				"m_observe": 0,
+				"m_hero": "",
+				"m_skin": "",
+				"m_mount": "",
+				"m_toonHandle": "",
+				"m_scaledRating": null
+			},
+			{
+				"m_name": "",
+				"m_clanTag": "",
+				"m_clanLogo": null,
+				"m_highestLeague": 0,
+				"m_combinedRaceLevels": 4294967295,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_testType": 0,
+				"m_observe": 0,
+				"m_hero": "",
+				"m_skin": "",
+				"m_mount": "",
+				"m_toonHandle": "",
+				"m_scaledRating": null
+			},
+			{
+				"m_name": "",
+				"m_clanTag": "",
+				"m_clanLogo": null,
+				"m_highestLeague": 0,
+				"m_combinedRaceLevels": 4294967295,
+				"m_randomSeed": 0,
+				"m_racePreference": {
+					"m_race": null
+				},
+				"m_teamPreference": {
+					"m_team": null
+				},
+				"m_testMap": false,
+				"m_testAuto": false,
+				"m_examine": false,
+				"m_customInterface": false,
+				"m_testType": 0,
+				"m_observe": 0,
+				"m_hero": "",
+				"m_skin": "",
+				"m_mount": "",
+				"m_toonHandle": "",
+				"m_scaledRating": null
+			}
+		],
+		"m_gameDescription": {
+			"m_randomValue": 1271994626,
+			"m_gameCacheName": "Dflt",
+			"m_gameOptions": {
+				"m_lockTeams": true,
+				"m_teamsTogether": false,
+				"m_advancedSharedControl": false,
+				"m_randomRaces": false,
+				"m_battleNet": true,
+				"m_amm": true,
+				"m_competitive": true,
+				"m_practice": false,
+				"m_cooperative": false,
+				"m_noVictoryOrDefeat": false,
+				"m_heroDuplicatesAllowed": true,
+				"m_fog": 0,
+				"m_observers": 0,
+				"m_userDifficulty": 0,
+				"m_clientDebugFlags": 265,
+				"m_buildCoachEnabled": false
+			},
+			"m_gameSpeed": 4,
+			"m_gameType": 0,
+			"m_maxUsers": 8,
+			"m_maxObservers": 8,
+			"m_maxPlayers": 8,
+			"m_maxTeams": 8,
+			"m_maxColors": 16,
+			"m_maxRaces": 3,
+			"m_maxControls": 1,
+			"m_mapSizeX": 0,
+			"m_mapSizeY": 0,
+			"m_mapFileSyncChecksum": 1924752611,
+			"m_mapFileName": "",
+			"m_mapAuthorName": "2-S2-1-165251",
+			"m_modFileSyncChecksum": 277041713,
+			"m_slotDescriptions": [
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "feff"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 255,
+						"hex": "3e80006000bf9e0060018f8e0060038f8e000000000000000000000000000000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "feff"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 255,
+						"hex": "3e80006000bf9e0180018f8e0060038e3e000000000000000000000000000000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "feff"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 255,
+						"hex": "3e80006000bf9e0600018f8860600388fe000000000000000000000000000000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "feff"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 255,
+						"hex": "3e80006000bf9e1800018f8380600383ee000000000000000000000000000000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "feff"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 255,
+						"hex": "3e80006000bf9e0060018f8e0060038f8e000000000000000000000000000000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "feff"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 255,
+						"hex": "3e80006000bf9e0180018f8e0060038e3e000000000000000000000000000000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "feff"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 255,
+						"hex": "3e80006000bf9e0600018f8860600388fe000000000000000000000000000000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "feff"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 255,
+						"hex": "3e80006000bf9e1800018f8380600383ee000000000000000000000000000000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "0100"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "0"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "0380000000000000000000000000000000000000000000000000000000000000"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 255,
+						"hex": "3e80006000bf9e0060018f8e0060038f8e000000000000000000000000000000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "0100"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "0"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "0380000000000000000000000000000000000000000000000000000000000000"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 255,
+						"hex": "3e80006000bf9e0180018f8e0060038e3e000000000000000000000000000000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "0100"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "0"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "0380000000000000000000000000000000000000000000000000000000000000"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 255,
+						"hex": "3e80006000bf9e0600018f8860600388fe000000000000000000000000000000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "0100"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "0"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "0380000000000000000000000000000000000000000000000000000000000000"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 255,
+						"hex": "3e80006000bf9e1800018f8380600383ee000000000000000000000000000000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "0100"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "0"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "0380000000000000000000000000000000000000000000000000000000000000"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 255,
+						"hex": "3e80006000bf9e0060018f8e0060038f8e000000000000000000000000000000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "0100"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "0"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "0380000000000000000000000000000000000000000000000000000000000000"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 255,
+						"hex": "3e80006000bf9e0180018f8e0060038e3e000000000000000000000000000000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "0100"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "0"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "0380000000000000000000000000000000000000000000000000000000000000"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 255,
+						"hex": "3e80006000bf9e0600018f8860600388fe000000000000000000000000000000"
+					}
+				},
+				{
+					"m_allowedColors": {
+						"bits": 16,
+						"hex": "0100"
+					},
+					"m_allowedRaces": {
+						"bits": 3,
+						"hex": "0"
+					},
+					"m_allowedDifficulty": {
+						"bits": 32,
+						"hex": "fe070000"
+					},
+					"m_allowedControls": {
+						"bits": 255,
+						"hex": "0380000000000000000000000000000000000000000000000000000000000000"
+					},
+					"m_allowedObserveTypes": {
+						"bits": 3,
+						"hex": "7"
+					},
+					"m_allowedAIBuilds": {
+						"bits": 255,
+						"hex": "3e80006000bf9e1800018f8380600383ee000000000000000000000000000000"
+					}
+				}
+			],
+			"m_defaultDifficulty": 3,
+			"m_defaultAIBuild": 0,
+			"m_cacheHandles": [
+				{
+					"hex": "73326d61000045556de41503baccd05656360b6f027db88169fa1989bb6357b1b215a2547939f5fb"
+				},
+				{
+					"hex": "73326d6100004555421c8aa0f3619b652d23a2735dfee812ab644228235e7a797edecfe8b67da30e"
+				},
+				{
+					"hex": "73326d610000455566093832128453efffbb787c80b7d3eec1ad81bde55c83c930dea79c4e505a04"
+				},
+				{
+					"hex": "73326d6100004555d92dfc48c484c59154270b924ad7d57484f2ab9a47621c7ab16431bf66c53b40"
+				},
+				{
+					"hex": "73326d6100004555796a8cfde49307ff4f7b4c9bb281f815b236924cb4e2745fd6a32caa572212cf"
+				},
+				{
+					"hex": "73326d610000455526b1b27647947a0f05ffe9a64f089b487a052de985a17310bea2041832a3dd85"
+				},
+				{
+					"hex": "73326d61000045558c2bf3aeee6755acaf14bc03211bd25929dded2131e4881b737d2d644fe7e07a"
+				}
+			],
+			"m_hasExtensionMod": false,
+			"m_hasNonBlizzardExtensionMod": false,
+			"m_isBlizzardMap": true,
+			"m_isPremadeFFA": false,
+			"m_isCoopMode": false,
+			"m_isRealtimeMode": false
+		},
+		"m_lobbyState": {
+			"m_phase": 0,
+			"m_maxUsers": 8,
+			"m_maxObservers": 8,
+			"m_slots": [
+				{
+					"m_control": 2,
+					"m_userId": 0,
+					"m_teamId": 0,
+					"m_colorPref": {
+						"m_color": 1
+					},
+					"m_racePref": {
+						"m_race": 2
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 0,
+					"m_logoIndex": 0,
+					"m_hero": "",
+					"m_skin": "",
+					"m_mount": "",
+					"m_artifacts": [
+						"",
+						"",
+						""
+					],
+					"m_workingSetSlotId": 0,
+					"m_rewards": [
+						957728898,
+						1932524020,
+						569055983,
+						3659500125,
+						800865563,
+						1500394717,
+						522060623,
+						2192271793,
+						2265163032,
+						2065745403,
+						1697980591,
+						4144653506,
+						918219367,
+						2908506816,
+						1873318506,
+						1555175204,
+						3774144990,
+						2594775162,
+						1211360877,
+						923590681,
+						2777065642,
+						4166020264,
+						2440135473,
+						3881125246,
+						3327520831,
+						135098568,
+						1185292261,
+						3710533283,
+						3979921667,
+						574205234,
+						1327776759,
+						3673336716,
+						1856740790,
+						861201319,
+						1465828875,
+						3837142423,
+						1970675092,
+						3573408684,
+						1664806146,
+						415049813,
+						2104220742,
+						616156284,
+						1751841167,
+						2575161619,
+						2686638163,
+						2798322801,
+						3281192906,
+						2418337610,
+						58624234,
+						3776162522,
+						2200440608,
+						0,
+						3733267237,
+						879683935,
+						3356965872,
+						4037382619,
+						1896734762,
+						877192560,
+						3535385893,
+						170345607,
+						268555963,
+						0,
+						1819379161,
+						2211791455,
+						471790708,
+						0,
+						332775232,
+						2261818887,
+						2636101654,
+						306523769,
+						2269615009,
+						3844201106,
+						2856181813,
+						3335041079,
+						122138682,
+						1333792768,
+						0,
+						2112492252,
+						3297901810,
+						2376829090,
+						2816041570,
+						3558592749,
+						194091906,
+						648212375,
+						460395439,
+						2428064812,
+						3770396493,
+						3334748015,
+						2442224836,
+						535063834,
+						570858554,
+						1804753350,
+						535257061,
+						92851551,
+						3927507442,
+						1588482748,
+						4008355342,
+						2743830879,
+						3065782512,
+						3961822947,
+						2926081466,
+						3862455791,
+						1434315354,
+						835964495,
+						2546882099,
+						1701027258,
+						3663192486,
+						2615206337,
+						2484810407,
+						3297635990,
+						3381814647,
+						3312681754,
+						3200889017,
+						695505991,
+						3662634844,
+						334383271,
+						3008846121,
+						3731742814,
+						2588696470,
+						1625603542,
+						2569643939,
+						3423502293,
+						2276535543,
+						2419802213,
+						3404898509,
+						2976815359,
+						3834465703,
+						4241103608,
+						1127476957,
+						928246938,
+						2063317397
+					],
+					"m_toonHandle": "2-S2-1-2513209",
+					"m_licenses": [],
+					"m_tandemLeaderId": null,
+					"m_commander": "",
+					"m_commanderLevel": 1,
+					"m_hasSilencePenalty": false,
+					"m_tandemId": 0,
+					"m_commanderMasteryLevel": 0,
+					"m_commanderMasteryTalents": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"m_trophyId": 1,
+					"m_rewardOverrides": [
+						{
+							"m_key": 1415934578,
+							"m_rewards": [
+								1413965940,
+								1414357362,
+								1413771380
+							]
+						},
+						{
+							"m_key": 1349676916,
+							"m_rewards": [
+								1348103284,
+								1346595955,
+								1346462832,
+								1347451244
+							]
+						}
+					],
+					"m_brutalPlusDifficulty": 0,
+					"m_retryMutationIndexes": [
+						0,
+						0,
+						0,
+						0
+					],
+					"m_aCEnemyRace": 0,
+					"m_aCEnemyWaveType": 0
+				},
+				{
+					"m_control": 2,
+					"m_userId": 1,
+					"m_teamId": 0,
+					"m_colorPref": {
+						"m_color": 2
+					},
+					"m_racePref": {
+						"m_race": null
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 0,
+					"m_logoIndex": 0,
+					"m_hero": "",
+					"m_skin": "",
+					"m_mount": "",
+					"m_artifacts": [
+						"",
+						"",
+						""
+					],
+					"m_workingSetSlotId": 1,
+					"m_rewards": [
+						1880708505,
+						981796711,
+						1014099060,
+						3870787359,
+						800865563,
+						255122222,
+						2109897391,
+						2135789835,
+						2265163032,
+						3985484933,
+						1697980591,
+						3074614472,
+						918219367,
+						11916563,
+						2948177731,
+						44476881,
+						800295000,
+						693439517,
+						3308215957,
+						3608992184,
+						1484225681,
+						73233165,
+						3443933416,
+						3881125246,
+						1303934070,
+						135098568,
+						1969893938,
+						3739745818,
+						3979921667,
+						324552878,
+						243308763,
+						3701101913,
+						3561450865,
+						3220018816,
+						2411195921,
+						656055948,
+						829351554,
+						3573408684,
+						1664806146,
+						415049813,
+						4139965965,
+						3717180683,
+						1751841167,
+						821737024,
+						4067220888,
+						2798322801,
+						1768231919,
+						2418337610,
+						1885296541,
+						3776162522,
+						2200440608,
+						0,
+						965710582,
+						879683935,
+						1973644476,
+						2614304887,
+						1896734762,
+						2586413780,
+						3535385893,
+						170345607,
+						268555963,
+						0,
+						3056199125,
+						3175120466,
+						471790708,
+						0,
+						612833218,
+						3870308955,
+						2875940343,
+						306523769,
+						3589018595,
+						4109790466,
+						2856181813,
+						2817002346,
+						977081445,
+						1333792768,
+						0,
+						3195443957,
+						2423614369,
+						2376829090,
+						2816041570,
+						3009450333,
+						2746536597,
+						648212375,
+						1333215300,
+						3697654851,
+						701422512,
+						3541431553,
+						3178422123,
+						2541795168,
+						570858554,
+						1804753350,
+						535257061,
+						92851551,
+						3927507442,
+						1716314872,
+						4008355342,
+						2743830879,
+						3065782512,
+						3309867517,
+						1710678584,
+						1137427643,
+						458516286,
+						835964495,
+						809499872,
+						1569852548,
+						3750705864,
+						2615206337,
+						1702535490,
+						4126391879,
+						3381814647,
+						3312681754,
+						3200889017,
+						695505991,
+						3662634844,
+						3592631179,
+						3008846121,
+						1185148968,
+						2588696470,
+						1625603542,
+						344062787,
+						3423502293,
+						2276535543,
+						2419802213,
+						3404898509,
+						2976815359,
+						3834465703,
+						4241103608,
+						1127476957,
+						928246938,
+						2063317397
+					],
+					"m_toonHandle": "2-S2-1-2821584",
+					"m_licenses": [],
+					"m_tandemLeaderId": null,
+					"m_commander": "",
+					"m_commanderLevel": 1,
+					"m_hasSilencePenalty": false,
+					"m_tandemId": 1,
+					"m_commanderMasteryLevel": 0,
+					"m_commanderMasteryTalents": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"m_trophyId": 1,
+					"m_rewardOverrides": [
+						{
+							"m_key": 1415934578,
+							"m_rewards": [
+								1413705539,
+								1413898595,
+								1414686054,
+								1413636466
+							]
+						},
+						{
+							"m_key": 1516597863,
+							"m_rewards": [
+								1514692980,
+								1515547747,
+								1515417697,
+								1514955122
+							]
+						},
+						{
+							"m_key": 1349676916,
+							"m_rewards": [
+								1347315064,
+								1347446895,
+								1346855284,
+								1347451244
+							]
+						}
+					],
+					"m_brutalPlusDifficulty": 0,
+					"m_retryMutationIndexes": [
+						0,
+						0,
+						0,
+						0
+					],
+					"m_aCEnemyRace": 0,
+					"m_aCEnemyWaveType": 0
+				},
+				{
+					"m_control": 2,
+					"m_userId": 2,
+					"m_teamId": 0,
+					"m_colorPref": {
+						"m_color": 3
+					},
+					"m_racePref": {
+						"m_race": 0
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 0,
+					"m_logoIndex": 0,
+					"m_hero": "",
+					"m_skin": "",
+					"m_mount": "",
+					"m_artifacts": [
+						"",
+						"",
+						""
+					],
+					"m_workingSetSlotId": 2,
+					"m_rewards": [
+						957728898,
+						1932524020,
+						569055983,
+						3659500125,
+						800865563,
+						2222924803,
+						522060623,
+						207557107,
+						2265163032,
+						2065745403,
+						1697980591,
+						4144653506,
+						918219367,
+						2908506816,
+						1873318506,
+						1555175204,
+						3774144990,
+						2358181903,
+						1211360877,
+						923590681,
+						2777065642,
+						4166020264,
+						2440135473,
+						3881125246,
+						3514729569,
+						135098568,
+						1185292261,
+						3710533283,
+						3979921667,
+						574205234,
+						3199996399,
+						3673336716,
+						1856740790,
+						861201319,
+						2411195921,
+						3837142423,
+						1970675092,
+						3573408684,
+						1664806146,
+						415049813,
+						2104220742,
+						616156284,
+						1751841167,
+						2575161619,
+						2686638163,
+						2798322801,
+						3281192906,
+						2418337610,
+						58624234,
+						3776162522,
+						2200440608,
+						0,
+						3733267237,
+						879683935,
+						3356965872,
+						4037382619,
+						1896734762,
+						877192560,
+						3535385893,
+						170345607,
+						268555963,
+						0,
+						1819379161,
+						2211791455,
+						2429550722,
+						0,
+						332775232,
+						2261818887,
+						2636101654,
+						306523769,
+						2269615009,
+						3844201106,
+						2856181813,
+						3335041079,
+						1440277345,
+						1333792768,
+						0,
+						2112492252,
+						3297901810,
+						2376829090,
+						2816041570,
+						3558592749,
+						2278011638,
+						648212375,
+						2011421739,
+						2428064812,
+						15768155,
+						3334748015,
+						2442224836,
+						535063834,
+						570858554,
+						1804753350,
+						535257061,
+						92851551,
+						3927507442,
+						167547349,
+						4008355342,
+						2743830879,
+						3065782512,
+						3961822947,
+						2926081466,
+						3862455791,
+						1434315354,
+						835964495,
+						2546882099,
+						1701027258,
+						3663192486,
+						2615206337,
+						2484810407,
+						3297635990,
+						3381814647,
+						3312681754,
+						3200889017,
+						695505991,
+						3662634844,
+						334383271,
+						2326149197,
+						1236408901,
+						2588696470,
+						1625603542,
+						2569643939,
+						3423502293,
+						2276535543,
+						2419802213,
+						3404898509,
+						2976815359,
+						3834465703,
+						4241103608,
+						1127476957,
+						928246938,
+						2063317397
+					],
+					"m_toonHandle": "2-S2-1-256717",
+					"m_licenses": [],
+					"m_tandemLeaderId": null,
+					"m_commander": "",
+					"m_commanderLevel": 1,
+					"m_hasSilencePenalty": false,
+					"m_tandemId": 2,
+					"m_commanderMasteryLevel": 0,
+					"m_commanderMasteryTalents": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"m_trophyId": 1,
+					"m_rewardOverrides": [],
+					"m_brutalPlusDifficulty": 0,
+					"m_retryMutationIndexes": [
+						0,
+						0,
+						0,
+						0
+					],
+					"m_aCEnemyRace": 0,
+					"m_aCEnemyWaveType": 0
+				},
+				{
+					"m_control": 2,
+					"m_userId": 3,
+					"m_teamId": 0,
+					"m_colorPref": {
+						"m_color": 4
+					},
+					"m_racePref": {
+						"m_race": null
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 0,
+					"m_logoIndex": 0,
+					"m_hero": "",
+					"m_skin": "",
+					"m_mount": "",
+					"m_artifacts": [
+						"",
+						"",
+						""
+					],
+					"m_workingSetSlotId": 3,
+					"m_rewards": [
+						957728898,
+						1932524020,
+						569055983,
+						3659500125,
+						800865563,
+						1500394717,
+						522060623,
+						207557107,
+						2265163032,
+						2065745403,
+						1697980591,
+						4144653506,
+						918219367,
+						2908506816,
+						1873318506,
+						1555175204,
+						3774144990,
+						18730036,
+						1211360877,
+						923590681,
+						2777065642,
+						4166020264,
+						2440135473,
+						3881125246,
+						2009110693,
+						135098568,
+						1185292261,
+						3710533283,
+						3979921667,
+						574205234,
+						3199996399,
+						3673336716,
+						1856740790,
+						861201319,
+						1465828875,
+						656055948,
+						1970675092,
+						3573408684,
+						1664806146,
+						415049813,
+						2104220742,
+						3717180683,
+						1751841167,
+						2575161619,
+						4067220888,
+						2798322801,
+						3281192906,
+						2418337610,
+						58624234,
+						3776162522,
+						2200440608,
+						0,
+						3733267237,
+						879683935,
+						3356965872,
+						4037382619,
+						1896734762,
+						877192560,
+						3535385893,
+						170345607,
+						268555963,
+						0,
+						1819379161,
+						2211791455,
+						2429550722,
+						0,
+						2820704051,
+						2261818887,
+						2636101654,
+						306523769,
+						2269615009,
+						3844201106,
+						2856181813,
+						3335041079,
+						1440277345,
+						1333792768,
+						0,
+						2112492252,
+						3297901810,
+						2376829090,
+						2816041570,
+						3558592749,
+						2951153716,
+						648212375,
+						2011421739,
+						2428064812,
+						15768155,
+						3334748015,
+						2442224836,
+						535063834,
+						570858554,
+						1804753350,
+						535257061,
+						92851551,
+						3927507442,
+						2359737029,
+						4008355342,
+						2743830879,
+						3065782512,
+						3961822947,
+						2926081466,
+						3862455791,
+						1434315354,
+						835964495,
+						2546882099,
+						1701027258,
+						3663192486,
+						2615206337,
+						2484810407,
+						3297635990,
+						3381814647,
+						3312681754,
+						3200889017,
+						695505991,
+						3662634844,
+						334383271,
+						2326149197,
+						1236408901,
+						2588696470,
+						1625603542,
+						2569643939,
+						3423502293,
+						2276535543,
+						2419802213,
+						3404898509,
+						2976815359,
+						3834465703,
+						4241103608,
+						1127476957,
+						928246938,
+						2063317397
+					],
+					"m_toonHandle": "2-S2-1-8760837",
+					"m_licenses": [],
+					"m_tandemLeaderId": null,
+					"m_commander": "",
+					"m_commanderLevel": 1,
+					"m_hasSilencePenalty": false,
+					"m_tandemId": 3,
+					"m_commanderMasteryLevel": 0,
+					"m_commanderMasteryTalents": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"m_trophyId": 1,
+					"m_rewardOverrides": [],
+					"m_brutalPlusDifficulty": 0,
+					"m_retryMutationIndexes": [
+						0,
+						0,
+						0,
+						0
+					],
+					"m_aCEnemyRace": 0,
+					"m_aCEnemyWaveType": 0
+				},
+				{
+					"m_control": 2,
+					"m_userId": 4,
+					"m_teamId": 1,
+					"m_colorPref": {
+						"m_color": 5
+					},
+					"m_racePref": {
+						"m_race": 0
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 0,
+					"m_logoIndex": 0,
+					"m_hero": "",
+					"m_skin": "",
+					"m_mount": "",
+					"m_artifacts": [
+						"",
+						"",
+						""
+					],
+					"m_workingSetSlotId": 4,
+					"m_rewards": [
+						957728898,
+						1932524020,
+						569055983,
+						3659500125,
+						800865563,
+						2222924803,
+						522060623,
+						207557107,
+						2265163032,
+						2065745403,
+						1697980591,
+						1001385194,
+						918219367,
+						2908506816,
+						1873318506,
+						1555175204,
+						3774144990,
+						1919498533,
+						1211360877,
+						923590681,
+						2777065642,
+						4166020264,
+						2440135473,
+						3881125246,
+						2491417749,
+						135098568,
+						1185292261,
+						3710533283,
+						4166430433,
+						574205234,
+						3199996399,
+						3399536420,
+						1856740790,
+						861201319,
+						2411195921,
+						3837142423,
+						1970675092,
+						3573408684,
+						1664806146,
+						415049813,
+						2104220742,
+						616156284,
+						1751841167,
+						2575161619,
+						2686638163,
+						2798322801,
+						3281192906,
+						2418337610,
+						58624234,
+						3776162522,
+						2200440608,
+						0,
+						3733267237,
+						879683935,
+						3356965872,
+						4037382619,
+						1896734762,
+						877192560,
+						3535385893,
+						170345607,
+						268555963,
+						0,
+						1819379161,
+						2211791455,
+						2429550722,
+						0,
+						332775232,
+						2261818887,
+						2636101654,
+						306523769,
+						2269615009,
+						3844201106,
+						4096119685,
+						3335041079,
+						977081445,
+						1333792768,
+						0,
+						2112492252,
+						3297901810,
+						2376829090,
+						2816041570,
+						3558592749,
+						1319468263,
+						648212375,
+						2011421739,
+						2428064812,
+						3770396493,
+						3334748015,
+						2442224836,
+						535063834,
+						570858554,
+						1804753350,
+						535257061,
+						92851551,
+						3927507442,
+						1716314872,
+						4008355342,
+						2743830879,
+						3065782512,
+						3961822947,
+						2926081466,
+						3862455791,
+						1434315354,
+						835964495,
+						2546882099,
+						1701027258,
+						3663192486,
+						2615206337,
+						2484810407,
+						3297635990,
+						3381814647,
+						3312681754,
+						3200889017,
+						695505991,
+						3662634844,
+						334383271,
+						2326149197,
+						3104963052,
+						2588696470,
+						1625603542,
+						2569643939,
+						2699657600,
+						2276535543,
+						2419802213,
+						3404898509,
+						2976815359,
+						3834465703,
+						4241103608,
+						1127476957,
+						928246938,
+						2063317397
+					],
+					"m_toonHandle": "2-S2-1-760274",
+					"m_licenses": [],
+					"m_tandemLeaderId": null,
+					"m_commander": "",
+					"m_commanderLevel": 1,
+					"m_hasSilencePenalty": false,
+					"m_tandemId": 4,
+					"m_commanderMasteryLevel": 0,
+					"m_commanderMasteryTalents": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"m_trophyId": 1,
+					"m_rewardOverrides": [],
+					"m_brutalPlusDifficulty": 0,
+					"m_retryMutationIndexes": [
+						0,
+						0,
+						0,
+						0
+					],
+					"m_aCEnemyRace": 0,
+					"m_aCEnemyWaveType": 0
+				},
+				{
+					"m_control": 2,
+					"m_userId": 5,
+					"m_teamId": 1,
+					"m_colorPref": {
+						"m_color": 6
+					},
+					"m_racePref": {
+						"m_race": 1
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 0,
+					"m_logoIndex": 0,
+					"m_hero": "",
+					"m_skin": "",
+					"m_mount": "",
+					"m_artifacts": [
+						"",
+						"",
+						""
+					],
+					"m_workingSetSlotId": 5,
+					"m_rewards": [
+						957728898,
+						1932524020,
+						569055983,
+						3659500125,
+						800865563,
+						1500394717,
+						522060623,
+						207557107,
+						4032654231,
+						2065745403,
+						1697980591,
+						4144653506,
+						918219367,
+						2908506816,
+						1873318506,
+						1555175204,
+						3774144990,
+						3800951360,
+						1211360877,
+						923590681,
+						2777065642,
+						4166020264,
+						2440135473,
+						3881125246,
+						1453233559,
+						135098568,
+						1185292261,
+						3710533283,
+						4166430433,
+						574205234,
+						3199996399,
+						3673336716,
+						1856740790,
+						861201319,
+						2411195921,
+						656055948,
+						1970675092,
+						3573408684,
+						1664806146,
+						3336901808,
+						2104220742,
+						3717180683,
+						1635177722,
+						2575161619,
+						1885508660,
+						2798322801,
+						3281192906,
+						347719412,
+						58624234,
+						3776162522,
+						2200440608,
+						0,
+						3733267237,
+						690230537,
+						3356965872,
+						4037382619,
+						2300079841,
+						877192560,
+						1485499624,
+						170345607,
+						268555963,
+						0,
+						1819379161,
+						2211791455,
+						2429550722,
+						0,
+						2820704051,
+						2261818887,
+						2636101654,
+						306523769,
+						2269615009,
+						3844201106,
+						2856181813,
+						3335041079,
+						1440277345,
+						1333792768,
+						0,
+						2112492252,
+						3297901810,
+						2376829090,
+						2816041570,
+						3558592749,
+						3247325755,
+						530961389,
+						2011421739,
+						2428064812,
+						15768155,
+						3334748015,
+						2442224836,
+						535063834,
+						570858554,
+						2644107764,
+						535257061,
+						92851551,
+						3927507442,
+						4224814199,
+						4008355342,
+						2743830879,
+						3065782512,
+						3961822947,
+						2926081466,
+						3862455791,
+						1434315354,
+						835964495,
+						2546882099,
+						1701027258,
+						3663192486,
+						3868852090,
+						2484810407,
+						3297635990,
+						3381814647,
+						3312681754,
+						3200889017,
+						695505991,
+						3981034062,
+						334383271,
+						2326149197,
+						1236408901,
+						2588696470,
+						1625603542,
+						2569643939,
+						3423502293,
+						2276535543,
+						2419802213,
+						3834465703,
+						4241103608,
+						1127476957,
+						928246938,
+						2063317397
+					],
+					"m_toonHandle": "2-S2-1-194480",
+					"m_licenses": [],
+					"m_tandemLeaderId": null,
+					"m_commander": "",
+					"m_commanderLevel": 1,
+					"m_hasSilencePenalty": false,
+					"m_tandemId": 5,
+					"m_commanderMasteryLevel": 0,
+					"m_commanderMasteryTalents": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"m_trophyId": 1,
+					"m_rewardOverrides": [],
+					"m_brutalPlusDifficulty": 0,
+					"m_retryMutationIndexes": [
+						0,
+						0,
+						0,
+						0
+					],
+					"m_aCEnemyRace": 0,
+					"m_aCEnemyWaveType": 0
+				},
+				{
+					"m_control": 2,
+					"m_userId": 6,
+					"m_teamId": 1,
+					"m_colorPref": {
+						"m_color": 7
+					},
+					"m_racePref": {
+						"m_race": null
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 0,
+					"m_logoIndex": 0,
+					"m_hero": "",
+					"m_skin": "",
+					"m_mount": "",
+					"m_artifacts": [
+						"",
+						"",
+						""
+					],
+					"m_workingSetSlotId": 6,
+					"m_rewards": [
+						1880708505,
+						981796711,
+						1014099060,
+						3739999408,
+						878938974,
+						255122222,
+						3857439422,
+						2135789835,
+						209804987,
+						3985484933,
+						687536709,
+						3553530526,
+						3317250716,
+						3134173179,
+						2948177731,
+						1801893459,
+						800295000,
+						4261253982,
+						3308215957,
+						3608992184,
+						1906334571,
+						73233165,
+						3443933416,
+						192281735,
+						3951154174,
+						135098568,
+						1969893938,
+						3739745818,
+						838396347,
+						94718994,
+						1971052712,
+						148417011,
+						3561450865,
+						1026179115,
+						3165201380,
+						2437905634,
+						829351554,
+						1310863139,
+						3730857920,
+						565736381,
+						3428275466,
+						399313258,
+						2474545738,
+						821737024,
+						1662494949,
+						2281419859,
+						1768231919,
+						4115581968,
+						1885296541,
+						69563435,
+						2467967408,
+						0,
+						965710582,
+						333364265,
+						1973644476,
+						1016588197,
+						3081790106,
+						4090137066,
+						2000980109,
+						2493350712,
+						4045489825,
+						0,
+						4006024666,
+						2066222270,
+						3500437755,
+						0,
+						612833218,
+						3870308955,
+						2875940343,
+						3545722180,
+						3589018595,
+						4109790466,
+						1867210994,
+						2817002346,
+						3772003337,
+						1333792768,
+						0,
+						1443771731,
+						2423614369,
+						2135458616,
+						4177517703,
+						3009450333,
+						2453403082,
+						150071138,
+						1435636454,
+						2707974947,
+						1107191635,
+						3541431553,
+						173673230,
+						2541795168,
+						3941352750,
+						3810940079,
+						2773673735,
+						3260782025,
+						2637014342,
+						1121169820,
+						4008355342,
+						2743830879,
+						3065782512,
+						3309867517,
+						1710678584,
+						1137427643,
+						1314819112,
+						835964495,
+						809499872,
+						3850064047,
+						3750705864,
+						3868852090,
+						1702535490,
+						4126391879,
+						1546065128,
+						2664728293,
+						2745651212,
+						1424600664,
+						2697782448,
+						1949714898,
+						3008846121,
+						2596228029,
+						1345605245,
+						1625603542,
+						344062787,
+						3634539801,
+						2276535543,
+						2419802213,
+						3404898509,
+						2976815359,
+						3834465703,
+						4241103608,
+						1127476957,
+						928246938,
+						2063317397
+					],
+					"m_toonHandle": "2-S2-1-5806547",
+					"m_licenses": [],
+					"m_tandemLeaderId": null,
+					"m_commander": "",
+					"m_commanderLevel": 1,
+					"m_hasSilencePenalty": false,
+					"m_tandemId": 6,
+					"m_commanderMasteryLevel": 0,
+					"m_commanderMasteryTalents": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"m_trophyId": 1,
+					"m_rewardOverrides": [],
+					"m_brutalPlusDifficulty": 0,
+					"m_retryMutationIndexes": [
+						0,
+						0,
+						0,
+						0
+					],
+					"m_aCEnemyRace": 0,
+					"m_aCEnemyWaveType": 0
+				},
+				{
+					"m_control": 2,
+					"m_userId": 7,
+					"m_teamId": 1,
+					"m_colorPref": {
+						"m_color": 8
+					},
+					"m_racePref": {
+						"m_race": 0
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 0,
+					"m_logoIndex": 0,
+					"m_hero": "",
+					"m_skin": "",
+					"m_mount": "",
+					"m_artifacts": [
+						"",
+						"",
+						""
+					],
+					"m_workingSetSlotId": 7,
+					"m_rewards": [
+						957728898,
+						1932524020,
+						569055983,
+						3659500125,
+						800865563,
+						2222924803,
+						522060623,
+						207557107,
+						2265163032,
+						2065745403,
+						1697980591,
+						4144653506,
+						918219367,
+						2908506816,
+						1873318506,
+						1555175204,
+						3774144990,
+						181312670,
+						1211360877,
+						923590681,
+						2777065642,
+						4166020264,
+						2440135473,
+						3881125246,
+						3652426167,
+						135098568,
+						1185292261,
+						3710533283,
+						3979921667,
+						574205234,
+						3199996399,
+						3399536420,
+						1856740790,
+						861201319,
+						2411195921,
+						3837142423,
+						1970675092,
+						3573408684,
+						1664806146,
+						415049813,
+						2104220742,
+						616156284,
+						1751841167,
+						2575161619,
+						2686638163,
+						2798322801,
+						3281192906,
+						2418337610,
+						58624234,
+						3776162522,
+						2200440608,
+						0,
+						3733267237,
+						879683935,
+						3356965872,
+						4037382619,
+						1896734762,
+						877192560,
+						3535385893,
+						170345607,
+						268555963,
+						0,
+						1819379161,
+						2211791455,
+						2475598465,
+						0,
+						332775232,
+						2261818887,
+						2636101654,
+						306523769,
+						2269615009,
+						3844201106,
+						2856181813,
+						3335041079,
+						1440277345,
+						1333792768,
+						0,
+						2112492252,
+						3297901810,
+						2376829090,
+						2816041570,
+						3558592749,
+						382993515,
+						648212375,
+						2011421739,
+						2428064812,
+						15768155,
+						3334748015,
+						2442224836,
+						535063834,
+						570858554,
+						1804753350,
+						535257061,
+						92851551,
+						3927507442,
+						1127061123,
+						4008355342,
+						2743830879,
+						3065782512,
+						3961822947,
+						2926081466,
+						3862455791,
+						1434315354,
+						835964495,
+						2546882099,
+						1701027258,
+						3663192486,
+						2615206337,
+						2484810407,
+						3297635990,
+						3381814647,
+						3312681754,
+						3200889017,
+						695505991,
+						3662634844,
+						334383271,
+						2326149197,
+						1236408901,
+						2588696470,
+						1625603542,
+						2569643939,
+						2479761292,
+						2276535543,
+						2419802213,
+						3404898509,
+						2976815359,
+						3834465703,
+						4241103608,
+						1127476957,
+						928246938,
+						2063317397
+					],
+					"m_toonHandle": "2-S2-1-401562",
+					"m_licenses": [],
+					"m_tandemLeaderId": null,
+					"m_commander": "",
+					"m_commanderLevel": 1,
+					"m_hasSilencePenalty": false,
+					"m_tandemId": 7,
+					"m_commanderMasteryLevel": 0,
+					"m_commanderMasteryTalents": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"m_trophyId": 1,
+					"m_rewardOverrides": [],
+					"m_brutalPlusDifficulty": 0,
+					"m_retryMutationIndexes": [
+						0,
+						0,
+						0,
+						0
+					],
+					"m_aCEnemyRace": 0,
+					"m_aCEnemyWaveType": 0
+				},
+				{
+					"m_control": 1,
+					"m_userId": null,
+					"m_teamId": 0,
+					"m_colorPref": {
+						"m_color": 0
+					},
+					"m_racePref": {
+						"m_race": 0
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 1,
+					"m_logoIndex": 0,
+					"m_hero": "",
+					"m_skin": "",
+					"m_mount": "",
+					"m_artifacts": [
+						"",
+						"",
+						""
+					],
+					"m_workingSetSlotId": 15,
+					"m_rewards": [],
+					"m_toonHandle": "",
+					"m_licenses": [],
+					"m_tandemLeaderId": null,
+					"m_commander": "",
+					"m_commanderLevel": 1,
+					"m_hasSilencePenalty": false,
+					"m_tandemId": null,
+					"m_commanderMasteryLevel": 0,
+					"m_commanderMasteryTalents": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"m_trophyId": 0,
+					"m_rewardOverrides": [],
+					"m_brutalPlusDifficulty": 0,
+					"m_retryMutationIndexes": [
+						0,
+						0,
+						0,
+						0
+					],
+					"m_aCEnemyRace": 0,
+					"m_aCEnemyWaveType": 0
+				},
+				{
+					"m_control": 1,
+					"m_userId": null,
+					"m_teamId": 0,
+					"m_colorPref": {
+						"m_color": 0
+					},
+					"m_racePref": {
+						"m_race": 0
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 1,
+					"m_logoIndex": 0,
+					"m_hero": "",
+					"m_skin": "",
+					"m_mount": "",
+					"m_artifacts": [
+						"",
+						"",
+						""
+					],
+					"m_workingSetSlotId": 14,
+					"m_rewards": [],
+					"m_toonHandle": "",
+					"m_licenses": [],
+					"m_tandemLeaderId": null,
+					"m_commander": "",
+					"m_commanderLevel": 1,
+					"m_hasSilencePenalty": false,
+					"m_tandemId": null,
+					"m_commanderMasteryLevel": 0,
+					"m_commanderMasteryTalents": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"m_trophyId": 0,
+					"m_rewardOverrides": [],
+					"m_brutalPlusDifficulty": 0,
+					"m_retryMutationIndexes": [
+						0,
+						0,
+						0,
+						0
+					],
+					"m_aCEnemyRace": 0,
+					"m_aCEnemyWaveType": 0
+				},
+				{
+					"m_control": 1,
+					"m_userId": null,
+					"m_teamId": 0,
+					"m_colorPref": {
+						"m_color": 0
+					},
+					"m_racePref": {
+						"m_race": 0
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 1,
+					"m_logoIndex": 0,
+					"m_hero": "",
+					"m_skin": "",
+					"m_mount": "",
+					"m_artifacts": [
+						"",
+						"",
+						""
+					],
+					"m_workingSetSlotId": 13,
+					"m_rewards": [],
+					"m_toonHandle": "",
+					"m_licenses": [],
+					"m_tandemLeaderId": null,
+					"m_commander": "",
+					"m_commanderLevel": 1,
+					"m_hasSilencePenalty": false,
+					"m_tandemId": null,
+					"m_commanderMasteryLevel": 0,
+					"m_commanderMasteryTalents": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"m_trophyId": 0,
+					"m_rewardOverrides": [],
+					"m_brutalPlusDifficulty": 0,
+					"m_retryMutationIndexes": [
+						0,
+						0,
+						0,
+						0
+					],
+					"m_aCEnemyRace": 0,
+					"m_aCEnemyWaveType": 0
+				},
+				{
+					"m_control": 1,
+					"m_userId": null,
+					"m_teamId": 0,
+					"m_colorPref": {
+						"m_color": 0
+					},
+					"m_racePref": {
+						"m_race": 0
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 1,
+					"m_logoIndex": 0,
+					"m_hero": "",
+					"m_skin": "",
+					"m_mount": "",
+					"m_artifacts": [
+						"",
+						"",
+						""
+					],
+					"m_workingSetSlotId": 12,
+					"m_rewards": [],
+					"m_toonHandle": "",
+					"m_licenses": [],
+					"m_tandemLeaderId": null,
+					"m_commander": "",
+					"m_commanderLevel": 1,
+					"m_hasSilencePenalty": false,
+					"m_tandemId": null,
+					"m_commanderMasteryLevel": 0,
+					"m_commanderMasteryTalents": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"m_trophyId": 0,
+					"m_rewardOverrides": [],
+					"m_brutalPlusDifficulty": 0,
+					"m_retryMutationIndexes": [
+						0,
+						0,
+						0,
+						0
+					],
+					"m_aCEnemyRace": 0,
+					"m_aCEnemyWaveType": 0
+				},
+				{
+					"m_control": 1,
+					"m_userId": null,
+					"m_teamId": 0,
+					"m_colorPref": {
+						"m_color": 0
+					},
+					"m_racePref": {
+						"m_race": 0
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 1,
+					"m_logoIndex": 0,
+					"m_hero": "",
+					"m_skin": "",
+					"m_mount": "",
+					"m_artifacts": [
+						"",
+						"",
+						""
+					],
+					"m_workingSetSlotId": 11,
+					"m_rewards": [],
+					"m_toonHandle": "",
+					"m_licenses": [],
+					"m_tandemLeaderId": null,
+					"m_commander": "",
+					"m_commanderLevel": 1,
+					"m_hasSilencePenalty": false,
+					"m_tandemId": null,
+					"m_commanderMasteryLevel": 0,
+					"m_commanderMasteryTalents": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"m_trophyId": 0,
+					"m_rewardOverrides": [],
+					"m_brutalPlusDifficulty": 0,
+					"m_retryMutationIndexes": [
+						0,
+						0,
+						0,
+						0
+					],
+					"m_aCEnemyRace": 0,
+					"m_aCEnemyWaveType": 0
+				},
+				{
+					"m_control": 1,
+					"m_userId": null,
+					"m_teamId": 0,
+					"m_colorPref": {
+						"m_color": 0
+					},
+					"m_racePref": {
+						"m_race": 0
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 1,
+					"m_logoIndex": 0,
+					"m_hero": "",
+					"m_skin": "",
+					"m_mount": "",
+					"m_artifacts": [
+						"",
+						"",
+						""
+					],
+					"m_workingSetSlotId": 10,
+					"m_rewards": [],
+					"m_toonHandle": "",
+					"m_licenses": [],
+					"m_tandemLeaderId": null,
+					"m_commander": "",
+					"m_commanderLevel": 1,
+					"m_hasSilencePenalty": false,
+					"m_tandemId": null,
+					"m_commanderMasteryLevel": 0,
+					"m_commanderMasteryTalents": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"m_trophyId": 0,
+					"m_rewardOverrides": [],
+					"m_brutalPlusDifficulty": 0,
+					"m_retryMutationIndexes": [
+						0,
+						0,
+						0,
+						0
+					],
+					"m_aCEnemyRace": 0,
+					"m_aCEnemyWaveType": 0
+				},
+				{
+					"m_control": 1,
+					"m_userId": null,
+					"m_teamId": 0,
+					"m_colorPref": {
+						"m_color": 0
+					},
+					"m_racePref": {
+						"m_race": 0
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 1,
+					"m_logoIndex": 0,
+					"m_hero": "",
+					"m_skin": "",
+					"m_mount": "",
+					"m_artifacts": [
+						"",
+						"",
+						""
+					],
+					"m_workingSetSlotId": 9,
+					"m_rewards": [],
+					"m_toonHandle": "",
+					"m_licenses": [],
+					"m_tandemLeaderId": null,
+					"m_commander": "",
+					"m_commanderLevel": 1,
+					"m_hasSilencePenalty": false,
+					"m_tandemId": null,
+					"m_commanderMasteryLevel": 0,
+					"m_commanderMasteryTalents": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"m_trophyId": 0,
+					"m_rewardOverrides": [],
+					"m_brutalPlusDifficulty": 0,
+					"m_retryMutationIndexes": [
+						0,
+						0,
+						0,
+						0
+					],
+					"m_aCEnemyRace": 0,
+					"m_aCEnemyWaveType": 0
+				},
+				{
+					"m_control": 1,
+					"m_userId": null,
+					"m_teamId": 0,
+					"m_colorPref": {
+						"m_color": 0
+					},
+					"m_racePref": {
+						"m_race": 0
+					},
+					"m_difficulty": 3,
+					"m_aiBuild": 0,
+					"m_handicap": 100,
+					"m_observe": 1,
+					"m_logoIndex": 0,
+					"m_hero": "",
+					"m_skin": "",
+					"m_mount": "",
+					"m_artifacts": [
+						"",
+						"",
+						""
+					],
+					"m_workingSetSlotId": 8,
+					"m_rewards": [],
+					"m_toonHandle": "",
+					"m_licenses": [],
+					"m_tandemLeaderId": null,
+					"m_commander": "",
+					"m_commanderLevel": 1,
+					"m_hasSilencePenalty": false,
+					"m_tandemId": null,
+					"m_commanderMasteryLevel": 0,
+					"m_commanderMasteryTalents": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"m_trophyId": 0,
+					"m_rewardOverrides": [],
+					"m_brutalPlusDifficulty": 0,
+					"m_retryMutationIndexes": [
+						0,
+						0,
+						0,
+						0
+					],
+					"m_aCEnemyRace": 0,
+					"m_aCEnemyWaveType": 0
+				}
+			],
+			"m_randomSeed": 1271994626,
+			"m_hostUserId": null,
+			"m_isSinglePlayer": false,
+			"m_pickedMapTag": 0,
+			"m_gameDuration": 0,
+			"m_defaultDifficulty": 3,
+			"m_defaultAIBuild": 0
+		}
+	}
+}

@@ -1,0 +1,10 @@
+[
+{"m_progress":33,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":0},"_bits":56},
+{"m_progress":38,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":0},"_bits":56},
+{"m_progress":46,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":0},"_bits":56},
+{"m_progress":53,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":0},"_bits":56},
+{"m_progress":60,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":0},"_bits":56},
+{"m_progress":79,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":0},"_bits":56},
+{"m_progress":99,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":0},"_bits":56},
+{"m_recipient":1,"m_point":{"x":162927,"y":135145},"_event":"NNet.Game.SPingMessage","_eventid":1,"_gameloop":2928,"_userid":{"m_userId":0},"_bits":96}
+]

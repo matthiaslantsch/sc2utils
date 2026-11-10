@@ -1,0 +1,79 @@
+{
+	"version": "0.10.0.14803",
+	"baseBuild": 14803,
+	"gameloops": 21936,
+	"expansion": "WoL",
+	"speed": "Faster",
+	"region": "krb",
+	"map": {
+		"name": "잃어버린 사원",
+		"hash": "28615da1031cda514dfb78c80dfee74c43cdbc75d570618df98c1c9db54b2de7",
+		"depotRegion": "krb"
+	},
+	"endTime": null,
+	"utcOffset": null,
+	"realLength": 979,
+	"gameMode": null,
+	"teamSize": null,
+	"realType": "1v1",
+	"isLadder": false,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "LeeRaEuN",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Unknown",
+			"playedRace": "Zerg",
+			"result": null,
+			"human": true,
+			"color": "Green",
+			"rgba": [
+				22,
+				128,
+				0,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "과일장수",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Unknown",
+			"playedRace": "Zerg",
+			"result": null,
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1
+			],
+			"result": null,
+			"lineup": "Z"
+		},
+		{
+			"number": 2,
+			"players": [
+				2
+			],
+			"result": null,
+			"lineup": "Z"
+		}
+	]
+}

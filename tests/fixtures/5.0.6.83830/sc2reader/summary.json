@@ -1,0 +1,148 @@
+{
+	"version": "5.0.6.83830",
+	"baseBuild": 83830,
+	"gameloops": 16754,
+	"expansion": "LotV",
+	"speed": "Faster",
+	"region": "kr",
+	"map": {
+		"name": "Oxide LE",
+		"hash": "e7b366e4b0a9b6339b6e3ccedf170460a0e5fc66dfff9afeefdd50fee2a061f8",
+		"depotRegion": "kr"
+	},
+	"endTime": 1615737723,
+	"utcOffset": 1.0,
+	"realLength": 747,
+	"gameMode": "Private",
+	"teamSize": "1v1",
+	"realType": "1v1",
+	"isLadder": false,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "DPGZest",
+			"clanTag": "",
+			"toon": [
+				3,
+				1,
+				2305463
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": "Loss",
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 2
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "DPGCure",
+			"clanTag": "",
+			"toon": [
+				3,
+				1,
+				3938571
+			],
+			"pickedRace": "Terran",
+			"playedRace": "Terran",
+			"result": "Win",
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 1
+		}
+	],
+	"observers": [
+		{
+			"name": "Lowko",
+			"clanTag": "",
+			"toon": "3-S2-1-4130488"
+		},
+		{
+			"name": "IntoTheiNu",
+			"clanTag": "인투더",
+			"toon": "3-S2-1-84709"
+		},
+		{
+			"name": "COSMOS",
+			"clanTag": "",
+			"toon": "3-S2-2-1691274"
+		},
+		{
+			"name": "kyuubi",
+			"clanTag": "",
+			"toon": "3-S2-2-1683475"
+		},
+		{
+			"name": "gLide",
+			"clanTag": "",
+			"toon": "3-S2-1-7114073"
+		},
+		{
+			"name": "Enki",
+			"clanTag": "αX",
+			"toon": "3-S2-2-1694163"
+		},
+		{
+			"name": "FruitBunker",
+			"clanTag": "",
+			"toon": "3-S2-1-4886383"
+		},
+		{
+			"name": "Koka",
+			"clanTag": "KAP",
+			"toon": "3-S2-1-4605574"
+		},
+		{
+			"name": "Indy",
+			"clanTag": "",
+			"toon": "3-S2-1-4131539"
+		},
+		{
+			"name": "YoGo",
+			"clanTag": "OGKR",
+			"toon": "3-S2-1-5174640"
+		},
+		{
+			"name": "RotterdaM",
+			"clanTag": "",
+			"toon": "3-S2-1-4515155"
+		},
+		{
+			"name": "hjpbeta",
+			"clanTag": "",
+			"toon": "3-S2-1-6524065"
+		}
+	],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				2
+			],
+			"result": "Win",
+			"lineup": "T"
+		},
+		{
+			"number": 2,
+			"players": [
+				1
+			],
+			"result": "Loss",
+			"lineup": "P"
+		}
+	]
+}

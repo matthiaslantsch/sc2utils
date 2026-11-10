@@ -1,0 +1,87 @@
+{
+	"version": "1.1.2.16755",
+	"baseBuild": 16755,
+	"gameloops": 5833,
+	"expansion": "WoL",
+	"speed": "Faster",
+	"region": "us",
+	"map": {
+		"name": "Lost Temple",
+		"hash": "58558f452af5ccf36c2eb1a6f55f510b4779b21fb0c316cceca38a69c5ffb3d1",
+		"depotRegion": "us"
+	},
+	"endTime": 1288831792,
+	"utcOffset": -7.0,
+	"realLength": 260,
+	"gameMode": "Public",
+	"teamSize": "1v1",
+	"realType": "1v1",
+	"isLadder": false,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "Mojo",
+			"clanTag": null,
+			"toon": [
+				1,
+				1,
+				1100724
+			],
+			"pickedRace": "Terran",
+			"playedRace": "Terran",
+			"result": "Loss",
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "Suerte",
+			"clanTag": null,
+			"toon": [
+				1,
+				1,
+				488679
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": "Win",
+			"human": true,
+			"color": "Light Pink",
+			"rgba": [
+				204,
+				166,
+				252,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1
+			],
+			"result": "Loss",
+			"lineup": "T"
+		},
+		{
+			"number": 2,
+			"players": [
+				2
+			],
+			"result": "Win",
+			"lineup": "P"
+		}
+	]
+}

@@ -1,0 +1,87 @@
+{
+	"version": "4.4.1.66668",
+	"baseBuild": 66668,
+	"gameloops": 2303,
+	"expansion": "LotV",
+	"speed": "Faster",
+	"region": "eu",
+	"map": {
+		"name": "Acid Plant LE",
+		"hash": "68c3c921acffa55e7aef3bd7e27e13952b50a0b5e047ec49f24779bb5704b612",
+		"depotRegion": "eu"
+	},
+	"endTime": 1532118895,
+	"utcOffset": 2.0,
+	"realLength": 102,
+	"gameMode": "Ladder",
+	"teamSize": "1v1",
+	"realType": "1v1",
+	"isLadder": true,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "DarthAlasar",
+			"clanTag": "TeamUR",
+			"toon": [
+				2,
+				1,
+				2513209
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": "Win",
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "Bollebob",
+			"clanTag": "",
+			"toon": [
+				2,
+				1,
+				718423
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": "Loss",
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1
+			],
+			"result": "Win",
+			"lineup": "P"
+		},
+		{
+			"number": 2,
+			"players": [
+				2
+			],
+			"result": "Loss",
+			"lineup": "P"
+		}
+	]
+}

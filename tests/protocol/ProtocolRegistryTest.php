@@ -32,13 +32,16 @@ class ProtocolRegistryTest extends TestCase {
 		yield 'exact' => array(41_743, 41_743);
 		yield 'between' => array(15_976, 15_405);
 		yield 'gap before the regenerated range' => array(51_701, 51_149);
+		yield 'HotS beta 23925, hand-written supplement' => array(24_000, 23_925);
+		yield 'HotS beta 24247, hand-written supplement' => array(24_247, 24_247);
 		yield 'newer than the newest' => array(999_999, 98_310);
 	}
 
 	public function test_builds(): void {
 		$builds = (new ProtocolRegistry())->builds();
 
-		$this->assertCount(144, $builds);
+		// 83 legacy + 61 current + 2 supplements (tools/supplements/)
+		$this->assertCount(146, $builds);
 		$sorted = $builds;
 		sort($sorted);
 		$this->assertSame($sorted, $builds);

@@ -1,0 +1,87 @@
+{
+	"version": "1.3.4.18701",
+	"baseBuild": 18574,
+	"gameloops": 8250,
+	"expansion": "WoL",
+	"speed": "Faster",
+	"region": "eu",
+	"map": {
+		"name": "Shakuras Plateau",
+		"hash": "83324557156ac19a9700cd9140a0436462dfe2391e2f3fc019528fe94dedd21a",
+		"depotRegion": "eu"
+	},
+	"endTime": 1310832039,
+	"utcOffset": 2.0,
+	"realLength": 367,
+	"gameMode": "Private",
+	"teamSize": "1v1",
+	"realType": "1v1",
+	"isLadder": false,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "MuTa",
+			"clanTag": null,
+			"toon": [
+				2,
+				1,
+				336714
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": "Win",
+			"human": true,
+			"color": "Light Pink",
+			"rgba": [
+				204,
+				166,
+				252,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "GƟArtunit",
+			"clanTag": null,
+			"toon": [
+				2,
+				1,
+				1553154
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": "Loss",
+			"human": true,
+			"color": "Orange",
+			"rgba": [
+				254,
+				138,
+				14,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1
+			],
+			"result": "Win",
+			"lineup": "P"
+		},
+		{
+			"number": 2,
+			"players": [
+				2
+			],
+			"result": "Loss",
+			"lineup": "P"
+		}
+	]
+}

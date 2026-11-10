@@ -1,0 +1,241 @@
+{
+	"version": "2.0.0.24247",
+	"baseBuild": 24247,
+	"gameloops": 14554,
+	"expansion": "HotS",
+	"speed": "Faster",
+	"region": "xx",
+	"map": {
+		"name": "Hunting Ground",
+		"hash": "506b61262caf5c14ed80ae01c1d4d134f9472f25151ad2686260fbf4a462ca8f",
+		"depotRegion": "xx"
+	},
+	"endTime": 1355005004,
+	"utcOffset": -8.0,
+	"realLength": 649,
+	"gameMode": "Private",
+	"teamSize": "1v1",
+	"realType": "2v2v2v2",
+	"isLadder": false,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "JaKaTaK",
+			"clanTag": null,
+			"toon": [
+				98,
+				1,
+				144831
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": null,
+			"human": true,
+			"color": "Teal",
+			"rgba": [
+				28,
+				167,
+				234,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "Deathblood",
+			"clanTag": null,
+			"toon": [
+				98,
+				1,
+				116806
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": null,
+			"human": true,
+			"color": "Light Pink",
+			"rgba": [
+				204,
+				166,
+				252,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 3,
+			"slot": 2,
+			"name": "genesis",
+			"clanTag": null,
+			"toon": [
+				98,
+				1,
+				114630
+			],
+			"pickedRace": "Zerg",
+			"playedRace": "Zerg",
+			"result": null,
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 2
+		},
+		{
+			"pid": 4,
+			"slot": 3,
+			"name": "Lasender",
+			"clanTag": null,
+			"toon": [
+				98,
+				1,
+				134508
+			],
+			"pickedRace": "Terran",
+			"playedRace": "Terran",
+			"result": null,
+			"human": true,
+			"color": "Purple",
+			"rgba": [
+				84,
+				0,
+				129,
+				255
+			],
+			"team": 4
+		},
+		{
+			"pid": 5,
+			"slot": 4,
+			"name": "StarZeph",
+			"clanTag": null,
+			"toon": [
+				98,
+				1,
+				112768
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": null,
+			"human": true,
+			"color": "Dark Green",
+			"rgba": [
+				16,
+				98,
+				70,
+				255
+			],
+			"team": 4
+		},
+		{
+			"pid": 6,
+			"slot": 5,
+			"name": "Vampz",
+			"clanTag": null,
+			"toon": [
+				98,
+				1,
+				31485
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": null,
+			"human": true,
+			"color": "Yellow",
+			"rgba": [
+				235,
+				225,
+				41,
+				255
+			],
+			"team": 2
+		},
+		{
+			"pid": 7,
+			"slot": 6,
+			"name": "southrngamer",
+			"clanTag": null,
+			"toon": [
+				98,
+				1,
+				162250
+			],
+			"pickedRace": "Random",
+			"playedRace": "Protoss",
+			"result": null,
+			"human": true,
+			"color": "Orange",
+			"rgba": [
+				254,
+				138,
+				14,
+				255
+			],
+			"team": 3
+		},
+		{
+			"pid": 8,
+			"slot": 7,
+			"name": "A.I. 8 (Medium)",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Unknown",
+			"playedRace": "Terran",
+			"result": null,
+			"human": false,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 3
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1,
+				2
+			],
+			"result": null,
+			"lineup": "PP"
+		},
+		{
+			"number": 2,
+			"players": [
+				3,
+				6
+			],
+			"result": null,
+			"lineup": "PZ"
+		},
+		{
+			"number": 3,
+			"players": [
+				7,
+				8
+			],
+			"result": null,
+			"lineup": "PT"
+		},
+		{
+			"number": 4,
+			"players": [
+				4,
+				5
+			],
+			"result": null,
+			"lineup": "PT"
+		}
+	]
+}

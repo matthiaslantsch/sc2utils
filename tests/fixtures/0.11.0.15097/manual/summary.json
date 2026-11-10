@@ -1,0 +1,119 @@
+{
+	"version": "0.11.0.15097",
+	"baseBuild": 15097,
+	"gameloops": 20416,
+	"expansion": "WoL",
+	"speed": "Faster",
+	"region": "usb",
+	"map": {
+		"name": "Decena",
+		"hash": "dae3c0c68b5cb7c4a321f2fd3977722ae9284a62202560f8486549d78e1e9959",
+		"depotRegion": "usb"
+	},
+	"endTime": 1272037518,
+	"utcOffset": -7.0,
+	"realLength": 911,
+	"gameMode": "Ladder",
+	"teamSize": "2v2",
+	"realType": "2v2",
+	"isLadder": true,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 1,
+			"name": "Zasz",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Random",
+			"playedRace": "Protoss",
+			"result": "Win",
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 2,
+			"name": "TedStyle",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Terran",
+			"playedRace": "Terran",
+			"result": "Win",
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 2
+		},
+		{
+			"pid": 3,
+			"slot": 3,
+			"name": "crazyjim",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Terran",
+			"playedRace": "Terran",
+			"result": "Loss",
+			"human": true,
+			"color": "Teal",
+			"rgba": [
+				28,
+				167,
+				234,
+				255
+			],
+			"team": 2
+		},
+		{
+			"pid": 4,
+			"slot": 4,
+			"name": "vickcy",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Zerg",
+			"playedRace": "Zerg",
+			"result": "Loss",
+			"human": true,
+			"color": "Purple",
+			"rgba": [
+				84,
+				0,
+				129,
+				255
+			],
+			"team": 1
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1,
+				4
+			],
+			"result": "Unknown",
+			"lineup": "PZ"
+		},
+		{
+			"number": 2,
+			"players": [
+				2,
+				3
+			],
+			"result": "Unknown",
+			"lineup": "TT"
+		}
+	]
+}

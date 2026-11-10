@@ -1,0 +1,87 @@
+{
+	"version": "3.15.1.54724",
+	"baseBuild": 54518,
+	"gameloops": 5171,
+	"expansion": "LotV",
+	"speed": "Faster",
+	"region": "eu",
+	"map": {
+		"name": "Séquenceur EC",
+		"hash": "89fa02a1476a52d28ceae84c8908200901d75ae515ab8fb9ccc6c5ce45255158",
+		"depotRegion": "eu"
+	},
+	"endTime": 1498336397,
+	"utcOffset": 2.0,
+	"realLength": 230,
+	"gameMode": "Ladder",
+	"teamSize": "1v1",
+	"realType": "1v1",
+	"isLadder": true,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "zidar",
+			"clanTag": "",
+			"toon": [
+				2,
+				1,
+				1373621
+			],
+			"pickedRace": "Zerg",
+			"playedRace": "Zerg",
+			"result": "Win",
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "MadFace",
+			"clanTag": "7AR0",
+			"toon": [
+				2,
+				1,
+				4669501
+			],
+			"pickedRace": "Zerg",
+			"playedRace": "Zerg",
+			"result": "Loss",
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1
+			],
+			"result": "Win",
+			"lineup": "Z"
+		},
+		{
+			"number": 2,
+			"players": [
+				2
+			],
+			"result": "Loss",
+			"lineup": "Z"
+		}
+	]
+}

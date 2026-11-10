@@ -1,0 +1,183 @@
+{
+	"version": "4.3.2.65384",
+	"baseBuild": 65384,
+	"gameloops": 13915,
+	"expansion": "LotV",
+	"speed": "Faster",
+	"region": "eu",
+	"map": {
+		"name": "Bastion of the Conclave",
+		"hash": "16e807f28555c9ab27823eaa7cbdc98b60c56ee56be4259e6a5ad229da303430",
+		"depotRegion": "eu"
+	},
+	"endTime": 1527960893,
+	"utcOffset": 2.0,
+	"realLength": 621,
+	"gameMode": "Ladder",
+	"teamSize": "3v3",
+	"realType": "3v3",
+	"isLadder": true,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "DarthAlasar",
+			"clanTag": "TeamUR",
+			"toon": [
+				2,
+				1,
+				2513209
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": null,
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "riglic",
+			"clanTag": "go4ham",
+			"toon": [
+				2,
+				1,
+				5210392
+			],
+			"pickedRace": "Zerg",
+			"playedRace": "Zerg",
+			"result": null,
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 3,
+			"slot": 2,
+			"name": "JohnTheGen",
+			"clanTag": "go4ham",
+			"toon": [
+				2,
+				1,
+				1668414
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": null,
+			"human": true,
+			"color": "Teal",
+			"rgba": [
+				28,
+				167,
+				234,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 4,
+			"slot": 3,
+			"name": "Arti",
+			"clanTag": "AsAg",
+			"toon": [
+				2,
+				1,
+				7365119
+			],
+			"pickedRace": "Zerg",
+			"playedRace": "Zerg",
+			"result": null,
+			"human": true,
+			"color": "Purple",
+			"rgba": [
+				84,
+				0,
+				129,
+				255
+			],
+			"team": 2
+		},
+		{
+			"pid": 5,
+			"slot": 4,
+			"name": "Андрей",
+			"clanTag": "",
+			"toon": [
+				2,
+				2,
+				2194335
+			],
+			"pickedRace": "Terran",
+			"playedRace": "Terran",
+			"result": null,
+			"human": true,
+			"color": "Yellow",
+			"rgba": [
+				235,
+				225,
+				41,
+				255
+			],
+			"team": 2
+		},
+		{
+			"pid": 6,
+			"slot": 5,
+			"name": "Pascal",
+			"clanTag": "AsAg",
+			"toon": [
+				2,
+				1,
+				7588939
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": null,
+			"human": true,
+			"color": "Orange",
+			"rgba": [
+				254,
+				138,
+				14,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1,
+				2,
+				3
+			],
+			"result": null,
+			"lineup": "PPZ"
+		},
+		{
+			"number": 2,
+			"players": [
+				4,
+				5,
+				6
+			],
+			"result": null,
+			"lineup": "PTZ"
+		}
+	]
+}

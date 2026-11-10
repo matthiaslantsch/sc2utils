@@ -1,0 +1,231 @@
+{
+	"version": "4.6.2.69232",
+	"baseBuild": 69232,
+	"gameloops": 2536,
+	"expansion": "LotV",
+	"speed": "Faster",
+	"region": "eu",
+	"map": {
+		"name": "Troizinia LE",
+		"hash": "b7440bc8c8f717850697ca4884fb01b4b01574eade023d4499cf6a9c7af03468",
+		"depotRegion": "eu"
+	},
+	"endTime": 1542135674,
+	"utcOffset": 1.0,
+	"realLength": 113,
+	"gameMode": "Ladder",
+	"teamSize": "4v4",
+	"realType": "4v4",
+	"isLadder": true,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "Coverops",
+			"clanTag": "",
+			"toon": [
+				2,
+				1,
+				677284
+			],
+			"pickedRace": "Terran",
+			"playedRace": "Terran",
+			"result": null,
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "Bonzo",
+			"clanTag": "",
+			"toon": [
+				2,
+				1,
+				2679282
+			],
+			"pickedRace": "Zerg",
+			"playedRace": "Zerg",
+			"result": null,
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 3,
+			"slot": 2,
+			"name": "барбосжук",
+			"clanTag": "жук",
+			"toon": [
+				2,
+				2,
+				691923
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": null,
+			"human": true,
+			"color": "Teal",
+			"rgba": [
+				28,
+				167,
+				234,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 4,
+			"slot": 3,
+			"name": "DarthAlasar",
+			"clanTag": "TeamUR",
+			"toon": [
+				2,
+				1,
+				2513209
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": null,
+			"human": true,
+			"color": "Purple",
+			"rgba": [
+				84,
+				0,
+				129,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 5,
+			"slot": 4,
+			"name": "REEEEEEEEEEE",
+			"clanTag": "3ØØ",
+			"toon": [
+				2,
+				1,
+				3166490
+			],
+			"pickedRace": "Terran",
+			"playedRace": "Terran",
+			"result": null,
+			"human": true,
+			"color": "Yellow",
+			"rgba": [
+				235,
+				225,
+				41,
+				255
+			],
+			"team": 2
+		},
+		{
+			"pid": 6,
+			"slot": 5,
+			"name": "BurakT",
+			"clanTag": "",
+			"toon": [
+				2,
+				1,
+				6228421
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": null,
+			"human": true,
+			"color": "Orange",
+			"rgba": [
+				254,
+				138,
+				14,
+				255
+			],
+			"team": 2
+		},
+		{
+			"pid": 7,
+			"slot": 6,
+			"name": "LEBEN",
+			"clanTag": "b00t",
+			"toon": [
+				2,
+				1,
+				5272574
+			],
+			"pickedRace": "Terran",
+			"playedRace": "Terran",
+			"result": null,
+			"human": true,
+			"color": "Green",
+			"rgba": [
+				22,
+				128,
+				0,
+				255
+			],
+			"team": 2
+		},
+		{
+			"pid": 8,
+			"slot": 7,
+			"name": "Mehemes",
+			"clanTag": "GRILLS",
+			"toon": [
+				2,
+				1,
+				640438
+			],
+			"pickedRace": "Random",
+			"playedRace": "Protoss",
+			"result": null,
+			"human": true,
+			"color": "Light Pink",
+			"rgba": [
+				204,
+				166,
+				252,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1,
+				2,
+				3,
+				4
+			],
+			"result": null,
+			"lineup": "PPTZ"
+		},
+		{
+			"number": 2,
+			"players": [
+				5,
+				6,
+				7,
+				8
+			],
+			"result": null,
+			"lineup": "PPTT"
+		}
+	]
+}

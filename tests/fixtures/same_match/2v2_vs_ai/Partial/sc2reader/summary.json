@@ -1,0 +1,127 @@
+{
+	"version": "3.2.1.41973",
+	"baseBuild": 41743,
+	"gameloops": 5612,
+	"expansion": "LotV",
+	"speed": "Faster",
+	"region": "eu",
+	"map": {
+		"name": "Magma Mines",
+		"hash": "1d45f79c0afda9ddb6e532f4cd569a4c2d25d1f93ee49ab97ac327b7051c72b0",
+		"depotRegion": "eu"
+	},
+	"endTime": 1460248313,
+	"utcOffset": 2.0,
+	"realLength": 250,
+	"gameMode": "Private",
+	"teamSize": "2v2",
+	"realType": "2v2",
+	"isLadder": false,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "DarthAlasar",
+			"clanTag": "go4ham",
+			"toon": [
+				2,
+				1,
+				2513209
+			],
+			"pickedRace": "Random",
+			"playedRace": "Zerg",
+			"result": null,
+			"human": true,
+			"color": "Light Pink",
+			"rgba": [
+				204,
+				166,
+				252,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "riglic",
+			"clanTag": "go4ham",
+			"toon": [
+				2,
+				1,
+				5210392
+			],
+			"pickedRace": "Zerg",
+			"playedRace": "Zerg",
+			"result": null,
+			"human": true,
+			"color": "Teal",
+			"rgba": [
+				28,
+				167,
+				234,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 3,
+			"slot": 2,
+			"name": "A.I. 2 (Very Easy)",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Random",
+			"playedRace": "Zerg",
+			"result": null,
+			"human": false,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 2
+		},
+		{
+			"pid": 4,
+			"slot": 3,
+			"name": "A.I. 3 (Very Easy)",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Random",
+			"playedRace": "Terran",
+			"result": null,
+			"human": false,
+			"color": "Purple",
+			"rgba": [
+				84,
+				0,
+				129,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1,
+				2
+			],
+			"result": null,
+			"lineup": "ZZ"
+		},
+		{
+			"number": 2,
+			"players": [
+				3,
+				4
+			],
+			"result": null,
+			"lineup": "TZ"
+		}
+	]
+}

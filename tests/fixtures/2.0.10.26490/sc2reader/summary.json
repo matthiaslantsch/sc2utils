@@ -1,0 +1,203 @@
+{
+	"version": "2.0.10.26490",
+	"baseBuild": 26490,
+	"gameloops": 15592,
+	"expansion": "HotS",
+	"speed": "Faster",
+	"region": "bn",
+	"map": {
+		"name": "Fossil Quarry",
+		"hash": "8e2c08fba821ee10b16aee79583df1e8bd1ccc83912ac9189374bfe705c5de13",
+		"depotRegion": "bn"
+	},
+	"endTime": 1374873397,
+	"utcOffset": -7.0,
+	"realLength": 695,
+	"gameMode": "Private",
+	"teamSize": "4v4",
+	"realType": "4v4",
+	"isLadder": false,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "Cchimes",
+			"clanTag": "",
+			"toon": [
+				1,
+				1,
+				4287
+			],
+			"pickedRace": "Zerg",
+			"playedRace": "Zerg",
+			"result": "Win",
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "A.I. 1 (Hard)",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Random",
+			"playedRace": "Zerg",
+			"result": "Loss",
+			"human": false,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 2
+		},
+		{
+			"pid": 3,
+			"slot": 2,
+			"name": "A.I. 2 (Harder)",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Random",
+			"playedRace": "Zerg",
+			"result": "Loss",
+			"human": false,
+			"color": "Teal",
+			"rgba": [
+				28,
+				167,
+				234,
+				255
+			],
+			"team": 2
+		},
+		{
+			"pid": 4,
+			"slot": 3,
+			"name": "A.I. 3 (Easy)",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Random",
+			"playedRace": "Zerg",
+			"result": "Loss",
+			"human": false,
+			"color": "Purple",
+			"rgba": [
+				84,
+				0,
+				129,
+				255
+			],
+			"team": 2
+		},
+		{
+			"pid": 5,
+			"slot": 4,
+			"name": "A.I. 4 (Very Easy)",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Random",
+			"playedRace": "Protoss",
+			"result": "Loss",
+			"human": false,
+			"color": "Yellow",
+			"rgba": [
+				235,
+				225,
+				41,
+				255
+			],
+			"team": 2
+		},
+		{
+			"pid": 6,
+			"slot": 5,
+			"name": "A.I. 5 (Very Easy)",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Random",
+			"playedRace": "Terran",
+			"result": "Win",
+			"human": false,
+			"color": "Orange",
+			"rgba": [
+				254,
+				138,
+				14,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 7,
+			"slot": 6,
+			"name": "A.I. 6 (Elite)",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Random",
+			"playedRace": "Protoss",
+			"result": "Win",
+			"human": false,
+			"color": "Green",
+			"rgba": [
+				22,
+				128,
+				0,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 8,
+			"slot": 7,
+			"name": "A.I. 7 (Medium)",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Random",
+			"playedRace": "Terran",
+			"result": "Win",
+			"human": false,
+			"color": "Light Pink",
+			"rgba": [
+				204,
+				166,
+				252,
+				255
+			],
+			"team": 1
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1,
+				6,
+				7,
+				8
+			],
+			"result": "Win",
+			"lineup": "PTTZ"
+		},
+		{
+			"number": 2,
+			"players": [
+				2,
+				3,
+				4,
+				5
+			],
+			"result": "Loss",
+			"lineup": "PZZZ"
+		}
+	]
+}

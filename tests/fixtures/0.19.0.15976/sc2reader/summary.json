@@ -1,0 +1,87 @@
+{
+	"version": "0.19.0.15976",
+	"baseBuild": 15976,
+	"gameloops": 2282,
+	"expansion": "WoL",
+	"speed": "Faster",
+	"region": "eu",
+	"map": {
+		"name": "Blistering Sands",
+		"hash": "e33a5890ad2eedeaa56ce17356d1e618ad4ff99f50e76a34e7772e087802e8ea",
+		"depotRegion": "eu"
+	},
+	"endTime": 1279015573,
+	"utcOffset": 2.0,
+	"realLength": 101,
+	"gameMode": "Ladder",
+	"teamSize": "1v1",
+	"realType": "1v1",
+	"isLadder": true,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "aTnDarKFoRcE",
+			"clanTag": null,
+			"toon": [
+				2,
+				1,
+				21311
+			],
+			"pickedRace": "Zerg",
+			"playedRace": "Zerg",
+			"result": "Win",
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "GoOdy",
+			"clanTag": null,
+			"toon": [
+				2,
+				1,
+				12131
+			],
+			"pickedRace": "Terran",
+			"playedRace": "Terran",
+			"result": "Loss",
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1
+			],
+			"result": "Win",
+			"lineup": "Z"
+		},
+		{
+			"number": 2,
+			"players": [
+				2
+			],
+			"result": "Loss",
+			"lineup": "T"
+		}
+	]
+}

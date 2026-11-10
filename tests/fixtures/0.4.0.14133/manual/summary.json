@@ -1,0 +1,79 @@
+{
+	"version": "0.4.0.14133",
+	"baseBuild": 14133,
+	"gameloops": 48112,
+	"expansion": "WoL",
+	"speed": "Faster",
+	"region": "eub",
+	"map": {
+		"name": "Metalopolis",
+		"hash": "74be9caf361f05c3dfb669fd43fd3f40905805f8f2d29a84780d09b38827cad6",
+		"depotRegion": "eub"
+	},
+	"endTime": null,
+	"utcOffset": null,
+	"realLength": 2147,
+	"gameMode": null,
+	"teamSize": null,
+	"realType": "1v1",
+	"isLadder": false,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "OgerAffe",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Unknown",
+			"playedRace": "Terran",
+			"result": null,
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "LiquidNazgul",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Unknown",
+			"playedRace": "Protoss",
+			"result": null,
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1
+			],
+			"result": null,
+			"lineup": "T"
+		},
+		{
+			"number": 2,
+			"players": [
+				2
+			],
+			"result": null,
+			"lineup": "P"
+		}
+	]
+}

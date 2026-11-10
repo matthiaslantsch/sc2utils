@@ -1,0 +1,83 @@
+{
+	"version": "4.3.1.65094",
+	"baseBuild": 65094,
+	"gameloops": 29214,
+	"expansion": "LotV",
+	"speed": "Faster",
+	"region": "eu",
+	"map": {
+		"name": "16-Bit LE",
+		"hash": "3f7b7cf32c8cf7692bb2212c655c2136b8b760ed6473a7a6b7632da64b471b00",
+		"depotRegion": "eu"
+	},
+	"endTime": 1526758428,
+	"utcOffset": 2.0,
+	"realLength": 1304,
+	"gameMode": "Private",
+	"teamSize": "1v1",
+	"realType": "1v1",
+	"isLadder": false,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "DarthAlasar",
+			"clanTag": "TeamUR",
+			"toon": [
+				2,
+				1,
+				2513209
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": "Win",
+			"human": true,
+			"color": "Teal",
+			"rgba": [
+				28,
+				167,
+				234,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "A.I. 1 (Very Easy)",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Random",
+			"playedRace": "Zerg",
+			"result": "Loss",
+			"human": false,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1
+			],
+			"result": "Win",
+			"lineup": "P"
+		},
+		{
+			"number": 2,
+			"players": [
+				2
+			],
+			"result": "Loss",
+			"lineup": "Z"
+		}
+	]
+}

@@ -1,0 +1,11 @@
+[
+{"m_progress":30,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":0},"_bits":56},
+{"m_progress":35,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":0},"_bits":56},
+{"m_progress":46,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":0},"_bits":56},
+{"m_progress":51,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":0},"_bits":56},
+{"m_progress":60,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":0},"_bits":56},
+{"m_progress":66,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":0},"_bits":56},
+{"m_progress":79,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":0},"_bits":56},
+{"m_progress":99,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":0},"_bits":56},
+{"m_recipient":0,"m_string":"hmm i can't click on anything","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":442,"_userid":{"m_userId":0},"_bits":272}
+]

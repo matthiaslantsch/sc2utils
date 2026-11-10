@@ -1,6 +1,6 @@
 """Loads the s2protocol version modules from the pinned submodule, without `imp`.
 
-Two generations make up the full set:
+Three sources make up the full set:
 
 - legacy: every module at `b41b369^`, the last commit of the old code generator (83 builds, 15405 to 57507).
   b41b369 (2017-10-27) deleted them all; a3d2066 regenerated 32 of them the same day with the new generator, and
@@ -8,6 +8,8 @@ Two generations make up the full set:
   tools/.cache/s2protocol/<commit>/.
 - current: the modules in the submodule's working tree (`s2protocol/versions/`), used for every build legacy
   doesn't have.
+- supplement: hand-written modules in tools/supplements/ for builds s2protocol never had (the HotS beta 2.0.0.x), each
+  derived from an s2protocol module as its docstring explains.
 
 Legacy wins when a build exists in both. The regenerated tables lost what the old generator knew about the old formats.
 """
@@ -22,6 +24,7 @@ from pathlib import Path
 from types import ModuleType
 
 TOOLS = Path(__file__).resolve().parents[1]
+SUPPLEMENTS = TOOLS / 'supplements'
 SUBMODULE = TOOLS / 's2protocol'
 VERSIONS = 's2protocol/versions'
 CACHE = TOOLS / '.cache' / 's2protocol'
@@ -38,12 +41,17 @@ class ProtocolError(Exception):
 class Source:
     build: int
     path: Path
-    # None for modules in the current tree, otherwise the commit the file was extracted from
+    # None for modules in the current tree and supplements, otherwise the commit the file was extracted from
     commit: str | None
+    supplement: bool = False
 
     @property
     def legacy(self) -> bool:
         return self.commit is not None
+
+    @property
+    def kind(self) -> str:
+        return 'supplement' if self.supplement else 'legacy' if self.legacy else 'current'
 
 
 def _git(*args: str) -> str:
@@ -98,6 +106,13 @@ def sources() -> dict[int, Source]:
             tmp.write_bytes(content)
             tmp.replace(target)
         found[build] = Source(build, target, commit)
+
+    for file in SUPPLEMENTS.iterdir():
+        if match := _NAME.match(file.name):
+            build = int(match.group(1))
+            if build in found:
+                raise ProtocolError(f'{file} duplicates s2protocol build {build}')
+            found[build] = Source(build, file, None, supplement=True)
 
     return dict(sorted(found.items()))
 

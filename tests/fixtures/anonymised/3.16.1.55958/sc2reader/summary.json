@@ -1,0 +1,87 @@
+{
+	"version": "3.16.1.55958",
+	"baseBuild": 55958,
+	"gameloops": 12359,
+	"expansion": "LotV",
+	"speed": "Faster",
+	"region": "eu",
+	"map": {
+		"name": "Acólito EJ",
+		"hash": "5160a062b890a6f2487deedc1f4acd8d1eb9324b6fe8a7cf384743bfd80a8b94",
+		"depotRegion": "eu"
+	},
+	"endTime": 1502280047,
+	"utcOffset": 2.0,
+	"realLength": 551,
+	"gameMode": "Ladder",
+	"teamSize": "1v1",
+	"realType": "1v1",
+	"isLadder": true,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "",
+			"clanTag": null,
+			"toon": [
+				0,
+				0,
+				0
+			],
+			"pickedRace": "Terran",
+			"playedRace": "Terran",
+			"result": "Loss",
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "",
+			"clanTag": null,
+			"toon": [
+				0,
+				0,
+				0
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": "Win",
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1
+			],
+			"result": "Loss",
+			"lineup": "T"
+		},
+		{
+			"number": 2,
+			"players": [
+				2
+			],
+			"result": "Win",
+			"lineup": "P"
+		}
+	]
+}

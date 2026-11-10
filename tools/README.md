@@ -14,11 +14,14 @@ The pinned submodule commits record exactly which upstream state produced the ge
 ```
 s2protocol/      submodule (Blizzard/s2protocol), oracle for decoding, source of the protocol tables
 sc2reader/       submodule (ggtracker/sc2reader), oracle for the semantic layer, source of the game data
-common/          shared Python: protocol loader (nearest build, legacy generation from b41b369^, event loop),
-                 JSON cleaning, gz JSON lines
-generate/        protocols.sh = protocols.py (tables → JSON lines) | protocols.php (→ PHP data files), gamedata.php
-fixtures/        decoded.py (s2protocol), sc2reader.py (summary/events/units/map), mpq.py (coverage scan for
-                 tests/MpqArchiveTest.php), fetch_maps.py (depot download + SHA-256 check)
+supplements/     hand-written protocol modules for builds s2protocol never had
+common/          shared Python: protocol loader (nearest build, legacy generation from b41b369^, supplements,
+                 event loop), JSON cleaning, gz JSON lines
+generate/        protocols.sh = protocols.py (tables → JSON lines) | protocols.php (→ PHP data files),
+                 gamedata.php (sc2reader's data files → src/gamedata/data/)
+fixtures/        decoded.py (s2protocol), sc2reader_dump.py (summary/events/units/map), mpq.py (coverage scan for
+                 tests/MpqArchiveTest.php), fetch_maps.py (depot download + SHA-256 check),
+                 protocol_coverage.py (which protocol classes the test replays cover, see the plan's Version gaps)
 .venv/  .cache/  local only (gitignored): Python environment; extracted legacy protocols,
                  downloaded maps outside the curated set
 ```
@@ -37,11 +40,18 @@ python3 -m venv .venv
 | Change | Run | Then |
 |---|---|---|
 | s2protocol submodule bumped | `generate/protocols.sh`, `fixtures/decoded.py` | review the diff of `src/protocol/data/` and the fixtures |
-| sc2reader submodule bumped | `generate/gamedata.php`, `fixtures/sc2reader.py` | review the diff |
-| replay or map added | `fixtures/decoded.py`, `fixtures/sc2reader.py`, `fixtures/mpq.py` | if `mpq.py` exits with 1, add the reported archive to `tests/MpqArchiveTest.php` (values once from mpyq) |
+| sc2reader submodule bumped | `generate/gamedata.php`, `fixtures/sc2reader_dump.py` | review the diff |
+| replay or map added | `fixtures/decoded.py`, `fixtures/sc2reader_dump.py`, `fixtures/mpq.py`, `fixtures/protocol_coverage.py` | if `mpq.py` exits with 1, extend `tests/MpqArchiveTest.php` |
 | map needed | `fixtures/fetch_maps.py` | curated maps go into `tests/test_maps/`, the rest stays in `.cache/` |
 
 ## Notes
+
+- `supplements/` holds hand-written protocol modules for builds s2protocol never had.
+  `common/protocols.py` loads them as a third source next to legacy and
+  current, so the generator and `fixtures/decoded.py` treat them like any other protocol.
+
+- `fixtures/sc2reader_dump.py` writes `tests/fixtures/<key>/sc2reader/summary.json`: the library's domain layer
+  as sc2reader computes it. For replays sc2reader can't read, `tests/fixtures/<key>/manual/summary.json` is hand-written instead.
 
 - Upstream s2protocol has no protocols between builds 32283 and 51702 (deleted in `b41b369`, 2017), and the 32 old
   ones it regenerated afterwards are broken for old formats. `common/protocols.py` therefore takes every module

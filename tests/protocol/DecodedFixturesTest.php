@@ -11,12 +11,11 @@ namespace holonet\sc2utils\tests\protocol;
 
 use holonet\sc2utils\archive\MpqArchive;
 use holonet\sc2utils\protocol\BitPackedCodec;
-use holonet\sc2utils\protocol\DecodeException;
 use holonet\sc2utils\protocol\EventStream;
 use holonet\sc2utils\protocol\Protocol;
 use holonet\sc2utils\protocol\ProtocolRegistry;
 use holonet\sc2utils\protocol\VersionedCodec;
-use holonet\sc2utils\tests\Fixtures;
+use holonet\sc2utils\tests\UsesFixtures;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Attributes\Medium;
@@ -35,6 +34,8 @@ use PHPUnit\Framework\TestCase;
 #[CoversClass(Protocol::class)]
 #[Medium]
 class DecodedFixturesTest extends TestCase {
+	use UsesFixtures;
+
 	private const array ARCHIVE_FILES = array(
 		'details' => 'replay.details',
 		'initdata' => 'replay.initData',
@@ -48,17 +49,6 @@ class DecodedFixturesTest extends TestCase {
 	/**
 	 * @return iterable<string, array{string, string}>
 	 */
-	public static function provide_failing_stream_cases(): iterable {
-		foreach (self::streams() as list($key, $stream, $info)) {
-			if (isset($info['error']) && $stream !== 'attributes') {
-				yield "{$key} {$stream}" => array($key, $stream);
-			}
-		}
-	}
-
-	/**
-	 * @return iterable<string, array{string, string}>
-	 */
 	public static function provide_stream_cases(): iterable {
 		foreach (self::streams() as list($key, $stream, $info)) {
 			if (isset($info['file']) && $stream !== 'attributes') {
@@ -67,47 +57,16 @@ class DecodedFixturesTest extends TestCase {
 		}
 	}
 
-	#[DataProvider('provide_failing_stream_cases')]
-	public function test_error_failing_stream(string $key, string $stream): void {
-		list($archive, $protocol) = $this->open($key);
-
-		$this->expectException(DecodeException::class);
-		$this->decode($archive, $protocol, $stream);
-	}
-
 	#[DataProvider('provide_stream_cases')]
 	public function test_stream(string $key, string $stream): void {
 		list($archive, $protocol) = $this->open($key);
 		list($codec, $value) = $this->decode($archive, $protocol, $stream);
 
-		if (is_iterable($value)) {
-			$this->assertEvents(Fixtures::events($key, $stream), $value);
-		} else {
-			$this->assertSame(Fixtures::json($key, $stream), Fixtures::normalize($value));
-		}
+		$this->assertDecodedFixture($key, $stream, $value);
 		$this->assertTrue($codec->atEnd(), 'consumed to the end');
 		if ($codec instanceof VersionedCodec) {
 			$this->assertSame(self::streamMeta($key, $stream)['skipped'] ?? 0, $codec->skipped(), 'skipped fields');
 		}
-	}
-
-	/**
-	 * Compares event by event and reports only the first difference.
-	 *
-	 * @param iterable<mixed> $expected
-	 * @param iterable<mixed> $actual
-	 */
-	private function assertEvents(iterable $expected, iterable $actual): void {
-		$expectedEvents = is_array($expected) ? $expected : iterator_to_array($expected, false);
-		$count = 0;
-		foreach ($actual as $i => $event) {
-			$event = Fixtures::normalize($event);
-			if (($expectedEvents[$i] ?? null) !== $event) {
-				$this->assertSame($expectedEvents[$i] ?? null, $event, "event {$i}");
-			}
-			$count++;
-		}
-		$this->assertSame(count($expectedEvents), $count, 'event count');
 	}
 
 	/**
@@ -120,7 +79,9 @@ class DecodedFixturesTest extends TestCase {
 			return array($codec, $codec->decode($protocol->header));
 		}
 
-		$data = $archive->read(self::ARCHIVE_FILES[$stream]);
+		$name = self::ARCHIVE_FILES[$stream];
+		// anonymised replay packs keep only the .backup copies of details and initData (as decoded.py reads them)
+		$data = $archive->has($name) ? $archive->read($name) : $archive->read("{$name}.backup");
 
 		switch ($stream) {
 			case 'details':
@@ -150,7 +111,7 @@ class DecodedFixturesTest extends TestCase {
 	 * @return array{MpqArchive, Protocol}
 	 */
 	private function open(string $key): array {
-		$archive = MpqArchive::open(Fixtures::replayPath($key));
+		$archive = MpqArchive::open(self::replayPath($key));
 		$header = $archive->userData?->content;
 		$this->assertNotNull($header);
 
@@ -158,7 +119,7 @@ class DecodedFixturesTest extends TestCase {
 		/** @var array{m_version: array{m_baseBuild: int}} $latestHeader */
 		$latestHeader = (new VersionedCodec($registry->latest(), $header))->decode($registry->latest()->header);
 		$baseBuild = $latestHeader['m_version']['m_baseBuild'];
-		$meta = Fixtures::meta($key);
+		$meta = self::meta($key);
 		$this->assertSame($meta['baseBuild'], $baseBuild, 'base build');
 		$this->assertSame($meta['protocol'], $registry->nearestBuild($baseBuild), 'protocol build');
 
@@ -170,7 +131,7 @@ class DecodedFixturesTest extends TestCase {
 	 */
 	private static function streamMeta(string $key, string $stream): array {
 		/** @var array{streams: array<string, array<string, mixed>>} $meta */
-		$meta = Fixtures::meta($key);
+		$meta = self::meta($key);
 
 		return $meta['streams'][$stream];
 	}
@@ -179,9 +140,9 @@ class DecodedFixturesTest extends TestCase {
 	 * @return iterable<array{string, string, array<string, mixed>}> [key, stream, its meta.json entry]
 	 */
 	private static function streams(): iterable {
-		foreach (Fixtures::keys() as $key) {
+		foreach (self::keys() as $key) {
 			/** @var array<string, array<string, mixed>> $streams */
-			$streams = Fixtures::meta($key)['streams'] ?? array();
+			$streams = self::meta($key)['streams'] ?? array();
 			foreach ($streams as $stream => $info) {
 				yield array($key, $stream, $info);
 			}

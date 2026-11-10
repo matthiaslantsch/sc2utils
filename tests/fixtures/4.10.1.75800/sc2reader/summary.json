@@ -1,0 +1,83 @@
+{
+	"version": "4.10.1.75800",
+	"baseBuild": 75800,
+	"gameloops": 2438,
+	"expansion": "LotV",
+	"speed": "Faster",
+	"region": "us",
+	"map": {
+		"name": "16-Bit LE",
+		"hash": "8ca93fd5745f63ec9b06658749660b278721000408cc04a22a4ec90083e12857",
+		"depotRegion": "us"
+	},
+	"endTime": 1566301508,
+	"utcOffset": 10.0,
+	"realLength": 108,
+	"gameMode": "Private",
+	"teamSize": "1v1",
+	"realType": "1v1",
+	"isLadder": false,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "Whisklaw",
+			"clanTag": "",
+			"toon": [
+				1,
+				1,
+				7755655
+			],
+			"pickedRace": "Terran",
+			"playedRace": "Terran",
+			"result": "Loss",
+			"human": true,
+			"color": "Teal",
+			"rgba": [
+				28,
+				167,
+				234,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "A.I. 1 (Very Easy)",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Random",
+			"playedRace": "Terran",
+			"result": "Win",
+			"human": false,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1
+			],
+			"result": "Loss",
+			"lineup": "T"
+		},
+		{
+			"number": 2,
+			"players": [
+				2
+			],
+			"result": "Win",
+			"lineup": "T"
+		}
+	]
+}

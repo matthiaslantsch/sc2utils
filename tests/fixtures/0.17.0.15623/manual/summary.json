@@ -1,0 +1,79 @@
+{
+	"version": "0.17.0.15623",
+	"baseBuild": 15623,
+	"gameloops": 12992,
+	"expansion": "WoL",
+	"speed": "Faster",
+	"region": "krb",
+	"map": {
+		"name": "고철 처리장",
+		"hash": "f78d5cae6d8263de6be49602a3889c4f29da6f857aedfaa0b090bb6e847a32fe",
+		"depotRegion": "krb"
+	},
+	"endTime": 1275699494,
+	"utcOffset": -7.0,
+	"realLength": 580,
+	"gameMode": "Ladder",
+	"teamSize": "1v1",
+	"realType": "1v1",
+	"isLadder": true,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 1,
+			"name": "Artosis",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Zerg",
+			"playedRace": "Zerg",
+			"result": "Win",
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 2
+		},
+		{
+			"pid": 2,
+			"slot": 2,
+			"name": "Coma",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": "Loss",
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 1
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				2
+			],
+			"result": "Loss",
+			"lineup": "P"
+		},
+		{
+			"number": 2,
+			"players": [
+				1
+			],
+			"result": "Win",
+			"lineup": "Z"
+		}
+	]
+}

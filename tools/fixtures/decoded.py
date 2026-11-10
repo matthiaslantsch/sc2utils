@@ -36,36 +36,14 @@ import mpyq  # noqa: E402
 from s2protocol.decoders import BitPackedDecoder  # noqa: E402
 
 from common import jsonio, protocols  # noqa: E402
+from common.replays import FIXTURES, REPLAYS, find_replays, replay_key  # noqa: E402
 
-REPO = Path(__file__).resolve().parents[2]
-REPLAYS = REPO / 'tests' / 'test_replays'
-FIXTURES = REPO / 'tests' / 'fixtures'
 KIND = 'decoded'
+BACKUP = ('replay.details', 'replay.initData')
 
 
 class IncompleteError(Exception):
     pass
-
-
-def find_replays(paths: list[Path]) -> list[Path]:
-    found = []
-    for path in paths:
-        path = path.resolve()
-        if path.is_dir():
-            found += [p for p in path.rglob('*') if p.suffix.lower() == '.sc2replay']
-        else:
-            found.append(path)
-    return sorted(set(found))
-
-
-def replay_key(path: Path) -> str:
-    try:
-        parts = path.relative_to(REPLAYS).with_suffix('').parts
-    except ValueError:
-        raise SystemExit(f'{path} is not inside {REPLAYS}') from None
-    if len(parts) >= 2 and parts[-1] == parts[-2]:
-        parts = parts[:-1]
-    return '/'.join(parts)
 
 
 def decode_whole(decoder, data: bytes, typeid: int):
@@ -108,10 +86,14 @@ def dump(path: Path, latest) -> dict:
     protocol = protocols.load(build)
     meta['baseBuild'] = base_build
     meta['protocol'] = build
-    meta['protocolSource'] = f'legacy {protocols.LEGACY}' if source.legacy else 'current'
+    meta['protocolSource'] = f'legacy {protocols.LEGACY}' if source.legacy else source.kind
 
     def read(name):
-        return header_data if name is None else archive.read_file(name)
+        if name is None:
+            return header_data
+        data = archive.read_file(name)
+        # Blizzard's anonymised replay packs keep only the .backup copies of details and initData
+        return archive.read_file(f'{name}.backup') if data is None and name in BACKUP else data
 
     versioned = lambda d: protocols.counting_versioned_decoder(d, protocol.typeinfos)  # noqa: E731
     bitpacked = lambda d: BitPackedDecoder(d, protocol.typeinfos)  # noqa: E731

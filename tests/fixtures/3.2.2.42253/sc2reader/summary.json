@@ -1,0 +1,87 @@
+{
+	"version": "3.2.2.42253",
+	"baseBuild": 42253,
+	"gameloops": 17735,
+	"expansion": "LotV",
+	"speed": "Faster",
+	"region": "eu",
+	"map": {
+		"name": "Frozen Temple",
+		"hash": "e737647c835b7ec6501991c077a06c75bb245dff263df152ab34ec757f0f7671",
+		"depotRegion": "eu"
+	},
+	"endTime": 1461504739,
+	"utcOffset": 2.0,
+	"realLength": 791,
+	"gameMode": "Ladder",
+	"teamSize": "1v1",
+	"realType": "1v1",
+	"isLadder": true,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "TallMonster",
+			"clanTag": "FND",
+			"toon": [
+				2,
+				1,
+				2639370
+			],
+			"pickedRace": "Zerg",
+			"playedRace": "Zerg",
+			"result": "Loss",
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "Azures",
+			"clanTag": "FoFoG",
+			"toon": [
+				2,
+				1,
+				1423316
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": "Win",
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1
+			],
+			"result": "Loss",
+			"lineup": "Z"
+		},
+		{
+			"number": 2,
+			"players": [
+				2
+			],
+			"result": "Win",
+			"lineup": "P"
+		}
+	]
+}

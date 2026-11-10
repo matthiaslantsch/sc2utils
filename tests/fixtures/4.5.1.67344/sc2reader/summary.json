@@ -1,0 +1,183 @@
+{
+	"version": "4.5.1.67344",
+	"baseBuild": 67188,
+	"gameloops": 7500,
+	"expansion": "LotV",
+	"speed": "Faster",
+	"region": "eu",
+	"map": {
+		"name": "Canyon of Tribulation",
+		"hash": "91b12efa47c13572fc2838c2466641cd89f7475fee088615a681222be361c85f",
+		"depotRegion": "eu"
+	},
+	"endTime": 1534598454,
+	"utcOffset": 2.0,
+	"realLength": 334,
+	"gameMode": "Ladder",
+	"teamSize": "3v3",
+	"realType": "3v3",
+	"isLadder": true,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "bissboss",
+			"clanTag": "",
+			"toon": [
+				2,
+				1,
+				5609252
+			],
+			"pickedRace": "Terran",
+			"playedRace": "Terran",
+			"result": "Loss",
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "BarackObobma",
+			"clanTag": "",
+			"toon": [
+				2,
+				1,
+				8379953
+			],
+			"pickedRace": "Terran",
+			"playedRace": "Terran",
+			"result": "Loss",
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 3,
+			"slot": 2,
+			"name": "Skel",
+			"clanTag": "",
+			"toon": [
+				2,
+				1,
+				8381936
+			],
+			"pickedRace": "Terran",
+			"playedRace": "Terran",
+			"result": "Loss",
+			"human": true,
+			"color": "Teal",
+			"rgba": [
+				28,
+				167,
+				234,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 4,
+			"slot": 3,
+			"name": "DarthAlasar",
+			"clanTag": "TeamUR",
+			"toon": [
+				2,
+				1,
+				2513209
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": "Win",
+			"human": true,
+			"color": "Purple",
+			"rgba": [
+				84,
+				0,
+				129,
+				255
+			],
+			"team": 2
+		},
+		{
+			"pid": 5,
+			"slot": 4,
+			"name": "riglic",
+			"clanTag": "go4ham",
+			"toon": [
+				2,
+				1,
+				5210392
+			],
+			"pickedRace": "Zerg",
+			"playedRace": "Zerg",
+			"result": "Win",
+			"human": true,
+			"color": "Yellow",
+			"rgba": [
+				235,
+				225,
+				41,
+				255
+			],
+			"team": 2
+		},
+		{
+			"pid": 6,
+			"slot": 5,
+			"name": "JohnTheGen",
+			"clanTag": "go4ham",
+			"toon": [
+				2,
+				1,
+				1668414
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": "Win",
+			"human": true,
+			"color": "Orange",
+			"rgba": [
+				254,
+				138,
+				14,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1,
+				2,
+				3
+			],
+			"result": "Loss",
+			"lineup": "TTT"
+		},
+		{
+			"number": 2,
+			"players": [
+				4,
+				5,
+				6
+			],
+			"result": "Win",
+			"lineup": "PPZ"
+		}
+	]
+}

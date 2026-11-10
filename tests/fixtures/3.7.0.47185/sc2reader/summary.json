@@ -1,0 +1,87 @@
+{
+	"version": "3.7.0.47185",
+	"baseBuild": 47185,
+	"gameloops": 3910,
+	"expansion": "LotV",
+	"speed": "Faster",
+	"region": "us",
+	"map": {
+		"name": "King Sejong Station LE",
+		"hash": "f3614abb9f664e3a1840065e8fde7f94e170bc75a2bd1630e12e3b60085146a7",
+		"depotRegion": "us"
+	},
+	"endTime": 1477094006,
+	"utcOffset": -7.0,
+	"realLength": 174,
+	"gameMode": "Ladder",
+	"teamSize": "1v1",
+	"realType": "1v1",
+	"isLadder": true,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "meeK",
+			"clanTag": "cloudM",
+			"toon": [
+				1,
+				1,
+				5978041
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": "Win",
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "Nathanias",
+			"clanTag": "Kappa",
+			"toon": [
+				1,
+				1,
+				292941
+			],
+			"pickedRace": "Terran",
+			"playedRace": "Terran",
+			"result": "Loss",
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1
+			],
+			"result": "Win",
+			"lineup": "P"
+		},
+		{
+			"number": 2,
+			"players": [
+				2
+			],
+			"result": "Loss",
+			"lineup": "T"
+		}
+	]
+}

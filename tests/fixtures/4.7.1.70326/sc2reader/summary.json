@@ -1,0 +1,135 @@
+{
+	"version": "4.7.1.70326",
+	"baseBuild": 70154,
+	"gameloops": 5682,
+	"expansion": "LotV",
+	"speed": "Faster",
+	"region": "eu",
+	"map": {
+		"name": "Stasis LE",
+		"hash": "f8aedc40ffa534a970447b095d1633a6384cbde9d1599a25885ce6271a50a504",
+		"depotRegion": "eu"
+	},
+	"endTime": 1544227594,
+	"utcOffset": 1.0,
+	"realLength": 253,
+	"gameMode": "Ladder",
+	"teamSize": "2v2",
+	"realType": "2v2",
+	"isLadder": true,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "DarthAlasar",
+			"clanTag": "TeamUR",
+			"toon": [
+				2,
+				1,
+				2513209
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": "Loss",
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "bunda",
+			"clanTag": "",
+			"toon": [
+				2,
+				1,
+				310407
+			],
+			"pickedRace": "Random",
+			"playedRace": "Protoss",
+			"result": "Loss",
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 2
+		},
+		{
+			"pid": 3,
+			"slot": 2,
+			"name": "rejko",
+			"clanTag": "",
+			"toon": [
+				2,
+				1,
+				7943995
+			],
+			"pickedRace": "Unknown",
+			"playedRace": "Zerg",
+			"result": "Win",
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 4,
+			"slot": 3,
+			"name": "Clarity",
+			"clanTag": "",
+			"toon": [
+				2,
+				1,
+				6984493
+			],
+			"pickedRace": "Unknown",
+			"playedRace": "Zerg",
+			"result": "Win",
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1,
+				3
+			],
+			"result": "Unknown",
+			"lineup": "PZ"
+		},
+		{
+			"number": 2,
+			"players": [
+				2,
+				4
+			],
+			"result": "Unknown",
+			"lineup": "PZ"
+		}
+	]
+}

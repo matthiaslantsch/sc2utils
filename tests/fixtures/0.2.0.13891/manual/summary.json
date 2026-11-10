@@ -1,0 +1,79 @@
+{
+	"version": "0.2.0.13891",
+	"baseBuild": 13891,
+	"gameloops": 7680,
+	"expansion": "WoL",
+	"speed": "Faster",
+	"region": "krb",
+	"map": {
+		"name": "大都會",
+		"hash": "71b443187e93226f1d1bfd56f639e0f5914270aec5166317cbaaaa8569422973",
+		"depotRegion": "krb"
+	},
+	"endTime": null,
+	"utcOffset": null,
+	"realLength": 342,
+	"gameMode": null,
+	"teamSize": null,
+	"realType": "1v1",
+	"isLadder": false,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "游久网",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Unknown",
+			"playedRace": "Protoss",
+			"result": null,
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "ChoiJungMin",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Unknown",
+			"playedRace": "Terran",
+			"result": null,
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1
+			],
+			"result": null,
+			"lineup": "P"
+		},
+		{
+			"number": 2,
+			"players": [
+				2
+			],
+			"result": null,
+			"lineup": "T"
+		}
+	]
+}

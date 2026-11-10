@@ -183,9 +183,11 @@ function fileHeader(array $head, ?array $protocol = null): string {
 		"Source: s2protocol {$head['s2protocol']} (submodule commit {$commit})",
 	);
 	if ($protocol !== null) {
-		$from = $protocol['source'] === 'legacy'
-			? "at {$head['legacy']} (".substr((string)$head['legacyCommit'], 0, 12).'), legacy generation'
-			: 'in the submodule commit';
+		$from = match ($protocol['source']) {
+			'legacy' => "at {$head['legacy']} (".substr((string)$head['legacyCommit'], 0, 12).'), legacy generation',
+			'supplement' => 'hand-written, derived from an earlier protocol with known changes applied to it',
+			default => 'in the submodule commit',
+		};
 		$lines[] = "{$protocol['file']} {$from}";
 		$lines[] = '';
 		foreach (explode("\n", (string)$protocol['notice']) as $line) {

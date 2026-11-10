@@ -1,0 +1,206 @@
+{
+	"m_playerList": [
+		{
+			"m_name": "&lt;TeamUR&gt;<sp/>ZergStillOP",
+			"m_toon": {
+				"m_region": 2,
+				"m_programId": "\u0000\u0000S2",
+				"m_realm": 1,
+				"m_id": 2513209
+			},
+			"m_race": "Protoss",
+			"m_color": {
+				"m_a": 255,
+				"m_r": 28,
+				"m_g": 167,
+				"m_b": 234
+			},
+			"m_control": 2,
+			"m_teamId": 0,
+			"m_handicap": 100,
+			"m_observe": 0,
+			"m_result": 0,
+			"m_workingSetSlotId": 0,
+			"m_hero": ""
+		},
+		{
+			"m_name": "&lt;go4ham&gt;<sp/>JohnTheGen",
+			"m_toon": {
+				"m_region": 2,
+				"m_programId": "\u0000\u0000S2",
+				"m_realm": 1,
+				"m_id": 1668414
+			},
+			"m_race": "Protoss",
+			"m_color": {
+				"m_a": 255,
+				"m_r": 28,
+				"m_g": 167,
+				"m_b": 234
+			},
+			"m_control": 2,
+			"m_teamId": 0,
+			"m_handicap": 100,
+			"m_observe": 0,
+			"m_result": 0,
+			"m_workingSetSlotId": 2,
+			"m_hero": ""
+		},
+		{
+			"m_name": "A.I. 1 (Very Easy)",
+			"m_toon": {
+				"m_region": 0,
+				"m_programId": "\u0000\u0000\u0000\u0000",
+				"m_realm": 0,
+				"m_id": 0
+			},
+			"m_race": "Zerg",
+			"m_color": {
+				"m_a": 255,
+				"m_r": 0,
+				"m_g": 66,
+				"m_b": 255
+			},
+			"m_control": 3,
+			"m_teamId": 1,
+			"m_handicap": 100,
+			"m_observe": 0,
+			"m_result": 0,
+			"m_workingSetSlotId": 1,
+			"m_hero": ""
+		},
+		{
+			"m_name": "&lt;Kingz&gt;<sp/>Prozak",
+			"m_toon": {
+				"m_region": 2,
+				"m_programId": "\u0000\u0000S2",
+				"m_realm": 1,
+				"m_id": 2203085
+			},
+			"m_race": "Protoss",
+			"m_color": {
+				"m_a": 255,
+				"m_r": 235,
+				"m_g": 225,
+				"m_b": 41
+			},
+			"m_control": 2,
+			"m_teamId": 0,
+			"m_handicap": 100,
+			"m_observe": 0,
+			"m_result": 0,
+			"m_workingSetSlotId": 4,
+			"m_hero": ""
+		},
+		{
+			"m_name": "A.I. 5 (Very Easy)",
+			"m_toon": {
+				"m_region": 0,
+				"m_programId": "\u0000\u0000\u0000\u0000",
+				"m_realm": 0,
+				"m_id": 0
+			},
+			"m_race": "Protoss",
+			"m_color": {
+				"m_a": 255,
+				"m_r": 254,
+				"m_g": 138,
+				"m_b": 14
+			},
+			"m_control": 3,
+			"m_teamId": 1,
+			"m_handicap": 100,
+			"m_observe": 0,
+			"m_result": 0,
+			"m_workingSetSlotId": 5,
+			"m_hero": ""
+		},
+		{
+			"m_name": "A.I. 8 (Elite)",
+			"m_toon": {
+				"m_region": 0,
+				"m_programId": "\u0000\u0000\u0000\u0000",
+				"m_realm": 0,
+				"m_id": 0
+			},
+			"m_race": "Terran",
+			"m_color": {
+				"m_a": 255,
+				"m_r": 84,
+				"m_g": 0,
+				"m_b": 129
+			},
+			"m_control": 3,
+			"m_teamId": 0,
+			"m_handicap": 100,
+			"m_observe": 0,
+			"m_result": 0,
+			"m_workingSetSlotId": 8,
+			"m_hero": ""
+		},
+		{
+			"m_name": "A.I. 9 (Very Easy)",
+			"m_toon": {
+				"m_region": 0,
+				"m_programId": "\u0000\u0000\u0000\u0000",
+				"m_realm": 0,
+				"m_id": 0
+			},
+			"m_race": "Terran",
+			"m_color": {
+				"m_a": 255,
+				"m_r": 180,
+				"m_g": 20,
+				"m_b": 30
+			},
+			"m_control": 3,
+			"m_teamId": 1,
+			"m_handicap": 100,
+			"m_observe": 0,
+			"m_result": 0,
+			"m_workingSetSlotId": 9,
+			"m_hero": ""
+		}
+	],
+	"m_title": "Research Site JD-2",
+	"m_difficulty": "",
+	"m_thumbnail": {
+		"m_file": "Minimap.tga"
+	},
+	"m_isBlizzardMap": true,
+	"m_timeUTC": 134384622192689768,
+	"m_timeLocalOffset": 36000000000,
+	"m_description": "",
+	"m_imageFilePath": "",
+	"m_mapFileName": "",
+	"m_cacheHandles": [
+		{
+			"hex": "73326d61000045556de41503baccd05656360b6f027db88169fa1989bb6357b1b215a2547939f5fb"
+		},
+		{
+			"hex": "73326d6100004555421c8aa0f3619b652d23a2735dfee812ab644228235e7a797edecfe8b67da30e"
+		},
+		{
+			"hex": "73326d610000455566093832128453efffbb787c80b7d3eec1ad81bde55c83c930dea79c4e505a04"
+		},
+		{
+			"hex": "73326d6100004555d92dfc48c484c59154270b924ad7d57484f2ab9a47621c7ab16431bf66c53b40"
+		},
+		{
+			"hex": "73326d61000045553ec7e730b73bceee45b064d7fe056350a86cfe9c7361fdc2609623feea8ad190"
+		},
+		{
+			"hex": "73326d610000455526b1b27647947a0f05ffe9a64f089b487a052de985a17310bea2041832a3dd85"
+		},
+		{
+			"hex": "73326d61000045553653a05b0c628b5a163760648b327dec09b9792bf837ba8e9768bff161da1037"
+		}
+	],
+	"m_miniSave": false,
+	"m_gameSpeed": 0,
+	"m_defaultDifficulty": 3,
+	"m_modPaths": null,
+	"m_campaignIndex": 0,
+	"m_restartAsTransitionMap": false,
+	"m_disableRecoverGame": false
+}

@@ -1,0 +1,93 @@
+{
+	"version": "1.3.2.18317",
+	"baseBuild": 18092,
+	"gameloops": 36425,
+	"expansion": "WoL",
+	"speed": "Faster",
+	"region": "us",
+	"map": {
+		"name": "Tal'darim Altar LE",
+		"hash": "eace8bb56827e935c95ab40f94e22edff0de353ab4a8543f17c200a08ba7b262",
+		"depotRegion": "us"
+	},
+	"endTime": 1302730336,
+	"utcOffset": -4.0,
+	"realLength": 1625,
+	"gameMode": "Private",
+	"teamSize": "1v1",
+	"realType": "1v1",
+	"isLadder": false,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "Zanti",
+			"clanTag": null,
+			"toon": [
+				1,
+				1,
+				2655018
+			],
+			"pickedRace": "Terran",
+			"playedRace": "Terran",
+			"result": "Win",
+			"human": true,
+			"color": "Yellow",
+			"rgba": [
+				235,
+				225,
+				41,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "Metalreflux",
+			"clanTag": null,
+			"toon": [
+				1,
+				1,
+				315512
+			],
+			"pickedRace": "Zerg",
+			"playedRace": "Zerg",
+			"result": "Loss",
+			"human": true,
+			"color": "Green",
+			"rgba": [
+				22,
+				128,
+				0,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [
+		{
+			"name": "Daedes",
+			"clanTag": null,
+			"toon": "1-S2-1-2607725"
+		}
+	],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1
+			],
+			"result": "Win",
+			"lineup": "T"
+		},
+		{
+			"number": 2,
+			"players": [
+				2
+			],
+			"result": "Loss",
+			"lineup": "Z"
+		}
+	]
+}

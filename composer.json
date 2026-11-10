@@ -35,6 +35,9 @@
 			"holonet\\sc2utils\\tests\\": "tests/"
 		}
 	},
+	"bin": [
+		"scripts/replay-organiser.php"
+	],
 	"config": {
 		"allow-plugins": {
 			"ergebnis/composer-normalize": true

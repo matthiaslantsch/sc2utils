@@ -1,0 +1,231 @@
+{
+	"version": "4.6.0.67926",
+	"baseBuild": 67926,
+	"gameloops": 16781,
+	"expansion": "LotV",
+	"speed": "Faster",
+	"region": "eu",
+	"map": {
+		"name": "Forgotten Sanctuary",
+		"hash": "84b2df3aafdc8f685a31395e95b8192adf72a4bf54adcb9546e4c7d52fd0b45b",
+		"depotRegion": "eu"
+	},
+	"endTime": 1536509218,
+	"utcOffset": 2.0,
+	"realLength": 749,
+	"gameMode": "Ladder",
+	"teamSize": "4v4",
+	"realType": "4v4",
+	"isLadder": true,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "ЙôŠŠťęḞ",
+			"clanTag": "FxL",
+			"toon": [
+				2,
+				1,
+				2238580
+			],
+			"pickedRace": "Zerg",
+			"playedRace": "Zerg",
+			"result": "Loss",
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "Armenius",
+			"clanTag": "",
+			"toon": [
+				2,
+				1,
+				1483197
+			],
+			"pickedRace": "Terran",
+			"playedRace": "Terran",
+			"result": "Loss",
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 3,
+			"slot": 2,
+			"name": "Donnerschlag",
+			"clanTag": "USEMe",
+			"toon": [
+				2,
+				1,
+				1265111
+			],
+			"pickedRace": "Random",
+			"playedRace": "Protoss",
+			"result": "Loss",
+			"human": true,
+			"color": "Teal",
+			"rgba": [
+				28,
+				167,
+				234,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 4,
+			"slot": 3,
+			"name": "xXMiltenXx",
+			"clanTag": "USEMe",
+			"toon": [
+				2,
+				1,
+				2201510
+			],
+			"pickedRace": "Terran",
+			"playedRace": "Terran",
+			"result": "Loss",
+			"human": true,
+			"color": "Purple",
+			"rgba": [
+				84,
+				0,
+				129,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 5,
+			"slot": 4,
+			"name": "DarthAlasar",
+			"clanTag": "TeamUR",
+			"toon": [
+				2,
+				1,
+				2513209
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": "Win",
+			"human": true,
+			"color": "Yellow",
+			"rgba": [
+				235,
+				225,
+				41,
+				255
+			],
+			"team": 2
+		},
+		{
+			"pid": 6,
+			"slot": 5,
+			"name": "rejko",
+			"clanTag": "",
+			"toon": [
+				2,
+				1,
+				310407
+			],
+			"pickedRace": "Zerg",
+			"playedRace": "Zerg",
+			"result": "Win",
+			"human": true,
+			"color": "Orange",
+			"rgba": [
+				254,
+				138,
+				14,
+				255
+			],
+			"team": 2
+		},
+		{
+			"pid": 7,
+			"slot": 6,
+			"name": "JohnTheGen",
+			"clanTag": "go4ham",
+			"toon": [
+				2,
+				1,
+				1668414
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": "Win",
+			"human": true,
+			"color": "Green",
+			"rgba": [
+				22,
+				128,
+				0,
+				255
+			],
+			"team": 2
+		},
+		{
+			"pid": 8,
+			"slot": 7,
+			"name": "Dimitri",
+			"clanTag": "",
+			"toon": [
+				2,
+				1,
+				248016
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": "Win",
+			"human": true,
+			"color": "Light Pink",
+			"rgba": [
+				204,
+				166,
+				252,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1,
+				2,
+				3,
+				4
+			],
+			"result": "Loss",
+			"lineup": "PTTZ"
+		},
+		{
+			"number": 2,
+			"players": [
+				5,
+				6,
+				7,
+				8
+			],
+			"result": "Win",
+			"lineup": "PPPZ"
+		}
+	]
+}

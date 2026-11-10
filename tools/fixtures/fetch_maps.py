@@ -20,6 +20,7 @@ import hashlib
 import os
 import sys
 import tempfile
+import time
 import urllib.request
 
 import sc2reader
@@ -79,6 +80,7 @@ def main():
     parser.add_argument('paths', nargs='+', help='replay files or directories containing replays')
     parser.add_argument('--out', required=True, help='directory to save the maps in (created if missing)')
     parser.add_argument('--timeout', type=int, default=120, help='download timeout per map in seconds')
+    parser.add_argument('--delay', type=float, default=0, help='seconds to wait before each download request')
     args = parser.parse_args()
 
     os.makedirs(args.out, exist_ok=True)
@@ -109,6 +111,7 @@ def main():
         ]
         errors = []
         for candidate in candidates:
+            time.sleep(args.delay)
             try:
                 size = download(candidate, sha256, target, args.timeout)
             except Exception as e:

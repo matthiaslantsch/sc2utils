@@ -3,18 +3,17 @@
 	"s2protocol": "5.0.17.98310.0",
 	"s2protocolCommit": "3b40c5ef01834096b4305172ef5485ec00133dcc",
 	"baseBuild": 23925,
-	"protocol": 23260,
-	"protocolSource": "legacy b41b369^",
+	"protocol": 23925,
+	"protocolSource": "supplement",
 	"streams": {
 		"header": {
 			"file": "header.json"
 		},
 		"details": {
-			"file": "details.json",
-			"skipped": 1
+			"file": "details.json"
 		},
 		"initdata": {
-			"error": "IncompleteError: 1138 of 1517 bytes not consumed"
+			"file": "initdata.json"
 		},
 		"attributes": {
 			"file": "attributes.json"
@@ -24,7 +23,8 @@
 			"events": 17
 		},
 		"game": {
-			"error": "CorruptedError: eventid(14) at buffer(0a/4,[7]=05)"
+			"file": "game.events.jsonl.gz",
+			"events": 1644
 		},
 		"tracker": {
 			"absent": true

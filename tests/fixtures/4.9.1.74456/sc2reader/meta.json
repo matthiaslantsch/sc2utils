@@ -1,0 +1,10 @@
+{
+	"replay": "4.9.1.74456/4.9.1.74456.SC2Replay",
+	"sc2reader": "1.9.0",
+	"sc2readerCommit": "382b19359d9031ffbc1efe3cda211c8a91fabd09",
+	"streams": {
+		"summary": {
+			"file": "summary.json"
+		}
+	}
+}

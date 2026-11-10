@@ -1,0 +1,87 @@
+{
+	"version": "3.0.4.38996",
+	"baseBuild": 38996,
+	"gameloops": 8805,
+	"expansion": "LotV",
+	"speed": "Faster",
+	"region": "eu",
+	"map": {
+		"name": "Prion Terraces",
+		"hash": "24445c8d8c9851f95ea00188309df33af23edcef87e59d4e11bb8bf935a4081d",
+		"depotRegion": "eu"
+	},
+	"endTime": 1447245777,
+	"utcOffset": 0.0,
+	"realLength": 393,
+	"gameMode": "Ladder",
+	"teamSize": "1v1",
+	"realType": "1v1",
+	"isLadder": true,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "Haighstrom",
+			"clanTag": "HAIGH",
+			"toon": [
+				2,
+				1,
+				1743651
+			],
+			"pickedRace": "Zerg",
+			"playedRace": "Zerg",
+			"result": "Win",
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "Davidesja",
+			"clanTag": "",
+			"toon": [
+				2,
+				1,
+				5267264
+			],
+			"pickedRace": "Zerg",
+			"playedRace": "Zerg",
+			"result": "Loss",
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1
+			],
+			"result": "Win",
+			"lineup": "Z"
+		},
+		{
+			"number": 2,
+			"players": [
+				2
+			],
+			"result": "Loss",
+			"lineup": "Z"
+		}
+	]
+}

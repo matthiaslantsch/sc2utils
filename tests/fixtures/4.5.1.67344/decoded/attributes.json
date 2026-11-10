@@ -1,0 +1,3366 @@
+{
+	"source": 0,
+	"mapNamespace": 0,
+	"scopes": {
+		"1": {
+			"3007": [
+				{
+					"namespace": 999,
+					"attrid": 3007,
+					"value": "Part"
+				}
+			],
+			"500": [
+				{
+					"namespace": 999,
+					"attrid": 500,
+					"value": "Humn"
+				}
+			],
+			"3001": [
+				{
+					"namespace": 999,
+					"attrid": 3001,
+					"value": "Terr"
+				}
+			],
+			"3103": [
+				{
+					"namespace": 999,
+					"attrid": 3103,
+					"value": "AB00"
+				}
+			],
+			"3011": [
+				{
+					"namespace": 999,
+					"attrid": 3011,
+					"value": "   0"
+				}
+			],
+			"3108": [
+				{
+					"namespace": 999,
+					"attrid": 3108,
+					"value": "AB00"
+				}
+			],
+			"3168": [
+				{
+					"namespace": 999,
+					"attrid": 3168,
+					"value": "AB00"
+				}
+			],
+			"2012": [
+				{
+					"namespace": 999,
+					"attrid": 2012,
+					"value": "T1"
+				}
+			],
+			"2024": [
+				{
+					"namespace": 999,
+					"attrid": 2024,
+					"value": "T1"
+				}
+			],
+			"5005": [
+				{
+					"namespace": 999,
+					"attrid": 5005,
+					"value": "   0"
+				}
+			],
+			"3110": [
+				{
+					"namespace": 999,
+					"attrid": 3110,
+					"value": "AB00"
+				}
+			],
+			"3109": [
+				{
+					"namespace": 999,
+					"attrid": 3109,
+					"value": "AB00"
+				}
+			],
+			"3202": [
+				{
+					"namespace": 999,
+					"attrid": 3202,
+					"value": "AB00"
+				}
+			],
+			"3002": [
+				{
+					"namespace": 999,
+					"attrid": 3002,
+					"value": "tc01"
+				}
+			],
+			"2008": [
+				{
+					"namespace": 999,
+					"attrid": 2008,
+					"value": "T1"
+				}
+			],
+			"3198": [
+				{
+					"namespace": 999,
+					"attrid": 3198,
+					"value": "AB00"
+				}
+			],
+			"3169": [
+				{
+					"namespace": 999,
+					"attrid": 3169,
+					"value": "AB00"
+				}
+			],
+			"3175": [
+				{
+					"namespace": 999,
+					"attrid": 3175,
+					"value": "AB00"
+				}
+			],
+			"2004": [
+				{
+					"namespace": 999,
+					"attrid": 2004,
+					"value": "T1"
+				}
+			],
+			"3020": [
+				{
+					"namespace": 999,
+					"attrid": 3020,
+					"value": "no"
+				}
+			],
+			"3139": [
+				{
+					"namespace": 999,
+					"attrid": 3139,
+					"value": "AB00"
+				}
+			],
+			"2003": [
+				{
+					"namespace": 999,
+					"attrid": 2003,
+					"value": "T1"
+				}
+			],
+			"3199": [
+				{
+					"namespace": 999,
+					"attrid": 3199,
+					"value": "AB00"
+				}
+			],
+			"3204": [
+				{
+					"namespace": 999,
+					"attrid": 3204,
+					"value": "AB00"
+				}
+			],
+			"3016": [
+				{
+					"namespace": 999,
+					"attrid": 3016,
+					"value": "   0"
+				}
+			],
+			"3136": [
+				{
+					"namespace": 999,
+					"attrid": 3136,
+					"value": "AB00"
+				}
+			],
+			"3004": [
+				{
+					"namespace": 999,
+					"attrid": 3004,
+					"value": "Medi"
+				}
+			],
+			"2011": [
+				{
+					"namespace": 999,
+					"attrid": 2011,
+					"value": "T1"
+				}
+			],
+			"5002": [
+				{
+					"namespace": 999,
+					"attrid": 5002,
+					"value": "   0"
+				}
+			],
+			"3206": [
+				{
+					"namespace": 999,
+					"attrid": 3206,
+					"value": "AB00"
+				}
+			],
+			"4005": [
+				{
+					"namespace": 999,
+					"attrid": 4005,
+					"value": "no"
+				}
+			],
+			"3205": [
+				{
+					"namespace": 999,
+					"attrid": 3205,
+					"value": "AB00"
+				}
+			],
+			"3170": [
+				{
+					"namespace": 999,
+					"attrid": 3170,
+					"value": "AB00"
+				}
+			],
+			"2014": [
+				{
+					"namespace": 999,
+					"attrid": 2014,
+					"value": "T1"
+				}
+			],
+			"3137": [
+				{
+					"namespace": 999,
+					"attrid": 3137,
+					"value": "AB00"
+				}
+			],
+			"3166": [
+				{
+					"namespace": 999,
+					"attrid": 3166,
+					"value": "AB00"
+				}
+			],
+			"3143": [
+				{
+					"namespace": 999,
+					"attrid": 3143,
+					"value": "AB00"
+				}
+			],
+			"3107": [
+				{
+					"namespace": 999,
+					"attrid": 3107,
+					"value": "AB00"
+				}
+			],
+			"3019": [
+				{
+					"namespace": 999,
+					"attrid": 3019,
+					"value": "no"
+				}
+			],
+			"2023": [
+				{
+					"namespace": 999,
+					"attrid": 2023,
+					"value": "T1"
+				}
+			],
+			"3167": [
+				{
+					"namespace": 999,
+					"attrid": 3167,
+					"value": "AB00"
+				}
+			],
+			"3172": [
+				{
+					"namespace": 999,
+					"attrid": 3172,
+					"value": "AB00"
+				}
+			],
+			"2018": [
+				{
+					"namespace": 999,
+					"attrid": 2018,
+					"value": "T1"
+				}
+			],
+			"3104": [
+				{
+					"namespace": 999,
+					"attrid": 3104,
+					"value": "AB00"
+				}
+			],
+			"2007": [
+				{
+					"namespace": 999,
+					"attrid": 2007,
+					"value": "T1"
+				}
+			],
+			"3003": [
+				{
+					"namespace": 999,
+					"attrid": 3003,
+					"value": " 100"
+				}
+			],
+			"3013": [
+				{
+					"namespace": 999,
+					"attrid": 3013,
+					"value": ""
+				}
+			],
+			"2006": [
+				{
+					"namespace": 999,
+					"attrid": 2006,
+					"value": "T1"
+				}
+			],
+			"3174": [
+				{
+					"namespace": 999,
+					"attrid": 3174,
+					"value": "AB00"
+				}
+			],
+			"2002": [
+				{
+					"namespace": 999,
+					"attrid": 2002,
+					"value": "T1"
+				}
+			],
+			"3014": [
+				{
+					"namespace": 999,
+					"attrid": 3014,
+					"value": "   1"
+				}
+			],
+			"3173": [
+				{
+					"namespace": 999,
+					"attrid": 3173,
+					"value": "AB00"
+				}
+			],
+			"3138": [
+				{
+					"namespace": 999,
+					"attrid": 3138,
+					"value": "AB00"
+				}
+			],
+			"2013": [
+				{
+					"namespace": 999,
+					"attrid": 2013,
+					"value": "T1"
+				}
+			],
+			"3105": [
+				{
+					"namespace": 999,
+					"attrid": 3105,
+					"value": "AB00"
+				}
+			],
+			"3134": [
+				{
+					"namespace": 999,
+					"attrid": 3134,
+					"value": "AB00"
+				}
+			],
+			"3111": [
+				{
+					"namespace": 999,
+					"attrid": 3111,
+					"value": "AB00"
+				}
+			],
+			"3203": [
+				{
+					"namespace": 999,
+					"attrid": 3203,
+					"value": "AB00"
+				}
+			],
+			"5004": [
+				{
+					"namespace": 999,
+					"attrid": 5004,
+					"value": "   0"
+				}
+			],
+			"3135": [
+				{
+					"namespace": 999,
+					"attrid": 3135,
+					"value": "AB00"
+				}
+			],
+			"3140": [
+				{
+					"namespace": 999,
+					"attrid": 3140,
+					"value": "AB00"
+				}
+			],
+			"5003": [
+				{
+					"namespace": 999,
+					"attrid": 5003,
+					"value": "   0"
+				}
+			],
+			"3200": [
+				{
+					"namespace": 999,
+					"attrid": 3200,
+					"value": "AB00"
+				}
+			],
+			"2005": [
+				{
+					"namespace": 999,
+					"attrid": 2005,
+					"value": "T1"
+				}
+			],
+			"3008": [
+				{
+					"namespace": 999,
+					"attrid": 3008,
+					"value": "Obs"
+				}
+			],
+			"5001": [
+				{
+					"namespace": 999,
+					"attrid": 5001,
+					"value": "   0"
+				}
+			],
+			"2017": [
+				{
+					"namespace": 999,
+					"attrid": 2017,
+					"value": "T1"
+				}
+			],
+			"3142": [
+				{
+					"namespace": 999,
+					"attrid": 3142,
+					"value": "AB00"
+				}
+			],
+			"3017": [
+				{
+					"namespace": 999,
+					"attrid": 3017,
+					"value": "   0"
+				}
+			],
+			"3141": [
+				{
+					"namespace": 999,
+					"attrid": 3141,
+					"value": "AB00"
+				}
+			],
+			"3106": [
+				{
+					"namespace": 999,
+					"attrid": 3106,
+					"value": "AB00"
+				}
+			],
+			"4001": [
+				{
+					"namespace": 999,
+					"attrid": 4001,
+					"value": "no"
+				}
+			],
+			"3201": [
+				{
+					"namespace": 999,
+					"attrid": 3201,
+					"value": "AB00"
+				}
+			],
+			"3102": [
+				{
+					"namespace": 999,
+					"attrid": 3102,
+					"value": "AB00"
+				}
+			],
+			"3207": [
+				{
+					"namespace": 999,
+					"attrid": 3207,
+					"value": "AB00"
+				}
+			],
+			"5000": [
+				{
+					"namespace": 999,
+					"attrid": 5000,
+					"value": "   0"
+				}
+			],
+			"3171": [
+				{
+					"namespace": 999,
+					"attrid": 3171,
+					"value": "AB00"
+				}
+			],
+			"3012": [
+				{
+					"namespace": 999,
+					"attrid": 3012,
+					"value": "  22"
+				}
+			]
+		},
+		"2": {
+			"3007": [
+				{
+					"namespace": 999,
+					"attrid": 3007,
+					"value": "Part"
+				}
+			],
+			"500": [
+				{
+					"namespace": 999,
+					"attrid": 500,
+					"value": "Humn"
+				}
+			],
+			"3001": [
+				{
+					"namespace": 999,
+					"attrid": 3001,
+					"value": "Terr"
+				}
+			],
+			"3103": [
+				{
+					"namespace": 999,
+					"attrid": 3103,
+					"value": "AB00"
+				}
+			],
+			"3011": [
+				{
+					"namespace": 999,
+					"attrid": 3011,
+					"value": "   0"
+				}
+			],
+			"3108": [
+				{
+					"namespace": 999,
+					"attrid": 3108,
+					"value": "AB00"
+				}
+			],
+			"3168": [
+				{
+					"namespace": 999,
+					"attrid": 3168,
+					"value": "AB00"
+				}
+			],
+			"2012": [
+				{
+					"namespace": 999,
+					"attrid": 2012,
+					"value": "T2"
+				}
+			],
+			"2024": [
+				{
+					"namespace": 999,
+					"attrid": 2024,
+					"value": "T2"
+				}
+			],
+			"5005": [
+				{
+					"namespace": 999,
+					"attrid": 5005,
+					"value": "   0"
+				}
+			],
+			"3110": [
+				{
+					"namespace": 999,
+					"attrid": 3110,
+					"value": "AB00"
+				}
+			],
+			"3109": [
+				{
+					"namespace": 999,
+					"attrid": 3109,
+					"value": "AB00"
+				}
+			],
+			"3202": [
+				{
+					"namespace": 999,
+					"attrid": 3202,
+					"value": "AB00"
+				}
+			],
+			"3002": [
+				{
+					"namespace": 999,
+					"attrid": 3002,
+					"value": "tc02"
+				}
+			],
+			"2008": [
+				{
+					"namespace": 999,
+					"attrid": 2008,
+					"value": "T2"
+				}
+			],
+			"3198": [
+				{
+					"namespace": 999,
+					"attrid": 3198,
+					"value": "AB00"
+				}
+			],
+			"3169": [
+				{
+					"namespace": 999,
+					"attrid": 3169,
+					"value": "AB00"
+				}
+			],
+			"3175": [
+				{
+					"namespace": 999,
+					"attrid": 3175,
+					"value": "AB00"
+				}
+			],
+			"2004": [
+				{
+					"namespace": 999,
+					"attrid": 2004,
+					"value": "T1"
+				}
+			],
+			"3020": [
+				{
+					"namespace": 999,
+					"attrid": 3020,
+					"value": "no"
+				}
+			],
+			"3139": [
+				{
+					"namespace": 999,
+					"attrid": 3139,
+					"value": "AB00"
+				}
+			],
+			"2003": [
+				{
+					"namespace": 999,
+					"attrid": 2003,
+					"value": "T2"
+				}
+			],
+			"3199": [
+				{
+					"namespace": 999,
+					"attrid": 3199,
+					"value": "AB00"
+				}
+			],
+			"3204": [
+				{
+					"namespace": 999,
+					"attrid": 3204,
+					"value": "AB00"
+				}
+			],
+			"3016": [
+				{
+					"namespace": 999,
+					"attrid": 3016,
+					"value": "   0"
+				}
+			],
+			"3136": [
+				{
+					"namespace": 999,
+					"attrid": 3136,
+					"value": "AB00"
+				}
+			],
+			"3004": [
+				{
+					"namespace": 999,
+					"attrid": 3004,
+					"value": "Medi"
+				}
+			],
+			"2011": [
+				{
+					"namespace": 999,
+					"attrid": 2011,
+					"value": "T2"
+				}
+			],
+			"5002": [
+				{
+					"namespace": 999,
+					"attrid": 5002,
+					"value": "   0"
+				}
+			],
+			"3206": [
+				{
+					"namespace": 999,
+					"attrid": 3206,
+					"value": "AB00"
+				}
+			],
+			"4005": [
+				{
+					"namespace": 999,
+					"attrid": 4005,
+					"value": "no"
+				}
+			],
+			"3205": [
+				{
+					"namespace": 999,
+					"attrid": 3205,
+					"value": "AB00"
+				}
+			],
+			"3170": [
+				{
+					"namespace": 999,
+					"attrid": 3170,
+					"value": "AB00"
+				}
+			],
+			"2014": [
+				{
+					"namespace": 999,
+					"attrid": 2014,
+					"value": "T2"
+				}
+			],
+			"3137": [
+				{
+					"namespace": 999,
+					"attrid": 3137,
+					"value": "AB00"
+				}
+			],
+			"3166": [
+				{
+					"namespace": 999,
+					"attrid": 3166,
+					"value": "AB00"
+				}
+			],
+			"3143": [
+				{
+					"namespace": 999,
+					"attrid": 3143,
+					"value": "AB00"
+				}
+			],
+			"3107": [
+				{
+					"namespace": 999,
+					"attrid": 3107,
+					"value": "AB00"
+				}
+			],
+			"3019": [
+				{
+					"namespace": 999,
+					"attrid": 3019,
+					"value": "no"
+				}
+			],
+			"2023": [
+				{
+					"namespace": 999,
+					"attrid": 2023,
+					"value": "T2"
+				}
+			],
+			"3167": [
+				{
+					"namespace": 999,
+					"attrid": 3167,
+					"value": "AB00"
+				}
+			],
+			"3172": [
+				{
+					"namespace": 999,
+					"attrid": 3172,
+					"value": "AB00"
+				}
+			],
+			"2018": [
+				{
+					"namespace": 999,
+					"attrid": 2018,
+					"value": "T2"
+				}
+			],
+			"3104": [
+				{
+					"namespace": 999,
+					"attrid": 3104,
+					"value": "AB00"
+				}
+			],
+			"2007": [
+				{
+					"namespace": 999,
+					"attrid": 2007,
+					"value": "T2"
+				}
+			],
+			"3003": [
+				{
+					"namespace": 999,
+					"attrid": 3003,
+					"value": " 100"
+				}
+			],
+			"3013": [
+				{
+					"namespace": 999,
+					"attrid": 3013,
+					"value": ""
+				}
+			],
+			"2006": [
+				{
+					"namespace": 999,
+					"attrid": 2006,
+					"value": "T2"
+				}
+			],
+			"3174": [
+				{
+					"namespace": 999,
+					"attrid": 3174,
+					"value": "AB00"
+				}
+			],
+			"2002": [
+				{
+					"namespace": 999,
+					"attrid": 2002,
+					"value": "T2"
+				}
+			],
+			"3014": [
+				{
+					"namespace": 999,
+					"attrid": 3014,
+					"value": "   1"
+				}
+			],
+			"3173": [
+				{
+					"namespace": 999,
+					"attrid": 3173,
+					"value": "AB00"
+				}
+			],
+			"3138": [
+				{
+					"namespace": 999,
+					"attrid": 3138,
+					"value": "AB00"
+				}
+			],
+			"2013": [
+				{
+					"namespace": 999,
+					"attrid": 2013,
+					"value": "T2"
+				}
+			],
+			"3105": [
+				{
+					"namespace": 999,
+					"attrid": 3105,
+					"value": "AB00"
+				}
+			],
+			"3134": [
+				{
+					"namespace": 999,
+					"attrid": 3134,
+					"value": "AB00"
+				}
+			],
+			"3111": [
+				{
+					"namespace": 999,
+					"attrid": 3111,
+					"value": "AB00"
+				}
+			],
+			"3203": [
+				{
+					"namespace": 999,
+					"attrid": 3203,
+					"value": "AB00"
+				}
+			],
+			"5004": [
+				{
+					"namespace": 999,
+					"attrid": 5004,
+					"value": "   0"
+				}
+			],
+			"3135": [
+				{
+					"namespace": 999,
+					"attrid": 3135,
+					"value": "AB00"
+				}
+			],
+			"3140": [
+				{
+					"namespace": 999,
+					"attrid": 3140,
+					"value": "AB00"
+				}
+			],
+			"5003": [
+				{
+					"namespace": 999,
+					"attrid": 5003,
+					"value": "   0"
+				}
+			],
+			"3200": [
+				{
+					"namespace": 999,
+					"attrid": 3200,
+					"value": "AB00"
+				}
+			],
+			"2005": [
+				{
+					"namespace": 999,
+					"attrid": 2005,
+					"value": "T2"
+				}
+			],
+			"3008": [
+				{
+					"namespace": 999,
+					"attrid": 3008,
+					"value": "Obs"
+				}
+			],
+			"5001": [
+				{
+					"namespace": 999,
+					"attrid": 5001,
+					"value": "   0"
+				}
+			],
+			"2017": [
+				{
+					"namespace": 999,
+					"attrid": 2017,
+					"value": "T2"
+				}
+			],
+			"3142": [
+				{
+					"namespace": 999,
+					"attrid": 3142,
+					"value": "AB00"
+				}
+			],
+			"3017": [
+				{
+					"namespace": 999,
+					"attrid": 3017,
+					"value": "   0"
+				}
+			],
+			"3141": [
+				{
+					"namespace": 999,
+					"attrid": 3141,
+					"value": "AB00"
+				}
+			],
+			"3106": [
+				{
+					"namespace": 999,
+					"attrid": 3106,
+					"value": "AB00"
+				}
+			],
+			"4001": [
+				{
+					"namespace": 999,
+					"attrid": 4001,
+					"value": "no"
+				}
+			],
+			"3201": [
+				{
+					"namespace": 999,
+					"attrid": 3201,
+					"value": "AB00"
+				}
+			],
+			"3102": [
+				{
+					"namespace": 999,
+					"attrid": 3102,
+					"value": "AB00"
+				}
+			],
+			"3207": [
+				{
+					"namespace": 999,
+					"attrid": 3207,
+					"value": "AB00"
+				}
+			],
+			"5000": [
+				{
+					"namespace": 999,
+					"attrid": 5000,
+					"value": "   0"
+				}
+			],
+			"3171": [
+				{
+					"namespace": 999,
+					"attrid": 3171,
+					"value": "AB00"
+				}
+			],
+			"3012": [
+				{
+					"namespace": 999,
+					"attrid": 3012,
+					"value": "  22"
+				}
+			]
+		},
+		"3": {
+			"3007": [
+				{
+					"namespace": 999,
+					"attrid": 3007,
+					"value": "Part"
+				}
+			],
+			"500": [
+				{
+					"namespace": 999,
+					"attrid": 500,
+					"value": "Humn"
+				}
+			],
+			"3001": [
+				{
+					"namespace": 999,
+					"attrid": 3001,
+					"value": "Terr"
+				}
+			],
+			"3103": [
+				{
+					"namespace": 999,
+					"attrid": 3103,
+					"value": "AB00"
+				}
+			],
+			"3011": [
+				{
+					"namespace": 999,
+					"attrid": 3011,
+					"value": "   0"
+				}
+			],
+			"3108": [
+				{
+					"namespace": 999,
+					"attrid": 3108,
+					"value": "AB00"
+				}
+			],
+			"3168": [
+				{
+					"namespace": 999,
+					"attrid": 3168,
+					"value": "AB00"
+				}
+			],
+			"2012": [
+				{
+					"namespace": 999,
+					"attrid": 2012,
+					"value": "T3"
+				}
+			],
+			"2024": [
+				{
+					"namespace": 999,
+					"attrid": 2024,
+					"value": "T3"
+				}
+			],
+			"5005": [
+				{
+					"namespace": 999,
+					"attrid": 5005,
+					"value": "   0"
+				}
+			],
+			"3110": [
+				{
+					"namespace": 999,
+					"attrid": 3110,
+					"value": "AB00"
+				}
+			],
+			"3109": [
+				{
+					"namespace": 999,
+					"attrid": 3109,
+					"value": "AB00"
+				}
+			],
+			"3202": [
+				{
+					"namespace": 999,
+					"attrid": 3202,
+					"value": "AB00"
+				}
+			],
+			"3002": [
+				{
+					"namespace": 999,
+					"attrid": 3002,
+					"value": "tc03"
+				}
+			],
+			"2008": [
+				{
+					"namespace": 999,
+					"attrid": 2008,
+					"value": "T1"
+				}
+			],
+			"3198": [
+				{
+					"namespace": 999,
+					"attrid": 3198,
+					"value": "AB00"
+				}
+			],
+			"3169": [
+				{
+					"namespace": 999,
+					"attrid": 3169,
+					"value": "AB00"
+				}
+			],
+			"3175": [
+				{
+					"namespace": 999,
+					"attrid": 3175,
+					"value": "AB00"
+				}
+			],
+			"2004": [
+				{
+					"namespace": 999,
+					"attrid": 2004,
+					"value": "T1"
+				}
+			],
+			"3020": [
+				{
+					"namespace": 999,
+					"attrid": 3020,
+					"value": "no"
+				}
+			],
+			"3139": [
+				{
+					"namespace": 999,
+					"attrid": 3139,
+					"value": "AB00"
+				}
+			],
+			"2003": [
+				{
+					"namespace": 999,
+					"attrid": 2003,
+					"value": "T1"
+				}
+			],
+			"3199": [
+				{
+					"namespace": 999,
+					"attrid": 3199,
+					"value": "AB00"
+				}
+			],
+			"3204": [
+				{
+					"namespace": 999,
+					"attrid": 3204,
+					"value": "AB00"
+				}
+			],
+			"3016": [
+				{
+					"namespace": 999,
+					"attrid": 3016,
+					"value": "   0"
+				}
+			],
+			"3136": [
+				{
+					"namespace": 999,
+					"attrid": 3136,
+					"value": "AB00"
+				}
+			],
+			"3004": [
+				{
+					"namespace": 999,
+					"attrid": 3004,
+					"value": "Medi"
+				}
+			],
+			"2011": [
+				{
+					"namespace": 999,
+					"attrid": 2011,
+					"value": "T1"
+				}
+			],
+			"5002": [
+				{
+					"namespace": 999,
+					"attrid": 5002,
+					"value": "   0"
+				}
+			],
+			"3206": [
+				{
+					"namespace": 999,
+					"attrid": 3206,
+					"value": "AB00"
+				}
+			],
+			"4005": [
+				{
+					"namespace": 999,
+					"attrid": 4005,
+					"value": "no"
+				}
+			],
+			"3205": [
+				{
+					"namespace": 999,
+					"attrid": 3205,
+					"value": "AB00"
+				}
+			],
+			"3170": [
+				{
+					"namespace": 999,
+					"attrid": 3170,
+					"value": "AB00"
+				}
+			],
+			"2014": [
+				{
+					"namespace": 999,
+					"attrid": 2014,
+					"value": "T3"
+				}
+			],
+			"3137": [
+				{
+					"namespace": 999,
+					"attrid": 3137,
+					"value": "AB00"
+				}
+			],
+			"3166": [
+				{
+					"namespace": 999,
+					"attrid": 3166,
+					"value": "AB00"
+				}
+			],
+			"3143": [
+				{
+					"namespace": 999,
+					"attrid": 3143,
+					"value": "AB00"
+				}
+			],
+			"3107": [
+				{
+					"namespace": 999,
+					"attrid": 3107,
+					"value": "AB00"
+				}
+			],
+			"3019": [
+				{
+					"namespace": 999,
+					"attrid": 3019,
+					"value": "no"
+				}
+			],
+			"2023": [
+				{
+					"namespace": 999,
+					"attrid": 2023,
+					"value": "T3"
+				}
+			],
+			"3167": [
+				{
+					"namespace": 999,
+					"attrid": 3167,
+					"value": "AB00"
+				}
+			],
+			"3172": [
+				{
+					"namespace": 999,
+					"attrid": 3172,
+					"value": "AB00"
+				}
+			],
+			"2018": [
+				{
+					"namespace": 999,
+					"attrid": 2018,
+					"value": "T3"
+				}
+			],
+			"3104": [
+				{
+					"namespace": 999,
+					"attrid": 3104,
+					"value": "AB00"
+				}
+			],
+			"2007": [
+				{
+					"namespace": 999,
+					"attrid": 2007,
+					"value": "T1"
+				}
+			],
+			"3003": [
+				{
+					"namespace": 999,
+					"attrid": 3003,
+					"value": " 100"
+				}
+			],
+			"3013": [
+				{
+					"namespace": 999,
+					"attrid": 3013,
+					"value": ""
+				}
+			],
+			"2006": [
+				{
+					"namespace": 999,
+					"attrid": 2006,
+					"value": "T3"
+				}
+			],
+			"3174": [
+				{
+					"namespace": 999,
+					"attrid": 3174,
+					"value": "AB00"
+				}
+			],
+			"2002": [
+				{
+					"namespace": 999,
+					"attrid": 2002,
+					"value": "T1"
+				}
+			],
+			"3014": [
+				{
+					"namespace": 999,
+					"attrid": 3014,
+					"value": "   1"
+				}
+			],
+			"3173": [
+				{
+					"namespace": 999,
+					"attrid": 3173,
+					"value": "AB00"
+				}
+			],
+			"3138": [
+				{
+					"namespace": 999,
+					"attrid": 3138,
+					"value": "AB00"
+				}
+			],
+			"2013": [
+				{
+					"namespace": 999,
+					"attrid": 2013,
+					"value": "T3"
+				}
+			],
+			"3105": [
+				{
+					"namespace": 999,
+					"attrid": 3105,
+					"value": "AB00"
+				}
+			],
+			"3134": [
+				{
+					"namespace": 999,
+					"attrid": 3134,
+					"value": "AB00"
+				}
+			],
+			"3111": [
+				{
+					"namespace": 999,
+					"attrid": 3111,
+					"value": "AB00"
+				}
+			],
+			"3203": [
+				{
+					"namespace": 999,
+					"attrid": 3203,
+					"value": "AB00"
+				}
+			],
+			"5004": [
+				{
+					"namespace": 999,
+					"attrid": 5004,
+					"value": "   0"
+				}
+			],
+			"3135": [
+				{
+					"namespace": 999,
+					"attrid": 3135,
+					"value": "AB00"
+				}
+			],
+			"3140": [
+				{
+					"namespace": 999,
+					"attrid": 3140,
+					"value": "AB00"
+				}
+			],
+			"5003": [
+				{
+					"namespace": 999,
+					"attrid": 5003,
+					"value": "   0"
+				}
+			],
+			"3200": [
+				{
+					"namespace": 999,
+					"attrid": 3200,
+					"value": "AB00"
+				}
+			],
+			"2005": [
+				{
+					"namespace": 999,
+					"attrid": 2005,
+					"value": "T1"
+				}
+			],
+			"3008": [
+				{
+					"namespace": 999,
+					"attrid": 3008,
+					"value": "Obs"
+				}
+			],
+			"5001": [
+				{
+					"namespace": 999,
+					"attrid": 5001,
+					"value": "   0"
+				}
+			],
+			"2017": [
+				{
+					"namespace": 999,
+					"attrid": 2017,
+					"value": "T3"
+				}
+			],
+			"3142": [
+				{
+					"namespace": 999,
+					"attrid": 3142,
+					"value": "AB00"
+				}
+			],
+			"3017": [
+				{
+					"namespace": 999,
+					"attrid": 3017,
+					"value": "   0"
+				}
+			],
+			"3141": [
+				{
+					"namespace": 999,
+					"attrid": 3141,
+					"value": "AB00"
+				}
+			],
+			"3106": [
+				{
+					"namespace": 999,
+					"attrid": 3106,
+					"value": "AB00"
+				}
+			],
+			"4001": [
+				{
+					"namespace": 999,
+					"attrid": 4001,
+					"value": "no"
+				}
+			],
+			"3201": [
+				{
+					"namespace": 999,
+					"attrid": 3201,
+					"value": "AB00"
+				}
+			],
+			"3102": [
+				{
+					"namespace": 999,
+					"attrid": 3102,
+					"value": "AB00"
+				}
+			],
+			"3207": [
+				{
+					"namespace": 999,
+					"attrid": 3207,
+					"value": "AB00"
+				}
+			],
+			"5000": [
+				{
+					"namespace": 999,
+					"attrid": 5000,
+					"value": "   0"
+				}
+			],
+			"3171": [
+				{
+					"namespace": 999,
+					"attrid": 3171,
+					"value": "AB00"
+				}
+			],
+			"3012": [
+				{
+					"namespace": 999,
+					"attrid": 3012,
+					"value": "  22"
+				}
+			]
+		},
+		"4": {
+			"3007": [
+				{
+					"namespace": 999,
+					"attrid": 3007,
+					"value": "Part"
+				}
+			],
+			"500": [
+				{
+					"namespace": 999,
+					"attrid": 500,
+					"value": "Humn"
+				}
+			],
+			"3001": [
+				{
+					"namespace": 999,
+					"attrid": 3001,
+					"value": "Prot"
+				}
+			],
+			"3103": [
+				{
+					"namespace": 999,
+					"attrid": 3103,
+					"value": "AB00"
+				}
+			],
+			"3011": [
+				{
+					"namespace": 999,
+					"attrid": 3011,
+					"value": "   0"
+				}
+			],
+			"3108": [
+				{
+					"namespace": 999,
+					"attrid": 3108,
+					"value": "AB00"
+				}
+			],
+			"3168": [
+				{
+					"namespace": 999,
+					"attrid": 3168,
+					"value": "AB00"
+				}
+			],
+			"2012": [
+				{
+					"namespace": 999,
+					"attrid": 2012,
+					"value": "T1"
+				}
+			],
+			"2024": [
+				{
+					"namespace": 999,
+					"attrid": 2024,
+					"value": "T4"
+				}
+			],
+			"5005": [
+				{
+					"namespace": 999,
+					"attrid": 5005,
+					"value": "   0"
+				}
+			],
+			"3110": [
+				{
+					"namespace": 999,
+					"attrid": 3110,
+					"value": "AB00"
+				}
+			],
+			"3109": [
+				{
+					"namespace": 999,
+					"attrid": 3109,
+					"value": "AB00"
+				}
+			],
+			"3202": [
+				{
+					"namespace": 999,
+					"attrid": 3202,
+					"value": "AB00"
+				}
+			],
+			"3002": [
+				{
+					"namespace": 999,
+					"attrid": 3002,
+					"value": "tc04"
+				}
+			],
+			"2008": [
+				{
+					"namespace": 999,
+					"attrid": 2008,
+					"value": "T2"
+				}
+			],
+			"3198": [
+				{
+					"namespace": 999,
+					"attrid": 3198,
+					"value": "AB00"
+				}
+			],
+			"3169": [
+				{
+					"namespace": 999,
+					"attrid": 3169,
+					"value": "AB00"
+				}
+			],
+			"3175": [
+				{
+					"namespace": 999,
+					"attrid": 3175,
+					"value": "AB00"
+				}
+			],
+			"2004": [
+				{
+					"namespace": 999,
+					"attrid": 2004,
+					"value": "T2"
+				}
+			],
+			"3020": [
+				{
+					"namespace": 999,
+					"attrid": 3020,
+					"value": "no"
+				}
+			],
+			"3139": [
+				{
+					"namespace": 999,
+					"attrid": 3139,
+					"value": "AB00"
+				}
+			],
+			"2003": [
+				{
+					"namespace": 999,
+					"attrid": 2003,
+					"value": "T2"
+				}
+			],
+			"3199": [
+				{
+					"namespace": 999,
+					"attrid": 3199,
+					"value": "AB00"
+				}
+			],
+			"3204": [
+				{
+					"namespace": 999,
+					"attrid": 3204,
+					"value": "AB00"
+				}
+			],
+			"3016": [
+				{
+					"namespace": 999,
+					"attrid": 3016,
+					"value": "   0"
+				}
+			],
+			"3136": [
+				{
+					"namespace": 999,
+					"attrid": 3136,
+					"value": "AB00"
+				}
+			],
+			"3004": [
+				{
+					"namespace": 999,
+					"attrid": 3004,
+					"value": "Medi"
+				}
+			],
+			"2011": [
+				{
+					"namespace": 999,
+					"attrid": 2011,
+					"value": "T2"
+				}
+			],
+			"5002": [
+				{
+					"namespace": 999,
+					"attrid": 5002,
+					"value": "   0"
+				}
+			],
+			"3206": [
+				{
+					"namespace": 999,
+					"attrid": 3206,
+					"value": "AB00"
+				}
+			],
+			"4005": [
+				{
+					"namespace": 999,
+					"attrid": 4005,
+					"value": "no"
+				}
+			],
+			"3205": [
+				{
+					"namespace": 999,
+					"attrid": 3205,
+					"value": "AB00"
+				}
+			],
+			"3170": [
+				{
+					"namespace": 999,
+					"attrid": 3170,
+					"value": "AB00"
+				}
+			],
+			"2014": [
+				{
+					"namespace": 999,
+					"attrid": 2014,
+					"value": "T4"
+				}
+			],
+			"3137": [
+				{
+					"namespace": 999,
+					"attrid": 3137,
+					"value": "AB00"
+				}
+			],
+			"3166": [
+				{
+					"namespace": 999,
+					"attrid": 3166,
+					"value": "AB00"
+				}
+			],
+			"3143": [
+				{
+					"namespace": 999,
+					"attrid": 3143,
+					"value": "AB00"
+				}
+			],
+			"3107": [
+				{
+					"namespace": 999,
+					"attrid": 3107,
+					"value": "AB00"
+				}
+			],
+			"3019": [
+				{
+					"namespace": 999,
+					"attrid": 3019,
+					"value": "no"
+				}
+			],
+			"2023": [
+				{
+					"namespace": 999,
+					"attrid": 2023,
+					"value": "T4"
+				}
+			],
+			"3167": [
+				{
+					"namespace": 999,
+					"attrid": 3167,
+					"value": "AB00"
+				}
+			],
+			"3172": [
+				{
+					"namespace": 999,
+					"attrid": 3172,
+					"value": "AB00"
+				}
+			],
+			"2018": [
+				{
+					"namespace": 999,
+					"attrid": 2018,
+					"value": "T4"
+				}
+			],
+			"3104": [
+				{
+					"namespace": 999,
+					"attrid": 3104,
+					"value": "AB00"
+				}
+			],
+			"2007": [
+				{
+					"namespace": 999,
+					"attrid": 2007,
+					"value": "T2"
+				}
+			],
+			"3003": [
+				{
+					"namespace": 999,
+					"attrid": 3003,
+					"value": " 100"
+				}
+			],
+			"3013": [
+				{
+					"namespace": 999,
+					"attrid": 3013,
+					"value": ""
+				}
+			],
+			"2006": [
+				{
+					"namespace": 999,
+					"attrid": 2006,
+					"value": "T4"
+				}
+			],
+			"3174": [
+				{
+					"namespace": 999,
+					"attrid": 3174,
+					"value": "AB00"
+				}
+			],
+			"2002": [
+				{
+					"namespace": 999,
+					"attrid": 2002,
+					"value": "T2"
+				}
+			],
+			"3014": [
+				{
+					"namespace": 999,
+					"attrid": 3014,
+					"value": "   1"
+				}
+			],
+			"3173": [
+				{
+					"namespace": 999,
+					"attrid": 3173,
+					"value": "AB00"
+				}
+			],
+			"3138": [
+				{
+					"namespace": 999,
+					"attrid": 3138,
+					"value": "AB00"
+				}
+			],
+			"2013": [
+				{
+					"namespace": 999,
+					"attrid": 2013,
+					"value": "T4"
+				}
+			],
+			"3105": [
+				{
+					"namespace": 999,
+					"attrid": 3105,
+					"value": "AB00"
+				}
+			],
+			"3134": [
+				{
+					"namespace": 999,
+					"attrid": 3134,
+					"value": "AB00"
+				}
+			],
+			"3111": [
+				{
+					"namespace": 999,
+					"attrid": 3111,
+					"value": "AB00"
+				}
+			],
+			"3203": [
+				{
+					"namespace": 999,
+					"attrid": 3203,
+					"value": "AB00"
+				}
+			],
+			"5004": [
+				{
+					"namespace": 999,
+					"attrid": 5004,
+					"value": "   0"
+				}
+			],
+			"3135": [
+				{
+					"namespace": 999,
+					"attrid": 3135,
+					"value": "AB00"
+				}
+			],
+			"3140": [
+				{
+					"namespace": 999,
+					"attrid": 3140,
+					"value": "AB00"
+				}
+			],
+			"5003": [
+				{
+					"namespace": 999,
+					"attrid": 5003,
+					"value": "   0"
+				}
+			],
+			"3200": [
+				{
+					"namespace": 999,
+					"attrid": 3200,
+					"value": "AB00"
+				}
+			],
+			"2005": [
+				{
+					"namespace": 999,
+					"attrid": 2005,
+					"value": "T2"
+				}
+			],
+			"3008": [
+				{
+					"namespace": 999,
+					"attrid": 3008,
+					"value": "Obs"
+				}
+			],
+			"5001": [
+				{
+					"namespace": 999,
+					"attrid": 5001,
+					"value": "   0"
+				}
+			],
+			"2017": [
+				{
+					"namespace": 999,
+					"attrid": 2017,
+					"value": "T4"
+				}
+			],
+			"3142": [
+				{
+					"namespace": 999,
+					"attrid": 3142,
+					"value": "AB00"
+				}
+			],
+			"3017": [
+				{
+					"namespace": 999,
+					"attrid": 3017,
+					"value": "   0"
+				}
+			],
+			"3141": [
+				{
+					"namespace": 999,
+					"attrid": 3141,
+					"value": "AB00"
+				}
+			],
+			"3106": [
+				{
+					"namespace": 999,
+					"attrid": 3106,
+					"value": "AB00"
+				}
+			],
+			"4001": [
+				{
+					"namespace": 999,
+					"attrid": 4001,
+					"value": "no"
+				}
+			],
+			"3201": [
+				{
+					"namespace": 999,
+					"attrid": 3201,
+					"value": "AB00"
+				}
+			],
+			"3102": [
+				{
+					"namespace": 999,
+					"attrid": 3102,
+					"value": "AB00"
+				}
+			],
+			"3207": [
+				{
+					"namespace": 999,
+					"attrid": 3207,
+					"value": "AB00"
+				}
+			],
+			"5000": [
+				{
+					"namespace": 999,
+					"attrid": 5000,
+					"value": "   0"
+				}
+			],
+			"3171": [
+				{
+					"namespace": 999,
+					"attrid": 3171,
+					"value": "AB00"
+				}
+			],
+			"3012": [
+				{
+					"namespace": 999,
+					"attrid": 3012,
+					"value": "  22"
+				}
+			]
+		},
+		"5": {
+			"3007": [
+				{
+					"namespace": 999,
+					"attrid": 3007,
+					"value": "Part"
+				}
+			],
+			"500": [
+				{
+					"namespace": 999,
+					"attrid": 500,
+					"value": "Humn"
+				}
+			],
+			"3001": [
+				{
+					"namespace": 999,
+					"attrid": 3001,
+					"value": "Zerg"
+				}
+			],
+			"3103": [
+				{
+					"namespace": 999,
+					"attrid": 3103,
+					"value": "AB00"
+				}
+			],
+			"3011": [
+				{
+					"namespace": 999,
+					"attrid": 3011,
+					"value": "   0"
+				}
+			],
+			"3108": [
+				{
+					"namespace": 999,
+					"attrid": 3108,
+					"value": "AB00"
+				}
+			],
+			"3168": [
+				{
+					"namespace": 999,
+					"attrid": 3168,
+					"value": "AB00"
+				}
+			],
+			"2012": [
+				{
+					"namespace": 999,
+					"attrid": 2012,
+					"value": "T2"
+				}
+			],
+			"2024": [
+				{
+					"namespace": 999,
+					"attrid": 2024,
+					"value": "T5"
+				}
+			],
+			"5005": [
+				{
+					"namespace": 999,
+					"attrid": 5005,
+					"value": "   0"
+				}
+			],
+			"3110": [
+				{
+					"namespace": 999,
+					"attrid": 3110,
+					"value": "AB00"
+				}
+			],
+			"3109": [
+				{
+					"namespace": 999,
+					"attrid": 3109,
+					"value": "AB00"
+				}
+			],
+			"3202": [
+				{
+					"namespace": 999,
+					"attrid": 3202,
+					"value": "AB00"
+				}
+			],
+			"3002": [
+				{
+					"namespace": 999,
+					"attrid": 3002,
+					"value": "tc05"
+				}
+			],
+			"2008": [
+				{
+					"namespace": 999,
+					"attrid": 2008,
+					"value": "T1"
+				}
+			],
+			"3198": [
+				{
+					"namespace": 999,
+					"attrid": 3198,
+					"value": "AB00"
+				}
+			],
+			"3169": [
+				{
+					"namespace": 999,
+					"attrid": 3169,
+					"value": "AB00"
+				}
+			],
+			"3175": [
+				{
+					"namespace": 999,
+					"attrid": 3175,
+					"value": "AB00"
+				}
+			],
+			"2004": [
+				{
+					"namespace": 999,
+					"attrid": 2004,
+					"value": "T2"
+				}
+			],
+			"3020": [
+				{
+					"namespace": 999,
+					"attrid": 3020,
+					"value": "no"
+				}
+			],
+			"3139": [
+				{
+					"namespace": 999,
+					"attrid": 3139,
+					"value": "AB00"
+				}
+			],
+			"2003": [
+				{
+					"namespace": 999,
+					"attrid": 2003,
+					"value": "T1"
+				}
+			],
+			"3199": [
+				{
+					"namespace": 999,
+					"attrid": 3199,
+					"value": "AB00"
+				}
+			],
+			"3204": [
+				{
+					"namespace": 999,
+					"attrid": 3204,
+					"value": "AB00"
+				}
+			],
+			"3016": [
+				{
+					"namespace": 999,
+					"attrid": 3016,
+					"value": "   0"
+				}
+			],
+			"3136": [
+				{
+					"namespace": 999,
+					"attrid": 3136,
+					"value": "AB00"
+				}
+			],
+			"3004": [
+				{
+					"namespace": 999,
+					"attrid": 3004,
+					"value": "Medi"
+				}
+			],
+			"2011": [
+				{
+					"namespace": 999,
+					"attrid": 2011,
+					"value": "T1"
+				}
+			],
+			"5002": [
+				{
+					"namespace": 999,
+					"attrid": 5002,
+					"value": "   0"
+				}
+			],
+			"3206": [
+				{
+					"namespace": 999,
+					"attrid": 3206,
+					"value": "AB00"
+				}
+			],
+			"4005": [
+				{
+					"namespace": 999,
+					"attrid": 4005,
+					"value": "no"
+				}
+			],
+			"3205": [
+				{
+					"namespace": 999,
+					"attrid": 3205,
+					"value": "AB00"
+				}
+			],
+			"3170": [
+				{
+					"namespace": 999,
+					"attrid": 3170,
+					"value": "AB00"
+				}
+			],
+			"2014": [
+				{
+					"namespace": 999,
+					"attrid": 2014,
+					"value": "T5"
+				}
+			],
+			"3137": [
+				{
+					"namespace": 999,
+					"attrid": 3137,
+					"value": "AB00"
+				}
+			],
+			"3166": [
+				{
+					"namespace": 999,
+					"attrid": 3166,
+					"value": "AB00"
+				}
+			],
+			"3143": [
+				{
+					"namespace": 999,
+					"attrid": 3143,
+					"value": "AB00"
+				}
+			],
+			"3107": [
+				{
+					"namespace": 999,
+					"attrid": 3107,
+					"value": "AB00"
+				}
+			],
+			"3019": [
+				{
+					"namespace": 999,
+					"attrid": 3019,
+					"value": "no"
+				}
+			],
+			"2023": [
+				{
+					"namespace": 999,
+					"attrid": 2023,
+					"value": "T5"
+				}
+			],
+			"3167": [
+				{
+					"namespace": 999,
+					"attrid": 3167,
+					"value": "AB00"
+				}
+			],
+			"3172": [
+				{
+					"namespace": 999,
+					"attrid": 3172,
+					"value": "AB00"
+				}
+			],
+			"2018": [
+				{
+					"namespace": 999,
+					"attrid": 2018,
+					"value": "T5"
+				}
+			],
+			"3104": [
+				{
+					"namespace": 999,
+					"attrid": 3104,
+					"value": "AB00"
+				}
+			],
+			"2007": [
+				{
+					"namespace": 999,
+					"attrid": 2007,
+					"value": "T1"
+				}
+			],
+			"3003": [
+				{
+					"namespace": 999,
+					"attrid": 3003,
+					"value": " 100"
+				}
+			],
+			"3013": [
+				{
+					"namespace": 999,
+					"attrid": 3013,
+					"value": ""
+				}
+			],
+			"2006": [
+				{
+					"namespace": 999,
+					"attrid": 2006,
+					"value": "T5"
+				}
+			],
+			"3174": [
+				{
+					"namespace": 999,
+					"attrid": 3174,
+					"value": "AB00"
+				}
+			],
+			"2002": [
+				{
+					"namespace": 999,
+					"attrid": 2002,
+					"value": "T1"
+				}
+			],
+			"3014": [
+				{
+					"namespace": 999,
+					"attrid": 3014,
+					"value": "   1"
+				}
+			],
+			"3173": [
+				{
+					"namespace": 999,
+					"attrid": 3173,
+					"value": "AB00"
+				}
+			],
+			"3138": [
+				{
+					"namespace": 999,
+					"attrid": 3138,
+					"value": "AB00"
+				}
+			],
+			"2013": [
+				{
+					"namespace": 999,
+					"attrid": 2013,
+					"value": "T1"
+				}
+			],
+			"3105": [
+				{
+					"namespace": 999,
+					"attrid": 3105,
+					"value": "AB00"
+				}
+			],
+			"3134": [
+				{
+					"namespace": 999,
+					"attrid": 3134,
+					"value": "AB00"
+				}
+			],
+			"3111": [
+				{
+					"namespace": 999,
+					"attrid": 3111,
+					"value": "AB00"
+				}
+			],
+			"3203": [
+				{
+					"namespace": 999,
+					"attrid": 3203,
+					"value": "AB00"
+				}
+			],
+			"5004": [
+				{
+					"namespace": 999,
+					"attrid": 5004,
+					"value": "   0"
+				}
+			],
+			"3135": [
+				{
+					"namespace": 999,
+					"attrid": 3135,
+					"value": "AB00"
+				}
+			],
+			"3140": [
+				{
+					"namespace": 999,
+					"attrid": 3140,
+					"value": "AB00"
+				}
+			],
+			"5003": [
+				{
+					"namespace": 999,
+					"attrid": 5003,
+					"value": "   0"
+				}
+			],
+			"3200": [
+				{
+					"namespace": 999,
+					"attrid": 3200,
+					"value": "AB00"
+				}
+			],
+			"2005": [
+				{
+					"namespace": 999,
+					"attrid": 2005,
+					"value": "T1"
+				}
+			],
+			"3008": [
+				{
+					"namespace": 999,
+					"attrid": 3008,
+					"value": "Obs"
+				}
+			],
+			"5001": [
+				{
+					"namespace": 999,
+					"attrid": 5001,
+					"value": "   0"
+				}
+			],
+			"2017": [
+				{
+					"namespace": 999,
+					"attrid": 2017,
+					"value": "T5"
+				}
+			],
+			"3142": [
+				{
+					"namespace": 999,
+					"attrid": 3142,
+					"value": "AB00"
+				}
+			],
+			"3017": [
+				{
+					"namespace": 999,
+					"attrid": 3017,
+					"value": "   0"
+				}
+			],
+			"3141": [
+				{
+					"namespace": 999,
+					"attrid": 3141,
+					"value": "AB00"
+				}
+			],
+			"3106": [
+				{
+					"namespace": 999,
+					"attrid": 3106,
+					"value": "AB00"
+				}
+			],
+			"4001": [
+				{
+					"namespace": 999,
+					"attrid": 4001,
+					"value": "no"
+				}
+			],
+			"3201": [
+				{
+					"namespace": 999,
+					"attrid": 3201,
+					"value": "AB00"
+				}
+			],
+			"3102": [
+				{
+					"namespace": 999,
+					"attrid": 3102,
+					"value": "AB00"
+				}
+			],
+			"3207": [
+				{
+					"namespace": 999,
+					"attrid": 3207,
+					"value": "AB00"
+				}
+			],
+			"5000": [
+				{
+					"namespace": 999,
+					"attrid": 5000,
+					"value": "   0"
+				}
+			],
+			"3171": [
+				{
+					"namespace": 999,
+					"attrid": 3171,
+					"value": "AB00"
+				}
+			],
+			"3012": [
+				{
+					"namespace": 999,
+					"attrid": 3012,
+					"value": "  22"
+				}
+			]
+		},
+		"6": {
+			"3007": [
+				{
+					"namespace": 999,
+					"attrid": 3007,
+					"value": "Part"
+				}
+			],
+			"500": [
+				{
+					"namespace": 999,
+					"attrid": 500,
+					"value": "Humn"
+				}
+			],
+			"3001": [
+				{
+					"namespace": 999,
+					"attrid": 3001,
+					"value": "Prot"
+				}
+			],
+			"3103": [
+				{
+					"namespace": 999,
+					"attrid": 3103,
+					"value": "AB00"
+				}
+			],
+			"3011": [
+				{
+					"namespace": 999,
+					"attrid": 3011,
+					"value": "   0"
+				}
+			],
+			"3108": [
+				{
+					"namespace": 999,
+					"attrid": 3108,
+					"value": "AB00"
+				}
+			],
+			"3168": [
+				{
+					"namespace": 999,
+					"attrid": 3168,
+					"value": "AB00"
+				}
+			],
+			"2012": [
+				{
+					"namespace": 999,
+					"attrid": 2012,
+					"value": "T3"
+				}
+			],
+			"2024": [
+				{
+					"namespace": 999,
+					"attrid": 2024,
+					"value": "T6"
+				}
+			],
+			"5005": [
+				{
+					"namespace": 999,
+					"attrid": 5005,
+					"value": "   0"
+				}
+			],
+			"3110": [
+				{
+					"namespace": 999,
+					"attrid": 3110,
+					"value": "AB00"
+				}
+			],
+			"3109": [
+				{
+					"namespace": 999,
+					"attrid": 3109,
+					"value": "AB00"
+				}
+			],
+			"3202": [
+				{
+					"namespace": 999,
+					"attrid": 3202,
+					"value": "AB00"
+				}
+			],
+			"3002": [
+				{
+					"namespace": 999,
+					"attrid": 3002,
+					"value": "tc06"
+				}
+			],
+			"2008": [
+				{
+					"namespace": 999,
+					"attrid": 2008,
+					"value": "T2"
+				}
+			],
+			"3198": [
+				{
+					"namespace": 999,
+					"attrid": 3198,
+					"value": "AB00"
+				}
+			],
+			"3169": [
+				{
+					"namespace": 999,
+					"attrid": 3169,
+					"value": "AB00"
+				}
+			],
+			"3175": [
+				{
+					"namespace": 999,
+					"attrid": 3175,
+					"value": "AB00"
+				}
+			],
+			"2004": [
+				{
+					"namespace": 999,
+					"attrid": 2004,
+					"value": "T2"
+				}
+			],
+			"3020": [
+				{
+					"namespace": 999,
+					"attrid": 3020,
+					"value": "no"
+				}
+			],
+			"3139": [
+				{
+					"namespace": 999,
+					"attrid": 3139,
+					"value": "AB00"
+				}
+			],
+			"2003": [
+				{
+					"namespace": 999,
+					"attrid": 2003,
+					"value": "T2"
+				}
+			],
+			"3199": [
+				{
+					"namespace": 999,
+					"attrid": 3199,
+					"value": "AB00"
+				}
+			],
+			"3204": [
+				{
+					"namespace": 999,
+					"attrid": 3204,
+					"value": "AB00"
+				}
+			],
+			"3016": [
+				{
+					"namespace": 999,
+					"attrid": 3016,
+					"value": "   0"
+				}
+			],
+			"3136": [
+				{
+					"namespace": 999,
+					"attrid": 3136,
+					"value": "AB00"
+				}
+			],
+			"3004": [
+				{
+					"namespace": 999,
+					"attrid": 3004,
+					"value": "Medi"
+				}
+			],
+			"2011": [
+				{
+					"namespace": 999,
+					"attrid": 2011,
+					"value": "T2"
+				}
+			],
+			"5002": [
+				{
+					"namespace": 999,
+					"attrid": 5002,
+					"value": "   0"
+				}
+			],
+			"3206": [
+				{
+					"namespace": 999,
+					"attrid": 3206,
+					"value": "AB00"
+				}
+			],
+			"4005": [
+				{
+					"namespace": 999,
+					"attrid": 4005,
+					"value": "no"
+				}
+			],
+			"3205": [
+				{
+					"namespace": 999,
+					"attrid": 3205,
+					"value": "AB00"
+				}
+			],
+			"3170": [
+				{
+					"namespace": 999,
+					"attrid": 3170,
+					"value": "AB00"
+				}
+			],
+			"2014": [
+				{
+					"namespace": 999,
+					"attrid": 2014,
+					"value": "T1"
+				}
+			],
+			"3137": [
+				{
+					"namespace": 999,
+					"attrid": 3137,
+					"value": "AB00"
+				}
+			],
+			"3166": [
+				{
+					"namespace": 999,
+					"attrid": 3166,
+					"value": "AB00"
+				}
+			],
+			"3143": [
+				{
+					"namespace": 999,
+					"attrid": 3143,
+					"value": "AB00"
+				}
+			],
+			"3107": [
+				{
+					"namespace": 999,
+					"attrid": 3107,
+					"value": "AB00"
+				}
+			],
+			"3019": [
+				{
+					"namespace": 999,
+					"attrid": 3019,
+					"value": "no"
+				}
+			],
+			"2023": [
+				{
+					"namespace": 999,
+					"attrid": 2023,
+					"value": "T6"
+				}
+			],
+			"3167": [
+				{
+					"namespace": 999,
+					"attrid": 3167,
+					"value": "AB00"
+				}
+			],
+			"3172": [
+				{
+					"namespace": 999,
+					"attrid": 3172,
+					"value": "AB00"
+				}
+			],
+			"2018": [
+				{
+					"namespace": 999,
+					"attrid": 2018,
+					"value": "T6"
+				}
+			],
+			"3104": [
+				{
+					"namespace": 999,
+					"attrid": 3104,
+					"value": "AB00"
+				}
+			],
+			"2007": [
+				{
+					"namespace": 999,
+					"attrid": 2007,
+					"value": "T2"
+				}
+			],
+			"3003": [
+				{
+					"namespace": 999,
+					"attrid": 3003,
+					"value": " 100"
+				}
+			],
+			"3013": [
+				{
+					"namespace": 999,
+					"attrid": 3013,
+					"value": ""
+				}
+			],
+			"2006": [
+				{
+					"namespace": 999,
+					"attrid": 2006,
+					"value": "T6"
+				}
+			],
+			"3174": [
+				{
+					"namespace": 999,
+					"attrid": 3174,
+					"value": "AB00"
+				}
+			],
+			"2002": [
+				{
+					"namespace": 999,
+					"attrid": 2002,
+					"value": "T2"
+				}
+			],
+			"3014": [
+				{
+					"namespace": 999,
+					"attrid": 3014,
+					"value": "   1"
+				}
+			],
+			"3173": [
+				{
+					"namespace": 999,
+					"attrid": 3173,
+					"value": "AB00"
+				}
+			],
+			"3138": [
+				{
+					"namespace": 999,
+					"attrid": 3138,
+					"value": "AB00"
+				}
+			],
+			"2013": [
+				{
+					"namespace": 999,
+					"attrid": 2013,
+					"value": "T2"
+				}
+			],
+			"3105": [
+				{
+					"namespace": 999,
+					"attrid": 3105,
+					"value": "AB00"
+				}
+			],
+			"3134": [
+				{
+					"namespace": 999,
+					"attrid": 3134,
+					"value": "AB00"
+				}
+			],
+			"3111": [
+				{
+					"namespace": 999,
+					"attrid": 3111,
+					"value": "AB00"
+				}
+			],
+			"3203": [
+				{
+					"namespace": 999,
+					"attrid": 3203,
+					"value": "AB00"
+				}
+			],
+			"5004": [
+				{
+					"namespace": 999,
+					"attrid": 5004,
+					"value": "   0"
+				}
+			],
+			"3135": [
+				{
+					"namespace": 999,
+					"attrid": 3135,
+					"value": "AB00"
+				}
+			],
+			"3140": [
+				{
+					"namespace": 999,
+					"attrid": 3140,
+					"value": "AB00"
+				}
+			],
+			"5003": [
+				{
+					"namespace": 999,
+					"attrid": 5003,
+					"value": "   0"
+				}
+			],
+			"3200": [
+				{
+					"namespace": 999,
+					"attrid": 3200,
+					"value": "AB00"
+				}
+			],
+			"2005": [
+				{
+					"namespace": 999,
+					"attrid": 2005,
+					"value": "T2"
+				}
+			],
+			"3008": [
+				{
+					"namespace": 999,
+					"attrid": 3008,
+					"value": "Obs"
+				}
+			],
+			"5001": [
+				{
+					"namespace": 999,
+					"attrid": 5001,
+					"value": "   0"
+				}
+			],
+			"2017": [
+				{
+					"namespace": 999,
+					"attrid": 2017,
+					"value": "T6"
+				}
+			],
+			"3142": [
+				{
+					"namespace": 999,
+					"attrid": 3142,
+					"value": "AB00"
+				}
+			],
+			"3017": [
+				{
+					"namespace": 999,
+					"attrid": 3017,
+					"value": "   0"
+				}
+			],
+			"3141": [
+				{
+					"namespace": 999,
+					"attrid": 3141,
+					"value": "AB00"
+				}
+			],
+			"3106": [
+				{
+					"namespace": 999,
+					"attrid": 3106,
+					"value": "AB00"
+				}
+			],
+			"4001": [
+				{
+					"namespace": 999,
+					"attrid": 4001,
+					"value": "no"
+				}
+			],
+			"3201": [
+				{
+					"namespace": 999,
+					"attrid": 3201,
+					"value": "AB00"
+				}
+			],
+			"3102": [
+				{
+					"namespace": 999,
+					"attrid": 3102,
+					"value": "AB00"
+				}
+			],
+			"3207": [
+				{
+					"namespace": 999,
+					"attrid": 3207,
+					"value": "AB00"
+				}
+			],
+			"5000": [
+				{
+					"namespace": 999,
+					"attrid": 5000,
+					"value": "   0"
+				}
+			],
+			"3171": [
+				{
+					"namespace": 999,
+					"attrid": 3171,
+					"value": "AB00"
+				}
+			],
+			"3012": [
+				{
+					"namespace": 999,
+					"attrid": 3012,
+					"value": "  22"
+				}
+			]
+		},
+		"16": {
+			"4000": [
+				{
+					"namespace": 999,
+					"attrid": 4000,
+					"value": "Norm"
+				}
+			],
+			"2000": [
+				{
+					"namespace": 999,
+					"attrid": 2000,
+					"value": "t2"
+				}
+			],
+			"3000": [
+				{
+					"namespace": 999,
+					"attrid": 3000,
+					"value": "Fasr"
+				}
+			],
+			"3006": [
+				{
+					"namespace": 999,
+					"attrid": 3006,
+					"value": "10"
+				}
+			],
+			"1001": [
+				{
+					"namespace": 999,
+					"attrid": 1001,
+					"value": "yes"
+				}
+			],
+			"3009": [
+				{
+					"namespace": 999,
+					"attrid": 3009,
+					"value": "Amm"
+				}
+			],
+			"3015": [
+				{
+					"namespace": 999,
+					"attrid": 3015,
+					"value": "0"
+				}
+			],
+			"1000": [
+				{
+					"namespace": 999,
+					"attrid": 1000,
+					"value": "Dflt"
+				}
+			],
+			"3010": [
+				{
+					"namespace": 999,
+					"attrid": 3010,
+					"value": "yes"
+				}
+			],
+			"2001": [
+				{
+					"namespace": 999,
+					"attrid": 2001,
+					"value": "3v3"
+				}
+			]
+		}
+	}
+}

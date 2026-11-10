@@ -1,0 +1,21 @@
+[
+{"m_progress":32,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":1},"_bits":56},
+{"m_progress":37,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":1},"_bits":56},
+{"m_progress":46,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":1},"_bits":56},
+{"m_progress":52,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":1},"_bits":56},
+{"m_progress":60,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":1},"_bits":56},
+{"m_progress":79,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":1},"_bits":56},
+{"m_progress":99,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":1},"_bits":56},
+{"m_recipient":0,"m_string":"GLHF","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":604,"_userid":{"m_userId":0},"_bits":72},
+{"m_recipient":0,"m_string":"glgl","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":809,"_userid":{"m_userId":1},"_bits":72},
+{"m_recipient":0,"m_string":"i miss the days you lived with rotti","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":1232,"_userid":{"m_userId":0},"_bits":328},
+{"m_recipient":0,"m_string":"in rancho","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":1394,"_userid":{"m_userId":0},"_bits":112},
+{"m_recipient":0,"m_string":"ya","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":1489,"_userid":{"m_userId":1},"_bits":56},
+{"m_recipient":0,"m_string":"was good times","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":1520,"_userid":{"m_userId":1},"_bits":144},
+{"m_recipient":0,"m_string":"I got paid to cast sc2 back then too \\o/","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":1620,"_userid":{"m_userId":1},"_bits":360},
+{"m_recipient":0,"m_string":"ROFL","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":1729,"_userid":{"m_userId":0},"_bits":72},
+{"m_recipient":0,"m_string":"the life","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":1878,"_userid":{"m_userId":0},"_bits":104},
+{"m_recipient":0,"m_string":"ya","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":1968,"_userid":{"m_userId":1},"_bits":56},
+{"m_recipient":0,"m_string":"feelsbadman","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":2001,"_userid":{"m_userId":1},"_bits":120},
+{"m_recipient":0,"m_string":"gg","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":3869,"_userid":{"m_userId":1},"_bits":56}
+]

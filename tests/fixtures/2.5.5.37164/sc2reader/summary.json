@@ -1,0 +1,87 @@
+{
+	"version": "2.5.5.37164",
+	"baseBuild": 37164,
+	"gameloops": 7657,
+	"expansion": "LotV",
+	"speed": "Faster",
+	"region": "xx",
+	"map": {
+		"name": "Moonlight Madness LE (Void)",
+		"hash": "2e0d9f6f381bcdaa98f5d264bfbe4faf0d00c2d1a2029f9de4103dfa2c2749c3",
+		"depotRegion": "xx"
+	},
+	"endTime": 1443498155,
+	"utcOffset": 9.0,
+	"realLength": 341,
+	"gameMode": "Ladder",
+	"teamSize": "1v1",
+	"realType": "1v1",
+	"isLadder": true,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "HAREN",
+			"clanTag": "",
+			"toon": [
+				98,
+				1,
+				72421
+			],
+			"pickedRace": "Terran",
+			"playedRace": "Terran",
+			"result": "Loss",
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "HzVee",
+			"clanTag": "",
+			"toon": [
+				98,
+				1,
+				361691
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": "Win",
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1
+			],
+			"result": "Loss",
+			"lineup": "T"
+		},
+		{
+			"number": 2,
+			"players": [
+				2
+			],
+			"result": "Win",
+			"lineup": "P"
+		}
+	]
+}

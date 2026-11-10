@@ -93,6 +93,16 @@ class MpqArchiveTest extends TestCase {
 			'Minimap.tga' => array('d680a42c4f19c65d52461125455d7bf6a744d949', 786_476),
 			'enUS.SC2Data\LocalizedData\GameStrings.txt' => array('fa667b36db5edb39730126c4df5f452096fc93b7', 2_756),
 		));
+
+		// MPQ v4: raw sectors in a compressed sectored file (CellAttribute_Pnp: sector CRCs, zlib and raw sectors)
+		yield 'Ujari' => array('test_maps/1fce2ad4284e3987cc41cc9e691d12abd1ea185b63ded8adb385bc0a7dc76119.s2ma', 55, array(
+			'CellAttribute_Pnp' => array('48c9cf65763a69ffb5c21ef4fc7bcf6d49e412c6', 65_540),
+			'DocumentHeader' => array('cd3ea1509315451085152879ab72a6519f7f5a13', 11_015),
+			'MapInfo' => array('0a2b18fb7c99674b0dc32fbe235ab146fd4e69d2', 494),
+			'MapScript.galaxy' => array('5a24f3fd05890b4aee36dd7276853cfdcdafd319', 2_217),
+			'Minimap.tga' => array('b3d68e5a6d4242e75e575bcc3151938952edaaf3', 196_652),
+			'enUS.SC2Data\LocalizedData\GameStrings.txt' => array('d229ae3c81b51637805f23fd5ca5f40036f78b49', 749),
+		));
 	}
 
 	/**

@@ -1,0 +1,9 @@
+[
+{"m_progress":62,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_playerId":1},"_bits":56},
+{"m_progress":67,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_playerId":1},"_bits":56},
+{"m_progress":75,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_playerId":1},"_bits":56},
+{"m_progress":81,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_playerId":1},"_bits":56},
+{"m_progress":86,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_playerId":1},"_bits":56},
+{"m_progress":91,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_playerId":1},"_bits":56},
+{"m_progress":100,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_playerId":1},"_bits":56}
+]

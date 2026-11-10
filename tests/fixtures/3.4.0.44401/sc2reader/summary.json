@@ -1,0 +1,87 @@
+{
+	"version": "3.4.0.44401",
+	"baseBuild": 44401,
+	"gameloops": 7008,
+	"expansion": "LotV",
+	"speed": "Faster",
+	"region": "us",
+	"map": {
+		"name": "Galactic Process LE",
+		"hash": "ba01e84a0aaeb09a7845e1177346326003ef77da3f5f37bb9b63d5e5d72a3809",
+		"depotRegion": "us"
+	},
+	"endTime": 1468929967,
+	"utcOffset": 10.0,
+	"realLength": 312,
+	"gameMode": "Private",
+	"teamSize": "1v1",
+	"realType": "1v1",
+	"isLadder": false,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "Temp",
+			"clanTag": "PasT3",
+			"toon": [
+				1,
+				1,
+				7535424
+			],
+			"pickedRace": "Terran",
+			"playedRace": "Terran",
+			"result": "Loss",
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "Rjftmepdl",
+			"clanTag": "",
+			"toon": [
+				1,
+				1,
+				6195496
+			],
+			"pickedRace": "Zerg",
+			"playedRace": "Zerg",
+			"result": "Win",
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1
+			],
+			"result": "Loss",
+			"lineup": "T"
+		},
+		{
+			"number": 2,
+			"players": [
+				2
+			],
+			"result": "Win",
+			"lineup": "Z"
+		}
+	]
+}

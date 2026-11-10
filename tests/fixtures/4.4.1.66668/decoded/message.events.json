@@ -1,0 +1,17 @@
+[
+{"m_progress":12,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":1},"_bits":56},
+{"m_progress":17,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":1},"_bits":56},
+{"m_progress":24,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":1},"_bits":56},
+{"m_progress":30,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":1},"_bits":56},
+{"m_progress":40,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":1},"_bits":56},
+{"m_progress":47,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":1},"_bits":56},
+{"m_progress":73,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":1},"_bits":56},
+{"m_progress":99,"_event":"NNet.Game.SLoadingProgressMessage","_eventid":2,"_gameloop":0,"_userid":{"m_userId":1},"_bits":56},
+{"m_recipient":0,"m_string":"glhf my man","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":286,"_userid":{"m_userId":0},"_bits":128},
+{"m_recipient":0,"m_string":"gl hfg","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":526,"_userid":{"m_userId":1},"_bits":88},
+{"m_recipient":0,"m_string":"please forgive me for being bad","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":767,"_userid":{"m_userId":1},"_bits":288},
+{"m_recipient":0,"m_string":"dude you have no idea","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":1048,"_userid":{"m_userId":0},"_bits":208},
+{"m_recipient":0,"m_string":"check my history aftetr","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":1166,"_userid":{"m_userId":0},"_bits":224},
+{"m_recipient":0,"m_string":"haha","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":2253,"_userid":{"m_userId":1},"_bits":72},
+{"m_recipient":0,"m_string":"gg","_event":"NNet.Game.SChatMessage","_eventid":0,"_gameloop":2267,"_userid":{"m_userId":1},"_bits":48}
+]

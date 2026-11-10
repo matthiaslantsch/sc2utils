@@ -1,0 +1,79 @@
+{
+	"version": "0.9.0.14621",
+	"baseBuild": 14621,
+	"gameloops": 3632,
+	"expansion": "WoL",
+	"speed": "Faster",
+	"region": "krb",
+	"map": {
+		"name": "전쟁 초원",
+		"hash": "12540e298cc79637a99342bfd255044c89e13e816fa3f215d525aaebeb8b41f2",
+		"depotRegion": "krb"
+	},
+	"endTime": null,
+	"utcOffset": null,
+	"realLength": 162,
+	"gameMode": null,
+	"teamSize": null,
+	"realType": "1v1",
+	"isLadder": false,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "Volrath",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Unknown",
+			"playedRace": "Zerg",
+			"result": null,
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "Spunky",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Unknown",
+			"playedRace": "Protoss",
+			"result": null,
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1
+			],
+			"result": null,
+			"lineup": "Z"
+		},
+		{
+			"number": 2,
+			"players": [
+				2
+			],
+			"result": null,
+			"lineup": "P"
+		}
+	]
+}

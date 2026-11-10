@@ -1,0 +1,79 @@
+{
+	"version": "0.6.0.14259",
+	"baseBuild": 14259,
+	"gameloops": 33552,
+	"expansion": "WoL",
+	"speed": "Faster",
+	"region": "krb",
+	"map": {
+		"name": "금속도시",
+		"hash": "74be9caf361f05c3dfb669fd43fd3f40905805f8f2d29a84780d09b38827cad6",
+		"depotRegion": "krb"
+	},
+	"endTime": null,
+	"utcOffset": null,
+	"realLength": 1497,
+	"gameMode": null,
+	"teamSize": null,
+	"realType": "1v1",
+	"isLadder": false,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "isskin",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Unknown",
+			"playedRace": "Terran",
+			"result": null,
+			"human": true,
+			"color": "Red",
+			"rgba": [
+				180,
+				20,
+				30,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "ChangDuSeop",
+			"clanTag": null,
+			"toon": null,
+			"pickedRace": "Unknown",
+			"playedRace": "Protoss",
+			"result": null,
+			"human": true,
+			"color": "Yellow",
+			"rgba": [
+				235,
+				225,
+				41,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1
+			],
+			"result": null,
+			"lineup": "T"
+		},
+		{
+			"number": 2,
+			"players": [
+				2
+			],
+			"result": null,
+			"lineup": "P"
+		}
+	]
+}

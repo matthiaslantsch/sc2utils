@@ -1,0 +1,87 @@
+{
+	"version": "1.4.3.21029",
+	"baseBuild": 21029,
+	"gameloops": 30527,
+	"expansion": "WoL",
+	"speed": "Faster",
+	"region": "us",
+	"map": {
+		"name": "IPLMap Daybreak",
+		"hash": "695bc23a5b0c4510b54ba4ee0c0ef1edfcf5b27415760b47ac1e4507eec78d12",
+		"depotRegion": "us"
+	},
+	"endTime": 1333768724,
+	"utcOffset": -5.0,
+	"realLength": 1362,
+	"gameMode": "Private",
+	"teamSize": "1v1",
+	"realType": "1v1",
+	"isLadder": false,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "ROOTKiWiKaKi",
+			"clanTag": null,
+			"toon": [
+				1,
+				1,
+				2885723
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": "Loss",
+			"human": true,
+			"color": "Yellow",
+			"rgba": [
+				235,
+				225,
+				41,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "vileIllusion",
+			"clanTag": null,
+			"toon": [
+				1,
+				1,
+				558433
+			],
+			"pickedRace": "Terran",
+			"playedRace": "Terran",
+			"result": "Win",
+			"human": true,
+			"color": "Orange",
+			"rgba": [
+				254,
+				138,
+				14,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1
+			],
+			"result": "Loss",
+			"lineup": "P"
+		},
+		{
+			"number": 2,
+			"players": [
+				2
+			],
+			"result": "Win",
+			"lineup": "T"
+		}
+	]
+}

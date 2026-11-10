@@ -1,0 +1,10 @@
+{
+	"replay": "0.8.0.14593/0.8.0.14593.SC2Replay",
+	"sc2reader": "1.9.0",
+	"sc2readerCommit": "382b19359d9031ffbc1efe3cda211c8a91fabd09",
+	"streams": {
+		"summary": {
+			"error": "TypeError: Unknown Data Structure: '21'"
+		}
+	}
+}

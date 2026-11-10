@@ -77,5 +77,6 @@
 	"m_miniSave": false,
 	"m_gameSpeed": 4,
 	"m_defaultDifficulty": 1,
-	"m_modPaths": null
+	"m_modPaths": null,
+	"m_campaignIndex": 0
 }
