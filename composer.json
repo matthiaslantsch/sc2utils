@@ -9,6 +9,7 @@
 		"holonet/common": "dev-develop"
 	},
 	"require-dev": {
+		"ext-gd": "*",
 		"ergebnis/composer-normalize": "^2.5",
 		"friendsofphp/php-cs-fixer": "^3.13",
 		"phpunit/phpunit": "*",

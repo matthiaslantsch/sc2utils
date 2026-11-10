@@ -20,7 +20,7 @@ common/          shared Python: protocol loader (nearest build, legacy generatio
 generate/        protocols.sh = protocols.py (tables → JSON lines) | protocols.php (→ PHP data files),
                  gamedata.php (sc2reader's data files → src/gamedata/data/)
 fixtures/        decoded.py (s2protocol), sc2reader_dump.py (summary/events/units/map), mpq.py (coverage scan for
-                 tests/MpqArchiveTest.php), fetch_maps.py (depot download + SHA-256 check),
+                 tests/MpqArchiveTest.php), fetch_maps.php (depot download),
                  protocol_coverage.py (which protocol classes the test replays cover, see the plan's Version gaps)
 .venv/  .cache/  local only (gitignored): Python environment; extracted legacy protocols,
                  downloaded maps outside the curated set
@@ -42,7 +42,7 @@ python3 -m venv .venv
 | s2protocol submodule bumped | `generate/protocols.sh`, `fixtures/decoded.py` | review the diff of `src/protocol/data/` and the fixtures |
 | sc2reader submodule bumped | `generate/gamedata.php`, `fixtures/sc2reader_dump.py` | review the diff |
 | replay or map added | `fixtures/decoded.py`, `fixtures/sc2reader_dump.py`, `fixtures/mpq.py`, `fixtures/protocol_coverage.py` | if `mpq.py` exits with 1, extend `tests/MpqArchiveTest.php` |
-| map needed | `fixtures/fetch_maps.py` | curated maps go into `tests/test_maps/`, the rest stays in `.cache/` |
+| map needed | `php fixtures/fetch_maps.php` | curated maps go into `tests/test_maps/`, the rest stays in `.cache/` |
 
 ## Notes
 
@@ -58,5 +58,5 @@ python3 -m venv .venv
   that existed at `b41b369^` from there (extracted into `.cache/`) and only newer ones from the current tree.
 - Map depot URL: `https://<region>-s2-depot.classic.blizzard.com/<hash>.<ext>` (`sea` → `us`, `cn` on
   `necdn.leihuo.netease.com`). The old `<region>.depot.battle.net:1119` hosts are gone. The file name is the
-  SHA-256 of the content. `fetch_maps.py` falls back to the us/eu/kr depots when the replay's own region fails
+  SHA-256 of the content. `MapDownloader` (and so `fetch_maps.php`) falls back to the us/eu/kr depots when the replay's own region fails
   (HotS beta replays say `xx`, and their maps are on us).
