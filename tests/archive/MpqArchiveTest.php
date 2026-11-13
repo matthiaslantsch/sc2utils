@@ -7,7 +7,7 @@
  * @author  Matthias Lantsch <matthias.lantsch@bluewin.ch>
  */
 
-namespace holonet\sc2utils\tests;
+namespace holonet\sc2utils\tests\archive;
 
 use holonet\bitstream\stream\StringStream;
 use holonet\sc2utils\archive\ArchiveHeader;
@@ -200,7 +200,7 @@ class MpqArchiveTest extends TestCase {
 	 * @param array<string, array{string, int}> $expected file name => [sha1, size]
 	 */
 	public function test_map_files(string $path, int $fileCount, array $expected): void {
-		$archive = MpqArchive::open(__DIR__."/{$path}");
+		$archive = MpqArchive::open(dirname(__DIR__)."/{$path}");
 		$names = $archive->listFiles();
 
 		$this->assertNotNull($names);
@@ -218,7 +218,7 @@ class MpqArchiveTest extends TestCase {
 	}
 
 	public function test_missing_file(): void {
-		$archive = MpqArchive::open(__DIR__.'/test_replays/4.4.0.65895/4.4.0.65895.SC2Replay');
+		$archive = MpqArchive::open(dirname(__DIR__).'/test_replays/4.4.0.65895/4.4.0.65895.SC2Replay');
 
 		$this->assertFalse($archive->has('replay.missing'));
 		$this->expectException(MpqException::class);
@@ -237,7 +237,7 @@ class MpqArchiveTest extends TestCase {
 	 * @param array<string, array{string, int}> $expected file name => [sha1, size]
 	 */
 	public function test_replay_files(string $path, array $expected): void {
-		$archive = MpqArchive::open(__DIR__."/{$path}");
+		$archive = MpqArchive::open(dirname(__DIR__)."/{$path}");
 
 		$this->assertSame(array_keys($expected), $archive->listFiles());
 		foreach ($expected as $name => list($sha1, $size)) {
@@ -249,11 +249,11 @@ class MpqArchiveTest extends TestCase {
 
 	public function test_user_data(): void {
 		// replays keep their replay header in the user data block, maps have none
-		$replay = MpqArchive::open(__DIR__.'/test_replays/4.4.0.65895/4.4.0.65895.SC2Replay');
+		$replay = MpqArchive::open(dirname(__DIR__).'/test_replays/4.4.0.65895/4.4.0.65895.SC2Replay');
 		$this->assertNotNull($replay->userData);
 		$this->assertStringContainsString('StarCraft II replay', $replay->userData->content);
 
-		$map = MpqArchive::open(__DIR__.'/test_maps/5e027e5132846e6a9921eb7146bf31c0e7c287c23fa96ebc64ab153c06b6c871.s2ma');
+		$map = MpqArchive::open(dirname(__DIR__).'/test_maps/5e027e5132846e6a9921eb7146bf31c0e7c287c23fa96ebc64ab153c06b6c871.s2ma');
 		$this->assertNull($map->userData);
 	}
 }

@@ -7,7 +7,7 @@
  * @author  Matthias Lantsch <matthias.lantsch@bluewin.ch>
  */
 
-namespace holonet\sc2utils\tests;
+namespace holonet\sc2utils\tests\map;
 
 use holonet\sc2utils\decode\MapInfoFile;
 use holonet\sc2utils\MapFile;
@@ -53,7 +53,7 @@ class MapFileTest extends TestCase {
 
 	#[DataProvider('provide_map_cases')]
 	public function test_map(string $hash): void {
-		$file = MapFile::open(__DIR__."/test_maps/{$hash}.s2ma");
+		$file = MapFile::open(dirname(__DIR__)."/test_maps/{$hash}.s2ma");
 		$map = $file->map();
 
 		$this->assertSame($this->dataName(), $map->name);

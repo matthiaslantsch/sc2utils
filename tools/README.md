@@ -20,7 +20,7 @@ common/          shared Python: protocol loader (nearest build, legacy generatio
 generate/        protocols.sh = protocols.py (tables → JSON lines) | protocols.php (→ PHP data files),
                  gamedata.php (sc2reader's data files → src/gamedata/data/)
 fixtures/        decoded.py (s2protocol), sc2reader_dump.py (summary/events/units/map), mpq.py (coverage scan for
-                 tests/MpqArchiveTest.php), fetch_maps.php (depot download),
+                 tests/archive/MpqArchiveTest.php), fetch_maps.php (depot download),
                  protocol_coverage.py (which protocol classes the test replays cover, see the plan's Version gaps)
 .venv/  .cache/  local only (gitignored): Python environment; extracted legacy protocols,
                  downloaded maps outside the curated set
@@ -41,7 +41,7 @@ python3 -m venv .venv
 |---|---|---|
 | s2protocol submodule bumped | `generate/protocols.sh`, `fixtures/decoded.py` | review the diff of `src/protocol/data/` and the fixtures |
 | sc2reader submodule bumped | `generate/gamedata.php`, `fixtures/sc2reader_dump.py` | review the diff |
-| replay or map added | `fixtures/decoded.py`, `fixtures/sc2reader_dump.py`, `fixtures/mpq.py`, `fixtures/protocol_coverage.py` | if `mpq.py` exits with 1, extend `tests/MpqArchiveTest.php` |
+| replay or map added | `fixtures/decoded.py`, `fixtures/sc2reader_dump.py`, `fixtures/mpq.py`, `fixtures/protocol_coverage.py` | if `mpq.py` exits with 1, extend `tests/archive/MpqArchiveTest.php` |
 | map needed | `php fixtures/fetch_maps.php` | curated maps go into `tests/test_maps/`, the rest stays in `.cache/` |
 
 ## Notes
@@ -52,6 +52,10 @@ python3 -m venv .venv
 
 - `fixtures/sc2reader_dump.py` writes `tests/fixtures/<key>/sc2reader/summary.json`: the library's domain layer
   as sc2reader computes it. For replays sc2reader can't read, `tests/fixtures/<key>/manual/summary.json` is hand-written instead.
+- `generate/gamedata.php` writes `attributes.php`, `abilities/<expansion>_<version>.php` (one per sc2reader ability
+  table) and `units.php` (`unit_lookup.csv` + `unit_info.json`, keyed by Blizzard's unit id). Which ability table a
+  replay uses, and how unit type changes relate (modes, morphs), are hand-written in `src/gamedata/` because
+  sc2reader has them in code or not at all.
 
 - Upstream s2protocol has no protocols between builds 32283 and 51702 (deleted in `b41b369`, 2017), and the 32 old
   ones it regenerated afterwards are broken for old formats. `common/protocols.py` therefore takes every module

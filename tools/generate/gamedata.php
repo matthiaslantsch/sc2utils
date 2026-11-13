@@ -7,6 +7,13 @@
  *
  *     attributes.php   attributes.json: attribute id => [name, [value => display value]]. Ids whose entry is null
  *                      in the JSON are left out (sc2reader can't use them either).
+ *     abilities/<expansion>_<version>.php
+ *                      one per <expansion>/<version>_abilities.csv: ability link number (m_abilLink) => Blizzard's
+ *                      ability id. Which table a replay uses is gamedata\Abilities' hand-copied rule.
+ *     units.php        unit_lookup.csv + unit_info.json: Blizzard's unit id => [title, race, is army, is worker,
+ *                      is building, minerals, vespene, supply], for every unit unit_info.json knows (looked up by
+ *                      the lowercased title, as sc2reader does) and every unit whose title differs from its id;
+ *                      race and the rest null without unit_info.json entry.
  */
 const SC2READER = __DIR__.'/../sc2reader';
 const DEFAULT_OUTPUT = __DIR__.'/../../src/gamedata/data';
@@ -18,8 +25,17 @@ function fail(string $message): never {
 }
 
 function export(mixed $value): string {
+	if ($value === null) {
+		return 'null';
+	}
+	if (is_bool($value)) {
+		return $value ? 'true' : 'false';
+	}
 	if (is_int($value)) {
 		return (string)$value;
+	}
+	if (is_float($value)) {
+		return var_export($value, true);
 	}
 	if (is_string($value)) {
 		return var_export($value, true);
@@ -97,6 +113,82 @@ function attributes(): array {
 	return $ret;
 }
 
+/**
+ * @return array<string, array<int, string>> "<expansion>_<version>" => link number => Blizzard's ability id
+ */
+function abilities(): array {
+	$ret = array();
+	foreach (glob(SC2READER.'/sc2reader/data/*/*_abilities.csv') ?: array() as $path) {
+		$expansion = basename(dirname($path));
+		$version = basename($path, '_abilities.csv');
+		$table = array();
+		foreach (file($path, \FILE_IGNORE_NEW_LINES | \FILE_SKIP_EMPTY_LINES) ?: array() as $line) {
+			if (preg_match('/^(\d+),(\w+)$/', trim($line), $m) !== 1) {
+				fail("{$path}: malformed line {$line}");
+			}
+			if (isset($table[(int)$m[1]])) {
+				// 47185 (1) and 48258 (31) list several rows per link; sc2reader's load_build() lets the later row
+				// overwrite the earlier one, so this does too
+				fwrite(\STDERR, "gamedata.php: {$expansion}/{$version}: link {$m[1]} is {$table[(int)$m[1]]} and {$m[2]}, keeping {$m[2]}\n");
+			}
+			$table[(int)$m[1]] = $m[2];
+		}
+		ksort($table);
+		$ret["{$expansion}_{$version}"] = $table;
+	}
+	if ($ret === array()) {
+		fail('no ability tables found');
+	}
+	ksort($ret);
+
+	return $ret;
+}
+
+/**
+ * @return array<string, list<mixed>>
+ */
+function units(): array {
+	$info = readJson(SC2READER.'/sc2reader/data/unit_info.json');
+	$ret = array();
+	foreach (file(SC2READER.'/sc2reader/data/unit_lookup.csv', \FILE_IGNORE_NEW_LINES | \FILE_SKIP_EMPTY_LINES) ?: array() as $line) {
+		$parts = explode(',', trim($line));
+		if (count($parts) !== 2) {
+			fail("unit_lookup.csv: malformed line {$line}");
+		}
+		list($id, $title) = $parts;
+		$entry = null;
+		// sc2reader's order (data/__init__.py load_build): the first race that knows the lowercased title
+		foreach (array('Protoss', 'Terran', 'Zerg') as $race) {
+			if (isset($info[$race][strtolower($title)])) {
+				$entry = array($race, $info[$race][strtolower($title)]);
+
+				break;
+			}
+		}
+		if ($entry === null) {
+			if ($title !== $id) {
+				$ret[$id] = array($title, null, null, null, null, null, null, null);
+			}
+
+			continue;
+		}
+		list($race, $values) = $entry;
+		$ret[$id] = array(
+			$title,
+			$race,
+			(bool)($values['is_army'] ?? false),
+			(bool)($values['is_worker'] ?? false),
+			(bool)($values['is_building'] ?? false),
+			(int)($values['minerals'] ?? 0),
+			(int)($values['vespene'] ?? 0),
+			(float)($values['supply'] ?? 0),
+		);
+	}
+	ksort($ret);
+
+	return $ret;
+}
+
 function write(string $path, string $content): void {
 	if (file_put_contents($path, $content) === false) {
 		fail("cannot write {$path}");
@@ -116,3 +208,24 @@ foreach (attributes() as $id => $entry) {
 	$lines[] = "\t{$id} => ".export($entry).',';
 }
 write("{$output}/attributes.php", fileHeader('sc2reader/data/attributes.json')."\nreturn array(\n".implode("\n", $lines)."\n);\n");
+
+if (!is_dir("{$output}/abilities") && !mkdir("{$output}/abilities")) {
+	fail("cannot create {$output}/abilities");
+}
+foreach (glob("{$output}/abilities/*.php") ?: array() as $old) {
+	unlink($old);
+}
+foreach (abilities() as $name => $table) {
+	$lines = array();
+	foreach ($table as $link => $id) {
+		$lines[] = "\t{$link} => ".export($id).',';
+	}
+	$source = 'sc2reader/data/'.str_replace('_', '/', $name).'_abilities.csv';
+	write("{$output}/abilities/{$name}.php", fileHeader($source)."\nreturn array(\n".implode("\n", $lines)."\n);\n");
+}
+
+$lines = array();
+foreach (units() as $id => $entry) {
+	$lines[] = "\t".export($id).' => '.export($entry).',';
+}
+write("{$output}/units.php", fileHeader('sc2reader/data/unit_lookup.csv and unit_info.json')."\nreturn array(\n".implode("\n", $lines)."\n);\n");

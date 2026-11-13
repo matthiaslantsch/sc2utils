@@ -37,6 +37,7 @@
 		}
 	},
 	"bin": [
+		"scripts/replay-dump.php",
 		"scripts/replay-organiser.php"
 	],
 	"config": {

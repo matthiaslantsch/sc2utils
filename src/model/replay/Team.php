@@ -17,10 +17,7 @@ final class Team {
 	 */
 	public string $lineup {
 		get {
-			$letters = array();
-			foreach ($this->players as $player) {
-				$letters[$player->pid] ??= $player->playedRace?->letter() ?? '?';
-			}
+			$letters = array_map(static fn (Player $player): string => $player->playedRace?->letter() ?? '?', $this->players);
 			sort($letters);
 
 			return implode('', $letters);

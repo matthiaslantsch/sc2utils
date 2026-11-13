@@ -19,10 +19,11 @@ use holonet\sc2utils\model\enum\Race;
 use holonet\sc2utils\model\enum\Result;
 use holonet\sc2utils\model\GameVersion;
 use holonet\sc2utils\model\MapRef;
-use holonet\sc2utils\model\replay\Observer;
+use holonet\sc2utils\model\replay\Computer;
 use holonet\sc2utils\model\replay\Player;
 use holonet\sc2utils\model\replay\Replay;
 use holonet\sc2utils\model\replay\Team;
+use holonet\sc2utils\model\replay\User;
 use holonet\sc2utils\model\ReplayHeader;
 use holonet\sc2utils\model\Toon;
 use holonet\sc2utils\protocol\DecodeException;
@@ -49,11 +50,6 @@ final class ReplayMapper {
 	private const int FILETIME_UNIX_EPOCH = 116_444_736_000_000_000;
 
 	/**
-	 * Since this build gameloops are counted at Faster: 22.4 per real second instead of 16.
-	 */
-	private const int LOTV_BUILD = 34_784;
-
-	/**
 	 * A cache handle: four bytes file type, four bytes depot region, 32 bytes SHA-256.
 	 *
 	 * @return array{type: string, server: string, hash: string}
@@ -77,24 +73,6 @@ final class ReplayMapper {
 	}
 
 	/**
-	 * Python's float floor division (CPython's float_floor_div), which sc2reader uses for the real length. It takes
-	 * the floor of the exact quotient of the two doubles, so 4 // 0.8 is 4, not floor(4 / 0.8) = 5.
-	 */
-	public static function floorDiv(float $x, float $y): float {
-		$mod = fmod($x, $y);
-		$div = ($x - $mod) / $y;
-		if ($mod !== 0.0 && (($y < 0) !== ($mod < 0))) {
-			$div -= 1.0;
-		}
-		if ($div === 0.0) {
-			return 0.0;
-		}
-		$floor = floor($div);
-
-		return $div - $floor > 0.5 ? $floor + 1.0 : $floor;
-	}
-
-	/**
 	 * @param array<string, mixed> $raw the replay header as s2protocol decodes it
 	 */
 	public static function header(array $raw): ReplayHeader {
@@ -110,25 +88,22 @@ final class ReplayMapper {
 	}
 
 	/**
-	 * Length in real seconds as sc2reader computes it: whole game seconds (LotV builds count 22.4 gameloops per
-	 * second), divided by the speed factor with Python's floor division.
+	 * Length in whole real seconds: 16 gameloops per game second at every speed and in every expansion, divided by
+	 * the speed's multiplier (Normal without a speed).
 	 */
-	public static function realLength(ReplayHeader $header, ?Expansion $expansion, ?GameSpeed $speed): int {
-		$fps = $header->version->build >= self::LOTV_BUILD ? 16.0 * 1.4 : 16.0;
-		$seconds = (int)((float)$header->gameloops / $fps);
-		$factor = $expansion !== null && $speed !== null ? $expansion->speedFactor($speed) : 1.0;
-
-		return (int)self::floorDiv($seconds, $factor);
+	public static function realLength(ReplayHeader $header, ?GameSpeed $speed): int {
+		// the epsilon keeps exact quotients like 22400 / 16 / 1.4 = 1000 from flooring to 999 in binary floating point
+		return (int)floor(($speed ?? GameSpeed::Normal)->seconds($header->gameloops) + 1e-9);
 	}
 
 	/**
 	 * sc2reader's real_type: team sizes ascending, e.g. "1v1", "1v2"; FFA for more than two teams of one. A team's
-	 * size counts its controlling units (player ids), so an archon pair counts once and archon 2v2 is "2v2".
+	 * size counts its players, so an archon pair counts once and archon 2v2 is "2v2".
 	 *
 	 * @param list<Team> $teams
 	 */
 	public static function realType(array $teams): string {
-		$sizes = array_map(static fn (Team $team): int => count(array_unique(array_map(static fn (Player $p): int => $p->pid, $team->players))), $teams);
+		$sizes = array_map(static fn (Team $team): int => count($team->players), $teams);
 		if (count($sizes) > 2 && array_sum($sizes) === count($sizes)) {
 			return 'FFA';
 		}
@@ -140,10 +115,6 @@ final class ReplayMapper {
 	/**
 	 * The replay from whatever the file has: details (or the details-shaped replay.info of the WoL betas 0.2 to 0.10,
 	 * ReplayInfoFile::toDetails()), initdata if a protocol reads it, attributes if the file has them.
-	 *
-	 * Without initdata (the WoL betas before 0.19) the lobby defaults apply: seed 0, every lobby flag false, no
-	 * archon, no observers, the players as details lists them (playersFromDetails()). Without m_timeUTC the times
-	 * are null. Some betas have no game speed attribute; then the speed comes from details.
 	 *
 	 * @param array<string, mixed> $details
 	 * @param array<string, mixed>|null $initdata
@@ -176,9 +147,9 @@ final class ReplayMapper {
 
 		/** @var array{m_lobbyState: array{m_slots: list<array<string, mixed>>}, m_userInitialData: list<array<string, mixed>>, m_gameDescription: array{m_randomValue: int, m_gameOptions: array<string, mixed>}}|null $lobby */
 		$lobby = $initdata['m_syncLobbyState'] ?? null;
-		list($players, $observers) = $lobby === null
-			? array(self::playersFromDetails($playerList, $attributes), array())
-			: self::entities($lobby['m_lobbyState']['m_slots'], $lobby['m_userInitialData'], $playerList, $attributes);
+		list($players, $users) = $lobby === null
+			? self::fromDetails($playerList, $attributes)
+			: self::fromLobby($lobby['m_lobbyState']['m_slots'], $lobby['m_userInitialData'], $playerList, $attributes);
 		$teams = self::teams($players);
 		$gameMode = GameMode::tryFrom((string)($game['Game Mode'] ?? ''));
 		$options = $lobby['m_gameDescription']['m_gameOptions'] ?? array();
@@ -193,12 +164,12 @@ final class ReplayMapper {
 			new MapRef($title, $map['hash'], $map['server'], $map['type']),
 			is_int($fileTime) ? self::endTime($fileTime) : null,
 			is_int($fileTime) && is_int($adjustment) ? self::utcOffset($adjustment, $fileTime) : null,
-			self::realLength($header, $expansion, $speed),
+			self::realLength($header, $speed),
 			$gameMode,
 			$game['Teams'] ?? null,
 			self::realType($teams),
 			// sc2reader: observers or computers make a ladder game not ladder (HotS marks vs AI games as amm)
-			$gameMode === GameMode::Ladder && $observers === array() && !in_array(false, array_map(static fn (Player $p): bool => $p->isHuman, $players), true),
+			$gameMode === GameMode::Ladder && !self::hasObservers($players, $users) && !in_array(false, array_map(static fn (Player $p): bool => $p->isHuman, $players), true),
 			$lobby !== null && in_array(true, array_map(self::isArchonPartner(...), $lobby['m_lobbyState']['m_slots']), true),
 			$option('m_amm'),
 			$option('m_ranked'),
@@ -208,7 +179,7 @@ final class ReplayMapper {
 			$option('m_battleNet'),
 			$lobby['m_gameDescription']['m_randomValue'] ?? 0,
 			$players,
-			$observers,
+			$users,
 			$teams,
 		);
 	}
@@ -285,11 +256,62 @@ final class ReplayMapper {
 	}
 
 	/**
-	 * Players and observers from the lobby slots. Differs from sc2reader's load_players() where that one is wrong
+	 * The players as replay.details lists them: entries without a name are empty
+	 * slots and left out, the slot is the index in the list, player ids count from 1 in list order,
+	 * and the attribute scope is the player id. Each player has one user or a computer.
+	 * What the entry lacks takes defaults.
+	 *
+	 * @param list<mixed> $detailPlayers
+	 * @param Attributes $attributes
+	 *
+	 * @return array{list<Player>, list<User>}
+	 */
+	private static function fromDetails(array $detailPlayers, array $attributes): array {
+		$players = array();
+		$users = array();
+		foreach ($detailPlayers as $slotId => $detail) {
+			/** @var array{m_name: string, m_race: string, m_color: array{m_r: int, m_g: int, m_b: int, m_a: int}, m_toon?: array<string, mixed>, m_control?: int, m_teamId?: int, m_result?: int, m_handicap?: int} $detail */
+			if ($detail['m_name'] === '') {
+				continue;
+			}
+			$pid = count($players) + 1;
+			$playerAttributes = $attributes[$pid] ?? array();
+			$computer = null;
+			$controlling = array();
+			if (($detail['m_control'] ?? 2) === 3) {
+				$computer = new Computer($slotId, $detail['m_name'], $playerAttributes['Difficulty'] ?? null);
+			} else {
+				$toon = $detail['m_toon'] ?? array();
+				$controlling[] = $users[] = new User(
+					$slotId,
+					count($users),
+					$detail['m_name'],
+					null,
+					is_int($toon['m_region'] ?? null) && is_int($toon['m_realm'] ?? null) && is_int($toon['m_id'] ?? null)
+						? new Toon($toon['m_region'], $toon['m_realm'], $toon['m_id'])
+						: null,
+				);
+			}
+			$players[] = self::player(
+				$pid,
+				isset($detail['m_teamId']) ? $detail['m_teamId'] + 1 : $pid,
+				$detail['m_handicap'] ?? 100,
+				$detail,
+				$playerAttributes,
+				$controlling,
+				$computer,
+			);
+		}
+
+		return array($players, $users);
+	}
+
+	/**
+	 * Players and users from the lobby slots. Differs from sc2reader's load_players() where that one is wrong
 	 * (archon games) and agrees everywhere else:
-	 * - a human slot (control 2) is an observer if it observes (referees too), otherwise a player;
-	 * - a computer slot (control 3) is a player if it has a replay.details entry; computer archon partners and the
-	 *   extra co-op slots have none;
+	 * - a human slot (control 2) is a user; it controls a player unless it observes (observers and referees);
+	 * - a computer slot (control 3) controls a player if it has a replay.details entry; computer archon partners and
+	 *   the extra co-op slots have none;
 	 * - every other slot is open or closed and skipped.
 	 *
 	 * Slots and details entries are paired by m_workingSetSlotId (both have it since 24764; it is not the slot
@@ -298,54 +320,56 @@ final class ReplayMapper {
 	 * computer partners out.
 	 *
 	 * Player ids are Blizzard's (the m_playerId of the tracker's player setup events): they count the controlling
-	 * units from 1 in slot order, an archon partner shares its leader's id, observers have none. The attribute scope
-	 * of a player is its player id. (sc2reader gives observers ids too; no replay has an observer slot before a
-	 * player slot, so that never made a difference.)
+	 * units from 1 in slot order. An archon partner (m_tandemLeaderId = its leader's m_tandemId) controls its
+	 * leader's player, which takes team, race, colour, result and handicap from the leader's slot and details entry.
+	 * The attribute scope of a player is its player id.
+	 *
+	 * Toons: a user controlling a player has the toon of its details entry, an observer the toon handle of its slot.
 	 *
 	 * @param list<array<string, mixed>> $slots initdata lobby slots
-	 * @param list<array<string, mixed>> $users initdata user initial data, indexed by user id
+	 * @param list<array<string, mixed>> $userData initdata user initial data, indexed by user id
 	 * @param list<mixed> $detailPlayers replay.details player list
 	 * @param Attributes $attributes
 	 *
-	 * @return array{list<Player>, list<Observer>}
+	 * @return array{list<Player>, list<User>}
 	 */
-	private static function entities(array $slots, array $users, array $detailPlayers, array $attributes): array {
+	private static function fromLobby(array $slots, array $userData, array $detailPlayers, array $attributes): array {
 		$byWorkingSetSlot = self::detailsByWorkingSetSlot($detailPlayers);
 		$entries = array();
-		$observers = array();
+		$users = array();
 		$detailId = 0;
 		foreach ($slots as $slotId => $slot) {
 			/** @var int|null $userId */
 			$userId = $slot['m_userId'];
-			$user = null;
+			$data = null;
 			if ($slot['m_control'] === 2 && $userId !== null) {
-				$user = $users[$userId] ?? throw new DecodeException("initdata has no user data for user {$userId} of slot {$slotId}");
+				$data = $userData[$userId] ?? throw new DecodeException("initdata has no user data for user {$userId} of slot {$slotId}");
 				if ($slot['m_observe'] !== 0) {
-					$observers[] = self::observer($slotId, $slot, $userId, $user);
+					$handle = $slot['m_toonHandle'] ?? null;
+					$users[$slotId] = self::user($slotId, $userId, $data, is_string($handle) && $handle !== '' ? Toon::fromHandle($handle) : null);
 
 					continue;
 				}
-			} elseif ($slot['m_control'] === 3) {
-				$userId = null;
-			} else {
+			} elseif ($slot['m_control'] !== 3) {
 				continue;
 			}
 
 			if ($byWorkingSetSlot !== null) {
 				$detail = $byWorkingSetSlot[$slot['m_workingSetSlotId'] ?? -1] ?? null;
 				if ($detail === null) {
-					if ($user !== null) {
+					if ($data !== null) {
 						throw new DecodeException("replay.details has no entry for the human in slot {$slotId}");
 					}
 
 					continue;
 				}
-			} elseif ($user === null && $detailId >= count($detailPlayers)) {
+			} elseif ($data === null && $detailId >= count($detailPlayers)) {
 				continue;
 			} else {
 				$detail = self::detailPlayer($detailPlayers, $detailId++);
 			}
-			$entries[$slotId] = array($slot, $userId, $user, $detail);
+			/** @var array{m_name: string, m_race: string, m_color: array{m_r: int, m_g: int, m_b: int, m_a: int}, m_toon: array{m_region: int, m_realm: int, m_id: int}, m_result: int} $detail */
+			$entries[$slotId] = array($slot, $detail, $data === null || $userId === null ? null : self::user($slotId, $userId, $data, Toon::fromDetails($detail['m_toon'])));
 		}
 
 		$pids = array();
@@ -356,18 +380,49 @@ final class ReplayMapper {
 				$byTandem[$slot['m_tandemId'] ?? "slot {$slotId}"] = $pids[$slotId];
 			}
 		}
-		foreach ($entries as $slotId => list($slot)) {
+
+		$controllers = array();
+		foreach ($entries as $slotId => list($slot, $detail, $user)) {
 			if (self::isArchonPartner($slot)) {
-				$pids[$slotId] = $byTandem[$slot['m_tandemLeaderId']] ?? throw new DecodeException("The archon leader of slot {$slotId} is not a player");
+				$pid = $byTandem[$slot['m_tandemLeaderId']] ?? throw new DecodeException("The archon leader of slot {$slotId} is not a player");
+			} else {
+				$pid = $pids[$slotId];
+				$controllers[$pid]['leader'] = array($slot, $detail);
+			}
+			if ($user !== null) {
+				$controllers[$pid]['users'][] = $user;
+				$users[$slotId] = $user;
+			} else {
+				$controllers[$pid]['computer'] = new Computer($slotId, $detail['m_name'], $attributes[$pid]['Difficulty'] ?? null);
 			}
 		}
 
 		$players = array();
-		foreach ($entries as $slotId => list($slot, $userId, $user, $detail)) {
-			$players[] = self::player($pids[$slotId], $slotId, $slot, $userId, $user, $detail, $attributes[$pids[$slotId]] ?? array());
+		foreach ($controllers as $pid => $controller) {
+			$computer = $controller['computer'] ?? null;
+			$controlling = $controller['users'] ?? array();
+			if ($computer !== null && $controlling !== array()) {
+				throw new DecodeException("Player {$pid} is controlled by humans and a computer");
+			}
+			list($slot, $detail) = $controller['leader'] ?? throw new DecodeException("Player {$pid} has no leader slot");
+			/** @var int $team */
+			$team = $slot['m_teamId'];
+			/** @var int $handicap */
+			$handicap = $slot['m_handicap'];
+			$players[] = self::player($pid, $team + 1, $handicap, $detail, $attributes[$pid] ?? array(), $controlling, $computer);
 		}
+		ksort($users);
 
-		return array($players, $observers);
+		return array($players, array_values($users));
+	}
+
+	/**
+	 * Whether some user controls no player.
+	 * @param list<Player> $players
+	 * @param list<User> $users
+	 */
+	private static function hasObservers(array $players, array $users): bool {
+		return count($users) > array_sum(array_map(static fn (Player $p): int => count($p->users), $players));
 	}
 
 	/**
@@ -382,101 +437,35 @@ final class ReplayMapper {
 	}
 
 	/**
-	 * @param array<string, mixed> $slot
-	 * @param array<string, mixed> $user
-	 */
-	private static function observer(int $slotId, array $slot, int $userId, array $user): Observer {
-		$handle = $slot['m_toonHandle'] ?? null;
-		/** @var string $name */
-		$name = $user['m_name'];
-		/** @var string|null $clanTag */
-		$clanTag = $user['m_clanTag'] ?? null;
-
-		return new Observer($slotId, $userId, $name, $clanTag, is_string($handle) && $handle !== '' ? Toon::fromHandle($handle) : null);
-	}
-
-	/**
-	 * A human (with user data) or a computer (without): name and clan tag from the user data, or the details name
-	 * for computers; race, colour, result and toon from details; team and handicap from the slot.
-	 *
-	 * @param array<string, mixed> $slot
-	 * @param array<string, mixed>|null $user
-	 * @param array<string, mixed> $detail
+	 * A player: race, colour and result from its (leader's) details entry, the race pick from its attributes.
+	 * @param array{m_race: string, m_color: array{m_r: int, m_g: int, m_b: int, m_a: int}, m_result?: int, ...} $detail
 	 * @param array<string, string|null> $attributes
+	 * @param list<User> $users
 	 */
-	private static function player(int $pid, int $slotId, array $slot, ?int $userId, ?array $user, array $detail, array $attributes): Player {
-		/** @var array{m_name: string, m_race: string, m_color: array{m_r: int, m_g: int, m_b: int, m_a: int}, m_toon: array{m_region: int, m_realm: int, m_id: int}, m_result: int} $detail */
-		/** @var string $name */
-		$name = $user['m_name'] ?? $detail['m_name'];
-		/** @var string|null $clanTag */
-		$clanTag = $user['m_clanTag'] ?? null;
-		/** @var int $team */
-		$team = $slot['m_teamId'];
-		/** @var int $handicap */
-		$handicap = $slot['m_handicap'];
-
+	private static function player(int $pid, int $team, int $handicap, array $detail, array $attributes, array $users, ?Computer $computer): Player {
 		return new Player(
 			$pid,
-			$slotId,
-			$userId,
-			$name,
-			$clanTag,
-			$user !== null ? Toon::fromDetails($detail['m_toon']) : null,
-			$team + 1,
+			$team,
 			Race::tryFrom((string)($attributes['Race'] ?? '')),
 			Race::fromLocalised($detail['m_race']),
 			Colour::fromDetails($detail['m_color']),
-			Result::fromDetails($detail['m_result']),
+			Result::fromDetails($detail['m_result'] ?? 0),
 			$handicap,
-			$attributes['Difficulty'] ?? null,
+			$users,
+			$computer,
 		);
 	}
 
 	/**
-	 * The players as replay.details lists them, for replays without initdata: entries
-	 * without a name are empty slots and left out, the slot is the index in the list, player ids count from 1 in
-	 * list order (no archon then), and the attribute scope is the player id. What the entry lacks takes a default:
-	 * - human unless m_control says computer (3); humans get user ids from 0 in list order;
-	 * - a toon only with an m_id (the betas have a "name#id" handle instead, which no Toon is);
-	 * - the team from m_teamId, else a team of its own
-	 * - no result without m_result, handicap 100 without m_handicap.
-	 *
-	 * @param list<mixed> $detailPlayers
-	 * @param Attributes $attributes
-	 *
-	 * @return list<Player>
+	 * A user: name and clan tag from the initdata user data.
+	 * @param array<string, mixed> $data
 	 */
-	private static function playersFromDetails(array $detailPlayers, array $attributes): array {
-		$players = array();
-		$humans = 0;
-		foreach ($detailPlayers as $slotId => $detail) {
-			/** @var array{m_name: string, m_race: string, m_color: array{m_r: int, m_g: int, m_b: int, m_a: int}, m_toon?: array<string, mixed>, m_control?: int, m_teamId?: int, m_result?: int, m_handicap?: int} $detail */
-			if ($detail['m_name'] === '') {
-				continue;
-			}
-			$pid = count($players) + 1;
-			$human = ($detail['m_control'] ?? 2) !== 3;
-			$toon = $detail['m_toon'] ?? array();
-			$playerAttributes = $attributes[$pid] ?? array();
-			$players[] = new Player(
-				$pid,
-				$slotId,
-				$human ? $humans++ : null,
-				$detail['m_name'],
-				null,
-				$human && is_int($toon['m_region'] ?? null) && is_int($toon['m_realm'] ?? null) && is_int($toon['m_id'] ?? null)
-					? new Toon($toon['m_region'], $toon['m_realm'], $toon['m_id'])
-					: null,
-				isset($detail['m_teamId']) ? $detail['m_teamId'] + 1 : $pid,
-				Race::tryFrom((string)($playerAttributes['Race'] ?? '')),
-				Race::fromLocalised($detail['m_race']),
-				Colour::fromDetails($detail['m_color']),
-				Result::fromDetails($detail['m_result'] ?? 0),
-				$detail['m_handicap'] ?? 100,
-				$playerAttributes['Difficulty'] ?? null,
-			);
-		}
+	private static function user(int $slotId, int $userId, array $data, ?Toon $toon): User {
+		/** @var string $name */
+		$name = $data['m_name'];
+		/** @var string|null $clanTag */
+		$clanTag = $data['m_clanTag'] ?? null;
 
-		return $players;
+		return new User($slotId, $userId, $name, $clanTag, $toon);
 	}
 }

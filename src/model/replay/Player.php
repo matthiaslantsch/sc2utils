@@ -12,45 +12,48 @@ namespace holonet\sc2utils\model\replay;
 use holonet\sc2utils\model\Colour;
 use holonet\sc2utils\model\enum\Race;
 use holonet\sc2utils\model\enum\Result;
-use holonet\sc2utils\model\Toon;
+use InvalidArgumentException;
 
 /**
- * A player of the game, human or computer.
+ * A player of the game, Blizzard's player: the controlling unit that owns units, has a race, a colour and a result.
+ * Tracker events and attributes name it by player id.
+ *
+ * A human player is controlled by one user, an archon player by two; a computer player by its computer.
  */
 final class Player {
-	/**
-	 * Humans have a user id, computers don't.
-	 */
 	public bool $isHuman {
-		get => $this->userId !== null;
+		get => $this->computer === null;
 	}
 
 	/**
-	 * @param int $pid Blizzard's player id (as in tracker events): counts the controlling units from 1, archon
-	 *                 partners share it, observers have none
-	 * @param int $slot index of the lobby slot
-	 * @param int|null $userId the human's user id; null for computers
-	 * @param string|null $clanTag null for computers and before clan tags existed (2.0.3)
-	 * @param Toon|null $toon null for computers
+	 * The users' names joined with " & " (archon), or the computer's name.
+	 */
+	public string $name {
+		get => $this->computer->name ?? implode(' & ', array_map(static fn (User $user): string => $user->name, $this->users));
+	}
+
+	/**
+	 * @param int $pid Blizzard's player id: counts the controlling units from 1 in slot order
 	 * @param int $team team number, from 1
 	 * @param Race|null $pickedRace the lobby pick; null if the replay has no race attribute for the player
 	 * @param Race|null $playedRace null if the race name isn't known
 	 * @param Result|null $result null if undecided or a tie
-	 * @param string|null $difficulty the computer difficulty attribute (humans have "Medium"); null if absent
+	 * @param list<User> $users the users controlling the player in slot order: one, two for archon, none for a computer
+	 * @param Computer|null $computer the computer controlling the player; null for humans
 	 */
 	public function __construct(
 		public readonly int $pid,
-		public readonly int $slot,
-		public readonly ?int $userId,
-		public readonly string $name,
-		public readonly ?string $clanTag,
-		public readonly ?Toon $toon,
 		public readonly int $team,
 		public readonly ?Race $pickedRace,
 		public readonly ?Race $playedRace,
 		public readonly Colour $colour,
 		public readonly ?Result $result,
 		public readonly int $handicap,
-		public readonly ?string $difficulty,
-	) {}
+		public readonly array $users,
+		public readonly ?Computer $computer = null,
+	) {
+		if (($users === array()) === ($computer === null)) {
+			throw new InvalidArgumentException("Player {$pid} needs either users or a computer");
+		}
+	}
 }

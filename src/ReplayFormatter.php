@@ -12,9 +12,11 @@ namespace holonet\sc2utils;
 use Closure;
 use DateTimeZone;
 use holonet\sc2utils\model\enum\Race;
+use holonet\sc2utils\model\replay\Computer;
 use holonet\sc2utils\model\replay\Player;
 use holonet\sc2utils\model\replay\Replay;
 use holonet\sc2utils\model\replay\Team;
+use holonet\sc2utils\model\replay\User;
 use InvalidArgumentException;
 
 /**
@@ -36,7 +38,7 @@ use InvalidArgumentException;
  *     {identifier}  match key
  *
  * Player tokens (in the player format, for {vs}):
- *     {name}        name
+ *     {name}        name of the user or computer
  *     {clantag}     clan tag in brackets, e.g. "[TAG]", empty without one
  *     {race} {race_short}  played race, "Zerg" / "Z"
  *     {pick} {pick_short}  lobby pick, "Random" / "R"
@@ -145,18 +147,32 @@ final readonly class ReplayFormatter {
 		return implode('v', $lineups);
 	}
 
-	private function player(Player $player): string {
+	/**
+	 * One person in the player format: name, clan tag and toon from the user or computer, the rest from the player.
+	 */
+	private function person(Player $player, Computer|User $person): string {
+		$clanTag = $person instanceof User ? $person->clanTag : null;
+
 		return (string)preg_replace_callback(self::TOKEN, fn (array $match): string => $this->filter(match ($match[1]) {
-			'name' => $player->name,
-			'clantag' => $player->clanTag === null || $player->clanTag === '' ? '' : "[{$player->clanTag}]",
+			'name' => $person->name,
+			'clantag' => $clanTag === null || $clanTag === '' ? '' : "[{$clanTag}]",
 			'race' => $player->playedRace?->value ?? '',
 			'race_short' => $player->playedRace?->letter() ?? '',
 			'pick' => $player->pickedRace?->value ?? '',
 			'pick_short' => $player->pickedRace?->letter() ?? '',
 			'team' => (string)$player->team,
-			'toon' => (string)$player->toon,
+			'toon' => $person instanceof User ? (string)$person->toon : '',
 			default => '',
 		}), $this->playerFormat);
+	}
+
+	/**
+	 * Every person of a player: its users (two for archon), or its computer.
+	 */
+	private function persons(Player $player): string {
+		$persons = $player->computer === null ? $player->users : array($player->computer);
+
+		return implode(' ', array_map(fn (Computer|User $person): string => $this->person($player, $person), $persons));
 	}
 
 	private function replayToken(string $token, Replay $replay): string {
@@ -171,32 +187,16 @@ final readonly class ReplayFormatter {
 			'gamelength' => self::length($replay->realLength),
 			'gametype' => $replay->realType,
 			'matchup' => self::matchup(array_map(
-				static fn (array $players): array => array_map(static fn (Player $p): ?Race => $p->playedRace, $players),
-				self::unitsPerTeam($replay),
+				static fn (Team $team): array => array_map(static fn (Player $p): ?Race => $p->playedRace, $team->players),
+				$replay->teams,
 			)),
 			'vs' => implode(' vs ', array_map(
-				fn (Team $team): string => implode(' ', array_map($this->player(...), $team->players)),
+				fn (Team $team): string => implode(' ', array_map($this->persons(...), $team->players)),
 				$replay->teams,
 			)),
 			'mode' => $replay->gameMode?->value ?? '',
 			'identifier' => $replay->matchKey,
 			default => throw new InvalidArgumentException("Unknown token {{$token}}"),
 		};
-	}
-
-	/**
-	 * Teams with one player per controlling unit (archon partners share a player id), for the matchup.
-	 *
-	 * @return list<list<Player>>
-	 */
-	private static function unitsPerTeam(Replay $replay): array {
-		return array_map(static function (Team $team): array {
-			$units = array();
-			foreach ($team->players as $player) {
-				$units[$player->pid] ??= $player;
-			}
-
-			return array_values($units);
-		}, $replay->teams);
 	}
 }

@@ -42,4 +42,25 @@ enum GameSpeed: string {
 			self::Faster => 4,
 		};
 	}
+
+	/**
+	 * Game seconds per real second. The game runs 16 gameloops per game second at every speed, in every expansion
+	 * (LotV only changed the clock it shows to real time).
+	 */
+	public function multiplier(): float {
+		return match ($this) {
+			self::Slower => 0.6,
+			self::Slow => 0.8,
+			self::Normal => 1.0,
+			self::Fast => 1.2,
+			self::Faster => 1.4,
+		};
+	}
+
+	/**
+	 * Real seconds for a number of gameloops at this speed.
+	 */
+	public function seconds(int $gameloops): float {
+		return (float)$gameloops / 16.0 / $this->multiplier();
+	}
 }

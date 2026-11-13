@@ -1,0 +1,93 @@
+{
+	"version": "5.0.17.98310",
+	"baseBuild": 98310,
+	"gameloops": 659,
+	"expansion": "LotV",
+	"speed": "Slower",
+	"region": "eu",
+	"map": {
+		"name": "At Eternity's Edge LE",
+		"hash": "d340aff4e6cefd978986f38f8a01d63e7b87e56ca764db706a418d97a4113b34",
+		"depotRegion": "eu"
+	},
+	"endTime": 1793988327,
+	"utcOffset": 1.0,
+	"realLength": 68,
+	"gameMode": "Private",
+	"teamSize": "1v1",
+	"realType": "1v1",
+	"isLadder": false,
+	"players": [
+		{
+			"pid": 1,
+			"slot": 0,
+			"name": "ZergStillOP",
+			"clanTag": "TeamUR",
+			"toon": [
+				2,
+				1,
+				2513209
+			],
+			"pickedRace": "Random",
+			"playedRace": "Terran",
+			"result": "Win",
+			"human": true,
+			"color": "Orange",
+			"rgba": [
+				254,
+				138,
+				14,
+				255
+			],
+			"team": 1
+		},
+		{
+			"pid": 2,
+			"slot": 1,
+			"name": "JohnTheGen",
+			"clanTag": "go4ham",
+			"toon": [
+				2,
+				1,
+				1668414
+			],
+			"pickedRace": "Protoss",
+			"playedRace": "Protoss",
+			"result": "Loss",
+			"human": true,
+			"color": "Blue",
+			"rgba": [
+				0,
+				66,
+				255,
+				255
+			],
+			"team": 2
+		}
+	],
+	"observers": [
+		{
+			"name": "Prozak",
+			"clanTag": "Kingz",
+			"toon": "2-S2-1-2203085"
+		}
+	],
+	"teams": [
+		{
+			"number": 1,
+			"players": [
+				1
+			],
+			"result": "Win",
+			"lineup": "T"
+		},
+		{
+			"number": 2,
+			"players": [
+				2
+			],
+			"result": "Loss",
+			"lineup": "P"
+		}
+	]
+}

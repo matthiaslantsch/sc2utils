@@ -18,9 +18,11 @@ use holonet\sc2utils\model\enum\Race;
 use holonet\sc2utils\model\enum\Result;
 use holonet\sc2utils\model\GameVersion;
 use holonet\sc2utils\model\MapRef;
+use holonet\sc2utils\model\replay\Computer;
 use holonet\sc2utils\model\replay\Player;
 use holonet\sc2utils\model\replay\Replay;
 use holonet\sc2utils\model\replay\Team;
+use holonet\sc2utils\model\replay\User;
 use holonet\sc2utils\model\ReplayHeader;
 use holonet\sc2utils\model\Toon;
 use holonet\sc2utils\ReplayFormatter;
@@ -56,12 +58,10 @@ class ReplayFormatterTest extends TestCase {
 		yield 'text around tokens' => array('{date} {vs} - {map}', '2018-07-10 11:58 [Team]Peter (Z) vs Sally (P) - Void Thrashing LE');
 	}
 
-	public function test_archon_pair_counts_once_in_the_matchup(): void {
+	public function test_archon_player_counts_once_in_the_matchup_and_shows_both_users(): void {
 		$replay = self::replay(array(
-			self::player(1, 'A', 1, Race::Protoss),
-			self::player(1, 'B', 1, Race::Protoss),
-			self::player(2, 'C', 2, Race::Zerg),
-			self::player(2, 'D', 2, Race::Zerg),
+			self::player(1, 'A', 1, Race::Protoss, partner: 'B'),
+			self::player(2, 'C', 2, Race::Zerg, partner: 'D'),
 		));
 
 		$this->assertSame('PvZ', new ReplayFormatter()->format('{matchup}', $replay));
@@ -76,6 +76,14 @@ class ReplayFormatterTest extends TestCase {
 
 		$this->assertSame('[] OgerAffe (T) vs LiquidNazgul (P) 1v1 PvT 35:47', new ReplayFormatter()->format('[{date}] {vs} {gametype} {matchup} {gamelength}', $beta));
 		$this->assertSame('OgerAffe| vs LiquidNazgul|', new ReplayFormatter(playerFormat: '{name}|{toon}')->format('{vs}', $beta));
+	}
+
+	public function test_computer_tokens(): void {
+		$computer = new Player(2, 2, Race::Random, Race::Terran, new Colour(0, 66, 255), Result::Loss, 100, array(), new Computer(1, 'A.I. 1 (Harder)', 'Harder'));
+		$replay = self::replay(array(self::player(1, 'Peter', 1, Race::Zerg), $computer));
+		$formatter = new ReplayFormatter(playerFormat: '{clantag}{name} ({race_short}, {pick})|{toon}|');
+
+		$this->assertSame('Peter (Z, Zerg)|2-S2-1-1001| vs A.I. 1 (Harder) (T, Random)||', $formatter->format('{vs}', $replay));
 	}
 
 	public function test_file_names_keep_values_out_of_the_path(): void {
@@ -130,10 +138,17 @@ class ReplayFormatterTest extends TestCase {
 	}
 
 	/**
+	 * A human player with one user, or an archon player with a second user named $partner.
+	 *
 	 * @param false|Toon|null $toon false for none, null for a generated one
 	 */
-	private static function player(int $pid, string $name, int $team, Race $race, ?string $clanTag = null, ?Race $pick = null, null|false|Toon $toon = null): Player {
-		return new Player($pid, $pid, $pid - 1, $name, $clanTag, $toon === false ? null : $toon ?? new Toon(2, 1, 1_000 + $pid), $team, $pick ?? $race, $race, new Colour(180, 20, 30), Result::Win, 100, null);
+	private static function player(int $pid, string $name, int $team, Race $race, ?string $clanTag = null, ?Race $pick = null, null|false|Toon $toon = null, ?string $partner = null): Player {
+		$users = array(new User($pid, $pid - 1, $name, $clanTag, $toon === false ? null : $toon ?? new Toon(2, 1, 1_000 + $pid)));
+		if ($partner !== null) {
+			$users[] = new User($pid + 10, $pid + 9, $partner, null, new Toon(2, 1, 2_000 + $pid));
+		}
+
+		return new Player($pid, $team, $pick ?? $race, $race, new Colour(180, 20, 30), Result::Win, 100, $users);
 	}
 
 	/**
@@ -158,7 +173,8 @@ class ReplayFormatterTest extends TestCase {
 			$endTime,
 			2.0,
 			$realLength,
-			GameMode::Ladder, '1v1', '1v1', true, false, true, true, false, false, false, true, 42, $players, array(),
+			GameMode::Ladder, '1v1', '1v1', true, false, true, true, false, false, false, true, 42, $players,
+			array_merge(...array_map(static fn (Player $p): array => $p->users, $players)),
 			array_values(array_map(static fn (int $number, array $members): Team => new Team($number, $members, Result::Win), array_keys($teams), $teams)),
 		);
 	}

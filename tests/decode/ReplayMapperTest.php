@@ -18,34 +18,25 @@ use holonet\sc2utils\model\enum\Result;
 use holonet\sc2utils\model\GameVersion;
 use holonet\sc2utils\model\replay\Player;
 use holonet\sc2utils\model\replay\Replay;
+use holonet\sc2utils\model\replay\User;
 use holonet\sc2utils\model\ReplayHeader;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Attributes\Small;
 use PHPUnit\Framework\TestCase;
 
 /**
- * The rules of the domain mapping with crafted input: lobby slots to people, teams, ladder, times.
+ * The rules of the domain mapping with crafted input: lobby slots to players and users, teams, ladder, times.
  * The corpus comparison (ReplaySummaryTest) covers real data; this covers the cases the corpus lacks.
  *
  * @internal
- * @small
  */
 #[CoversClass(ReplayMapper::class)]
+#[Small]
 class ReplayMapperTest extends TestCase {
 	private const string LIBERTY = 'Standard Data: Liberty.SC2Mod';
 
 	private const string VOID = 'Standard Data: Void.SC2Mod';
-
-	/**
-	 * @return iterable<string, array{float, float}>
-	 */
-	public static function provide_floor_div_cases(): iterable {
-		yield 'exact quotient of the doubles is below 5' => array(4.0, 0.8);
-		yield 'faster' => array(410.0, 1.4);
-		yield 'zero' => array(0.0, 1.4);
-		yield 'one' => array(7.0, 1.0);
-		yield 'one tenth' => array(1.0, 0.1);
-	}
 
 	/**
 	 * @return iterable<string, array{list<int>, string}>
@@ -58,7 +49,7 @@ class ReplayMapperTest extends TestCase {
 		yield 'one team' => array(array(1, 1), '2');
 	}
 
-	public function test_archon_partners_share_the_player_id(): void {
+	public function test_archon_partners_control_one_player(): void {
 		// archon 2v2 vs AI as in same_match/archon_vs_ai: humans 0 + 2 are one unit, computers 1 + 3 another.
 		// details lists the human partner (in working set order) but not the computer partner.
 		$slots = array(
@@ -73,9 +64,12 @@ class ReplayMapperTest extends TestCase {
 			attributes: array(1 => array('Race' => 'Protoss'), 2 => array('Race' => 'Random')),
 		);
 
-		$this->assertSame(array(array(1, 0, 'A'), array(2, 1, 'AI'), array(1, 2, 'B')), array_map(static fn ($p): array => array($p->pid, $p->slot, $p->name), $replay->players));
-		$this->assertSame(Race::Protoss, $replay->players[2]->pickedRace, 'the partner has the scope of the pair');
+		$this->assertSame(array(array(1, array(0, 2), 'A & B'), array(2, array(1), 'AI')), array_map(static fn (Player $p): array => array($p->pid, self::slots($p), $p->name), $replay->players));
+		$this->assertSame(array('A', 'B'), array_map(static fn (User $u): string => $u->name, $replay->players[0]->users));
+		$this->assertSame(Race::Protoss, $replay->players[0]->pickedRace, 'the pair has one attribute scope');
 		$this->assertSame(Race::Random, $replay->players[1]->pickedRace);
+		$this->assertSame($replay->players[0], $replay->playerOf($replay->users[1]), 'the partner controls the leader\'s player');
+		$this->assertSame(array(), $replay->observers);
 		$this->assertTrue($replay->isArchon);
 		$this->assertSame('1v1', $replay->realType);
 		$this->assertSame(array('P', 'Z'), array_map(static fn ($t): string => $t->lineup, $replay->teams));
@@ -119,24 +113,6 @@ class ReplayMapperTest extends TestCase {
 		$this->assertSame('2017-07-14T02:40:00+00:00', $time->format(\DATE_ATOM));
 	}
 
-	public function test_expansion_and_speed_set_the_real_length(): void {
-		// LotV build: 22.4 gameloops per second, factor 1.0 at Faster
-		$replay = $this->replay(build: 65_895, gameloops: 22_400, dependencies: array(self::VOID));
-		$this->assertSame(Expansion::LotV, $replay->expansion);
-		$this->assertSame(1_000, $replay->realLength);
-
-		// WoL: 16 gameloops per game second, 1.4 game seconds per real second at Faster
-		$replay = $this->replay(gameloops: 16 * 1_400);
-		$this->assertSame(1_000, $replay->realLength);
-	}
-
-	#[DataProvider('provide_floor_div_cases')]
-	public function test_floor_div_like_python(float $x, float $y): void {
-		$expected = array('4/0.8' => 4.0, '410/1.4' => 292.0, '0/1.4' => 0.0, '7/1' => 7.0, '1/0.1' => 9.0)["{$x}/{$y}"];
-
-		$this->assertSame($expected, ReplayMapper::floorDiv($x, $y));
-	}
-
 	public function test_ladder_needs_ladder_mode_without_observers_and_computers(): void {
 		$ladder = array(16 => array('Game Mode' => 'Ladder'));
 		$this->assertTrue($this->replay(attributes: $ladder)->isLadder);
@@ -163,14 +139,16 @@ class ReplayMapperTest extends TestCase {
 		);
 
 		$this->assertSame('Foo', $replay->players[0]->name);
-		$this->assertSame('CLAN', $replay->players[0]->clanTag);
-		$this->assertSame('2-S2-1-100', (string)$replay->players[0]->toon);
+		$this->assertSame('CLAN', $replay->players[0]->users[0]->clanTag);
+		$this->assertSame('2-S2-1-100', (string)$replay->players[0]->users[0]->toon);
 		$this->assertTrue($replay->players[0]->isHuman);
+		$this->assertNull($replay->players[0]->computer);
 		$this->assertSame('A.I. 1 (Hard)', $replay->players[1]->name);
-		$this->assertNull($replay->players[1]->clanTag);
-		$this->assertNull($replay->players[1]->toon);
+		$this->assertSame(array(), $replay->players[1]->users);
 		$this->assertFalse($replay->players[1]->isHuman);
-		$this->assertSame('Hard', $replay->players[1]->difficulty);
+		$this->assertSame(1, $replay->players[1]->computer?->slot);
+		$this->assertSame('Hard', $replay->players[1]->computer->difficulty);
+		$this->assertCount(1, $replay->users, 'computers are no users');
 	}
 
 	public function test_observers_take_no_player_id(): void {
@@ -182,7 +160,9 @@ class ReplayMapperTest extends TestCase {
 		);
 
 		$this->assertSame(array(1, 2), array_map(static fn ($p): int => $p->pid, $replay->players));
-		$this->assertSame(array(0, 2), array_map(static fn ($p): int => $p->slot, $replay->players));
+		$this->assertSame(array(array(0), array(2)), array_map(self::slots(...), $replay->players));
+		$this->assertSame(array(0, 1, 2), array_map(static fn (User $u): int => $u->slot, $replay->users), 'users are every human, observers included');
+		$this->assertNull($replay->playerOf($replay->users[1]));
 		$this->assertSame(Race::Zerg, $replay->players[1]->pickedRace, 'scope 2 is the second player, not the observer');
 		$this->assertCount(1, $replay->observers);
 		$this->assertSame('Obs', $replay->observers[0]->name);
@@ -197,7 +177,7 @@ class ReplayMapperTest extends TestCase {
 		$replay = $this->replay(slots: array($open, self::human(1, 0), $closed, self::human(3, 1)), users: $users);
 
 		$this->assertSame(array(1, 2), array_map(static fn ($p): int => $p->pid, $replay->players));
-		$this->assertSame(array(1, 3), array_map(static fn ($p): int => $p->slot, $replay->players));
+		$this->assertSame(array(array(1), array(3)), array_map(self::slots(...), $replay->players));
 	}
 
 	public function test_race_pick_and_play(): void {
@@ -230,6 +210,19 @@ class ReplayMapperTest extends TestCase {
 	public function test_region_singapore_is_sea(): void {
 		$this->assertSame('sea', $this->replay(region: 'SG')->region);
 		$this->assertSame('us', $this->replay(region: 'US')->region);
+	}
+
+	public function test_speed_sets_the_real_length(): void {
+		// 16 gameloops per game second at every speed and in every expansion, Faster = 1.4 game seconds per second
+		$replay = $this->replay(build: 65_895, gameloops: 22_400, dependencies: array(self::VOID));
+		$this->assertSame(Expansion::LotV, $replay->expansion);
+		$this->assertSame(1_000, $replay->realLength);
+		$this->assertEqualsWithDelta(10.0, $replay->realSeconds(224), 1e-9, '22.4 gameloops per real second at Faster');
+
+		$this->assertSame(1_000, $this->replay(gameloops: 16 * 1_400)->realLength, 'WoL at Faster');
+		$this->assertSame(1_666, $this->replay(gameloops: 16_000, attributes: array(16 => array('Game Speed' => 'Slower')))->realLength, 'Slower: 0.6 game seconds per second');
+		$this->assertSame(1_000, $this->replay(build: 65_895, gameloops: 16_000, dependencies: array(self::VOID), attributes: array(16 => array('Game Speed' => 'Normal')))->realLength, 'LotV at Normal');
+		$this->assertSame(714, $this->replay(build: 38_215, gameloops: 16_000)->realLength, 'HotS on the LotV client counts like any other game');
 	}
 
 	public function test_team_results(): void {
@@ -267,9 +260,10 @@ class ReplayMapperTest extends TestCase {
 		$this->assertSame(array(), $replay->observers);
 		$this->assertSame(array('A', 'B', 'AI'), array_map(static fn (Player $p): string => $p->name, $replay->players), 'empty entries are left out');
 		$this->assertSame(array(1, 2, 3), array_map(static fn (Player $p): int => $p->pid, $replay->players));
-		$this->assertSame(array(1, 2, 3), array_map(static fn (Player $p): int => $p->slot, $replay->players), 'the slot is the index in details');
-		$this->assertSame(array(0, 1, null), array_map(static fn (Player $p): ?int => $p->userId, $replay->players), 'humans unless m_control says computer');
-		$this->assertSame(array('2-S2-1-100', null, null), array_map(static fn (Player $p): ?string => $p->toon === null ? null : (string)$p->toon, $replay->players), 'a toon needs an m_id');
+		$this->assertSame(array(array(1), array(2), array(3)), array_map(self::slots(...), $replay->players), 'the slot is the index in details');
+		$this->assertSame(array(0, 1), array_map(static fn (User $u): int => $u->userId, $replay->users), 'users unless m_control says computer');
+		$this->assertSame('AI', $replay->players[2]->computer?->name);
+		$this->assertSame(array('2-S2-1-100', null), array_map(static fn (User $u): ?string => $u->toon === null ? null : (string)$u->toon, $replay->users), 'a toon needs an m_id');
 		$this->assertSame(array(1, 2, 3), array_map(static fn (Player $p): int => $p->team, $replay->players), 'no m_teamId: a team of its own');
 		$this->assertSame(array(null, Race::Random, null), array_map(static fn (Player $p): ?Race => $p->pickedRace, $replay->players), 'attribute scope = pid');
 		$this->assertSame(array(Result::Win, Result::Loss, Result::Win), array_map(static fn (Player $p): ?Result => $p->result, $replay->players));
@@ -377,5 +371,14 @@ class ReplayMapperTest extends TestCase {
 		}
 
 		return $ret;
+	}
+
+	/**
+	 * The slots of the users controlling a player, or of its computer.
+	 *
+	 * @return list<int>
+	 */
+	private static function slots(Player $player): array {
+		return $player->computer === null ? array_map(static fn (User $u): int => $u->slot, $player->users) : array($player->computer->slot);
 	}
 }

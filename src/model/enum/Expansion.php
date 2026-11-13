@@ -33,16 +33,6 @@ enum Expansion: string {
 		return null;
 	}
 
-	/**
-	 * How much faster than real time the game runs at each speed (sc2reader's GAME_SPEED_FACTOR).
-	 * LotV counts its gameloops at Faster already.
-	 */
-	public function speedFactor(GameSpeed $speed): float {
-		$factors = $this === self::LotV ? array(0.2, 0.4, 0.6, 0.8, 1.0) : array(0.6, 0.8, 1.0, 1.2, 1.4);
-
-		return $factors[$speed->index()];
-	}
-
 	private function standardData(): string {
 		return match ($this) {
 			self::WoL => 'Standard Data: Liberty.SC2Mod',

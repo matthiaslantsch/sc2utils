@@ -1,4 +1,4 @@
-"""Dump sc2reader's view of the test replays into tests/fixtures/ (the "sc2reader" fixture kind).
+r"""Dump sc2reader's view of the test replays into tests/fixtures/ (the "sc2reader" fixture kind).
 
 Usage (from the repo root):
     tools/.venv/bin/python tools/fixtures/sc2reader_dump.py [replay or directory ...]
@@ -31,6 +31,9 @@ import sys
 from pathlib import Path
 
 import sc2reader  # noqa: E402
+from sc2reader.data import Build  # noqa: E402
+from sc2reader.engine import GameEngine  # noqa: E402
+from sc2reader.engine.plugins import ContextLoader  # noqa: E402
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
@@ -93,7 +96,6 @@ def summary(replay) -> dict:
         } for t in replay.teams],
     }
 
-
 def dump(path: Path, commit: str) -> dict:
     meta: dict = {
         'replay': path.relative_to(REPLAYS).as_posix(),
@@ -121,7 +123,10 @@ def write(key: str, result: dict) -> None:
     tmp.mkdir(parents=True)
     jsonio.write_json(tmp / 'meta.json', result['meta'])
     for filename, value in result['files'].items():
-        jsonio.write_json(tmp / filename, value)
+        if filename.endswith('.jsonl.gz'):
+            jsonio.write_jsonl_gz(tmp / filename, value)
+        else:
+            jsonio.write_json(tmp / filename, value)
     if target.exists():
         shutil.rmtree(target)
     tmp.rename(target)

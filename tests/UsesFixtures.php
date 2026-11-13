@@ -11,10 +11,11 @@ namespace holonet\sc2utils\tests;
 
 use Generator;
 use holonet\bitstream\BitArray;
-use holonet\sc2utils\model\replay\Observer;
+use holonet\sc2utils\model\replay\Computer;
 use holonet\sc2utils\model\replay\Player;
 use holonet\sc2utils\model\replay\Replay;
 use holonet\sc2utils\model\replay\Team;
+use holonet\sc2utils\model\replay\User;
 use holonet\sc2utils\ReplayParser;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
@@ -64,17 +65,27 @@ trait UsesFixtures {
 
 	/**
 	 * The Replay against its summary fixture: our own manual/summary.json if there is one, otherwise sc2reader's
-	 * (tools/fixtures/sc2reader_dump.py). Exact, except the end time:
-	 * sc2reader converts FILETIME with an epoch 0.4 s off, so its end times are 0 or 1 s later.
+	 * (tools/fixtures/sc2reader_dump.py). Exact, except:
+	 * sc2reader converts FILETIME with an epoch 0.4 s off, so its end times are 0 or 1 s later; and it floors
+	 * the real length twice, so it is 0 to 2 s shorter.
+	 * Where sc2reader's real length is wrong,
+	 * the replay has a manual summary.
 	 */
 	protected function assertReplayFixture(string $key, Replay $replay): void {
 		$manual = self::fixturePath($key, 'manual', 'summary.json');
 		/** @var array<string, mixed> $expected */
 		$expected = is_file($manual) ? self::readJson($manual) : self::readJson(self::fixturePath($key, 'sc2reader', self::fixtureFile($key, 'summary', 'sc2reader')));
 		$actual = self::summary($replay);
+		self::sortPersons($expected);
+		self::sortPersons($actual);
 
 		$this->assertContains((int)$expected['endTime'] - (int)$actual['endTime'], array(0, 1), 'endTime (0 or 1 s behind sc2reader)');
 		$actual['endTime'] = $expected['endTime'];
+		if (!is_file($manual)) {
+			// sc2reader floors twice (whole game seconds, then the speed): up to 2 s shorter than ours, never longer
+			$this->assertContains((int)$actual['realLength'] - (int)$expected['realLength'], array(0, 1, 2), 'realLength (0 to 2 s ahead of sc2reader)');
+			$actual['realLength'] = $expected['realLength'];
+		}
 		$this->assertSame($expected, $actual);
 	}
 
@@ -196,8 +207,28 @@ trait UsesFixtures {
 	}
 
 	/**
-	 * The Replay in the summary fixture's shape. Reshapes only: enums as their values, times as Unix timestamps; the
-	 * one translation is a missing race pick, which sc2reader calls "Unknown".
+	 * Orders the persons by slot and each team's player ids, so the comparison doesn't depend on the order in which
+	 * sc2reader and our model list the persons of a player.
+	 * @param array<string, mixed> $summary
+	 */
+	private static function sortPersons(array &$summary): void {
+		/** @var list<array{slot: int}> $players */
+		$players = $summary['players'];
+		usort($players, static fn (array $a, array $b): int => $a['slot'] <=> $b['slot']);
+		$summary['players'] = $players;
+		/** @var list<array{players: list<int>}> $teams */
+		$teams = $summary['teams'];
+		foreach ($teams as &$team) {
+			sort($team['players']);
+		}
+		$summary['teams'] = $teams;
+	}
+
+	/**
+	 * The Replay in the summary fixture's shape, which is sc2reader's: one entry per person (every user of a player,
+	 * both archon partners, or its computer) with the player's fields, and a team's players as one player id per
+	 * person. Reshapes only: enums as their values, times as Unix timestamps; the one translation is a missing race
+	 * pick, which sc2reader calls "Unknown".
 	 *
 	 * @return array<string, mixed>
 	 */
@@ -221,12 +252,12 @@ trait UsesFixtures {
 			'teamSize' => $replay->teamSize,
 			'realType' => $replay->realType,
 			'isLadder' => $replay->isLadder,
-			'players' => array_map(static fn (Player $p): array => array(
+			'players' => array_merge(...array_map(static fn (Player $p): array => array_map(static fn (Computer|User $person): array => array(
 				'pid' => $p->pid,
-				'slot' => $p->slot,
-				'name' => $p->name,
-				'clanTag' => $p->clanTag,
-				'toon' => $p->toon === null ? null : array($p->toon->region, $p->toon->realm, $p->toon->id),
+				'slot' => $person->slot,
+				'name' => $person->name,
+				'clanTag' => $person instanceof User ? $person->clanTag : null,
+				'toon' => $person instanceof User && $person->toon !== null ? array($person->toon->region, $person->toon->realm, $person->toon->id) : null,
 				'pickedRace' => $p->pickedRace->value ?? 'Unknown',
 				'playedRace' => $p->playedRace?->value,
 				'result' => $p->result?->value,
@@ -234,15 +265,15 @@ trait UsesFixtures {
 				'color' => $p->colour->name,
 				'rgba' => array($p->colour->r, $p->colour->g, $p->colour->b, $p->colour->a),
 				'team' => $p->team,
-			), $replay->players),
-			'observers' => array_map(static fn (Observer $o): array => array(
+			), $p->computer === null ? $p->users : array($p->computer)), $replay->players)),
+			'observers' => array_map(static fn (User $o): array => array(
 				'name' => $o->name,
 				'clanTag' => $o->clanTag,
 				'toon' => $o->toon === null ? null : (string)$o->toon,
 			), $replay->observers),
 			'teams' => array_map(static fn (Team $t): array => array(
 				'number' => $t->number,
-				'players' => array_map(static fn (Player $p): int => $p->pid, $t->players),
+				'players' => array_merge(...array_map(static fn (Player $p): array => array_fill(0, max(1, count($p->users)), $p->pid), $t->players)),
 				'result' => $t->result?->value,
 				'lineup' => $t->lineup,
 			), $replay->teams),

@@ -1,4 +1,4 @@
-"""Report MPQ archives (replays, maps) with a variant that tests/MpqArchiveTest.php doesn't cover yet.
+"""Report MPQ archives (replays, maps) with a variant that tests/archive/MpqArchiveTest.php doesn't cover yet.
 
 Each file in an archive has a variant: single-unit or sectored, encrypted, and the compression of its first sector
 (0x02 zlib, 0x10 bzip2, ...). An archive is covered when every variant it has also occurs in an archive of the
@@ -22,7 +22,7 @@ import sys
 import mpyq
 
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-TEST_FILE = os.path.join(REPO, 'tests', 'MpqArchiveTest.php')
+TEST_FILE = os.path.join(REPO, 'tests', 'archive', 'MpqArchiveTest.php')
 
 FLAG_SINGLE_UNIT = 0x01000000
 FLAG_SECTOR_CRC = 0x04000000
@@ -45,7 +45,7 @@ def covered_archives():
     """Absolute paths of the archives in MpqArchiveTest's data providers."""
     with open(TEST_FILE, encoding='utf8') as f:
         source = f.read()
-    tests_dir = os.path.dirname(TEST_FILE)
+    tests_dir = os.path.join(REPO, 'tests')
     return {
         os.path.realpath(os.path.join(tests_dir, p))
         for p in re.findall(r"'(test_(?:replays|maps)/[^']+\.(?:SC2Replay|s2ma))'", source)
