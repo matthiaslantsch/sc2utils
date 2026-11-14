@@ -5,8 +5,7 @@
 		"php": ">=8.4",
 		"ext-bz2": "*",
 		"ext-zlib": "*",
-		"holonet/bitstream": "^1.0.0",
-		"holonet/common": "dev-develop"
+		"holonet/bitstream": "^1.0.0"
 	},
 	"require-dev": {
 		"ext-gd": "*",
