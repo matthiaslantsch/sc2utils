@@ -45,6 +45,12 @@
 			"ergebnis/composer-normalize": true
 		}
 	},
+	"extra": {
+		"branch-alias": {
+			"dev-develop": "2.1.x-dev",
+			"dev-master": "2.0.x-dev"
+		}
+	},
 	"scripts": {
 		"fix": [
 			"@composer normalize --diff --ansi",
