@@ -11,6 +11,7 @@ namespace holonet\sc2utils\model\replay;
 
 use DateInterval;
 use DateTimeImmutable;
+use holonet\sc2utils\gamedata\Season;
 use holonet\sc2utils\model\enum\Expansion;
 use holonet\sc2utils\model\enum\GameMode;
 use holonet\sc2utils\model\enum\GameSpeed;
@@ -63,6 +64,13 @@ final class Replay {
 
 			return array_values(array_filter($this->users, static fn (User $user): bool => !isset($controlling[$user->userId])));
 		}
+	}
+
+	/**
+	 * The ladder season the game was played in: for matchmade games (ranked or not) by their end time.
+	 */
+	public ?Season $season {
+		get => $this->amm && $this->endTime !== null ? Season::at($this->endTime) : null;
 	}
 
 	/**
